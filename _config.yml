@@ -1,0 +1,15 @@
+title: Apkallu
+email: help@apkallu.co.uk
+description: >-
+  A software company with a mission to add real value to the lifes of users through
+  technology.
+baseurl: ""
+url: "apkallu.co.uk"
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
