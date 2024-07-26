@@ -1,10 +1,18 @@
 title: Apkallu
 email: help@apkallu.co.uk
 description: >-
-  A software company with a mission to add real value to the lifes of users through
-  technology.
+  We are a software company dedicated to empowering individuals and communities
+  through technology. Our mission is to create products that foster personal
+  growth, enhance community connections, and drive positive change in the
+  digital world.
 baseurl: ""
 url: "apkallu.co.uk"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 exclude:
   - .sass-cache/
@@ -12,4 +20,4 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - .gitignore
+  - .gitignorec
