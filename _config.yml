@@ -1,4 +1,5 @@
 title: Apkallu
+ascendtitle: Ascend
 email: help@apkallu.co.uk
 description: >-
   We are a software company dedicated to empowering individuals and communities
@@ -7,6 +8,13 @@ description: >-
   digital world.
 baseurl: ""
 url: "apkallu.co.uk"
+
+social:
+  facebook: https://www.facebook.com/ascend.app.fb/
+  instagram: https://www.instagram.com/ascend.app.ig
+  tiktok: https://www.tiktok.com/@ascendapp
+  youtube: https://www.youtube.com/@ascend-app
+  linktree: https://linktr.ee/ascendapp
 
 defaults:
   - scope:
