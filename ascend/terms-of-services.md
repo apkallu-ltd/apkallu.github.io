@@ -6,7 +6,7 @@ permalink: /ascend/terms/
 
 # TERMS OF SERVICE
 
-**Last updated July 24, 2024**
+**Last updated September 2, 2024**
 
 <br>
 

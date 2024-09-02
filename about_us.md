@@ -13,7 +13,7 @@ We are a software company dedicated to empowering individuals and communities th
 ### [Ascend]({{ '/' | relative_url }})
 *Coming Soon*
 
-**Ascend** is our latest upcoming application designed to promote self-development communities by bringing individuals together through shared goals. Our aim with Ascend is to help each user become a better version of themselves by providing a platform for growth and collaboration.
+**Ascend** is our latest upcoming application designed to promote self-improvement communities by bringing individuals together through shared goals. Our aim with Ascend is to help each user become a better version of themselves by providing a platform for growth and collaboration.
 
 Stay tuned for the launch of Ascend and be among the first to join a community dedicated to self-improvement and mutual support!
 

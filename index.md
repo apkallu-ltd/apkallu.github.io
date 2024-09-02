@@ -10,7 +10,7 @@ title: Home
 # Ascend
 *Coming Soon*
 
-Welcome to **Ascend**, the ultimate platform for self-development enthusiasts. **Ascend** is more than just an app—it's a movement designed to unite individuals through shared goals, fostering a community where everyone can strive to become the best version of themselves. Whether you're seeking to achieve personal milestones, connect with like-minded individuals, or contribute to a supportive community, Ascend is here to empower your journey.
+Welcome to **Ascend**, the ultimate platform for self-improvement enthusiasts. **Ascend** is more than just an app—it's a movement designed to unite individuals through shared goals, fostering a community where everyone can strive to become the best version of themselves. Whether you're seeking to achieve personal milestones, connect with like-minded individuals, or contribute to a supportive community, Ascend is here to empower your journey.
 
 ## Get Ready to Ascend!
 

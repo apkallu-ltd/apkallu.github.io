@@ -6,7 +6,7 @@ permalink: /ascend/privacy/
 
 # PRIVACY POLICY
 
-**Last updated July 24, 2024**
+**Last updated September 2, 2024**
 
 <br>
 
@@ -116,6 +116,7 @@ may include the following:
 * gender
 * date of birth
 * bio
+* profile pictures
 
 **Sensitive Information.** We do not process sensitive information.
 
