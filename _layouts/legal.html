@@ -12,7 +12,16 @@
     <div class="top-banner">
       <div class="container">
         <div class="header-content">
-          <h1>{{ site.ascendtitle }}</h1>
+          <nav>
+            <ul>
+              <li>
+                <div class="logo-container">
+                  <img src="{{ 'assets/icons/ascend-logo.png' | relative_url }}" alt="Ascend Logo" class="app-logo">
+                </div>
+              </li>
+              <li><h1>{{ site.ascendtitle }}</h1></li>
+            </ul>
+          </nav>
           <nav>
             <ul>
               <li><a href="{{ '/' | relative_url }}">Home</a></li>

@@ -3,32 +3,11 @@ layout: default
 title: Home
 ---
 
-<div class="logo-container">
-  <img src="assets/icons/ascend-logo.png" alt="Ascend Logo" class="app-logo">
-</div>
-
-# Ascend
-*Coming Soon*
-
-Welcome to **Ascend**, the ultimate platform for self-improvement enthusiasts. **Ascend** is more than just an app—it's a movement designed to unite individuals through shared goals, fostering a community where everyone can strive to become the best version of themselves. Whether you're seeking to achieve personal milestones, connect with like-minded individuals, or contribute to a supportive community, Ascend is here to empower your journey.
+---
 
 ## Get Ready to Ascend!
 
 **Ascend** is currently in development and will soon be available on both Android and iOS platforms. We invite you to stay connected with us and be among the first to experience the transformative power of **Ascend**.
-
-### Download the App
-*Our app is coming soon to Android and iOS. Stay tuned!*
-
-<div class="app-links">
-  <a href="{{ site.social.linktree }}" target="_blank" rel="noopener noreferrer" class="btn disabled">
-    <img src="assets/icons/PreRegisterOnGoogle.png" alt="Google Play">
-  </a>
-  <a href="{{ site.social.linktree }}" target="_blank" rel="noopener noreferrer" class="btn disabled">
-    <img src="assets/icons/DownloadOnTheAppStore.png" alt="App Store">
-  </a>
-</div>
-
----
 
 ### Stay Connected
 

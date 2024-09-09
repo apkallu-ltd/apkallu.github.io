@@ -16,6 +16,9 @@ social:
   youtube: https://www.youtube.com/@ascend-app
   linktree: https://linktr.ee/ascendapp
 
+app:
+  testing_form: https://docs.google.com/forms/d/e/1FAIpQLSfK4L5aW8uSz3lSrodQCsPTwNDf54fA-UVXA4W6_3NPdRFnqQ/viewform
+
 defaults:
   - scope:
       path: ""
