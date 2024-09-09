@@ -333,10 +333,6 @@ footer p {
   .hero-text h1 {
     font-size: 36px;
   }
-
-  .hero-image img {
-    width: 300px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -352,17 +348,12 @@ footer p {
   }
 
   .hero-image {
-    width: 100%;
     margin-top: 20px;
   }
 
-  .hero-image img {
-    width: 80%;
-  }
 
   .feature-section {
     flex-direction: column;
-    padding: 30px 20px;
   }
 
   .feature-text, .feature-image {
