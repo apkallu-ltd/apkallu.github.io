@@ -145,9 +145,13 @@ a:hover {
   color: #fff;
 }
 
+.hero-image {
+  width: 23%;
+}
+
 .hero-image img {
-  width: 350px;
-  height: auto;
+  max-height: 75vh;
+  width: auto;
   transform: rotate(-10deg);
   transition: transform 0.3s ease;
 }
@@ -237,13 +241,10 @@ a:hover {
   color: #fff;
 }
 
-.feature-image {
-  width: 33%;
-}
 
 .feature-image img {
-  width: 100%;
-  height: auto;
+  max-height: 75vh;
+  width: auto;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease;
 }
