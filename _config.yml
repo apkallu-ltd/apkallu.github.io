@@ -1,19 +1,27 @@
-title: Apkallu
-ascendtitle: Ascend
+title: Ascend - The Self-Improvement App for Community Challenges & Goal Tracking
+apkallu_title: Apkallu
+ascend_title: Ascend
 email: help@apkallu.co.uk
 description: >-
-  We are a software company dedicated to empowering individuals and communities
-  through technology. Our mission is to create products that foster personal
-  growth, enhance community connections, and drive positive change in the
-  digital world.
+  Join Ascend, the social platform for self-improvement.
+  Take part in community challenges, track goals, and celebrate achievements.
+  Coming soon to Android & iOS!
+
+keywords: self-improvement, community challenges, goal tracking app, personal growth, Ascend app, best self-improvement app, personal goals, self-improvement platform
+
 baseurl: ""
 url: "apkallu.co.uk"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
 
 social:
   facebook: https://www.facebook.com/ascend.app.fb/
   instagram: https://www.instagram.com/ascend.app.ig
   tiktok: https://www.tiktok.com/@ascendapp
   youtube: https://www.youtube.com/@ascend-app
+  medium: https://medium.com/feed/ascend-app
   linktree: https://linktr.ee/ascendapp
 
 app:

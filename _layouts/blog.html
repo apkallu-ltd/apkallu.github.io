@@ -55,8 +55,16 @@
   <!-- Main Content -->
   <main>
     <div class="container">
-      <div class="legal-terms">
+      <div class="main">
         {{ content }}
+
+        <div id="retainable-rss-embed"
+            data-rss="{{ site.social.medium }}"
+            data-layout="grid"
+            data-poststyle="inline"
+            data-buttonclass="btn btn-register"
+            data-offset="-100">
+        </div>
       </div>
     </div>
   </main>
@@ -64,8 +72,10 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2024 Apkallu Ltd</p>
+      <p>&copy; 2024 Apkallu Ltkd</p>
     </div>
   </footer>
+
+  <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 </body>
 </html>

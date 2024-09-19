@@ -3,19 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
+
+  <title>{{ site.ascend_title }}</title>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="{{ site.keywords }}">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ site.url }}{{ 'assets/icons/ascend-logo.png' | relative_url }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ 'assets/icons/ascend-logo.png' | relative_url }}">
+
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}"></head>
-  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" type="image/x-icon">
 <body>
   <!-- Top Banner -->
   <header>
     <div class="top-banner">
       <div class="container">
         <div class="header-content">
-          <h1>{{ site.title }}</h1>
+          <h1>{{ site.apkallu_title }}</h1>
           <nav>
             <ul>
               <li><a href="{{ '/' | relative_url }}">Home</a></li>
+              <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
               <li><a href="{{ '/about_us' | relative_url }}">About Us</a></li>
             </ul>
           </nav>
