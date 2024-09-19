@@ -10,7 +10,7 @@ description: >-
 keywords: self-improvement, community challenges, goal tracking app, personal growth, Ascend app, best self-improvement app, personal goals, self-improvement platform
 
 baseurl: ""
-url: "apkallu.co.uk"
+url: "https://apkallu.co.uk"
 
 plugins:
   - jekyll-sitemap
