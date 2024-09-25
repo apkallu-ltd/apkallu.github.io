@@ -6,7 +6,7 @@ permalink: /about_us
 
 # Welcome to Apkallu
 
-We are a software company dedicated to empowering individuals and communities through technology. Our mission is to create products that foster personal growth, enhance community connections, and drive positive change in the digital world.
+We are a software company based in London, United Kingdom. We are dedicated to empowering individuals and communities through technology. Our mission is to create products that foster personal growth, enhance community connections, and drive positive change in the digital world.
 
 ## Our Products
 

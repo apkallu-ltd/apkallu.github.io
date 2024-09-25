@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
----
-
 ## Get Ready to Ascend!
 
 **Ascend** is currently in development and will soon be available on both Android and iOS platforms. We invite you to stay connected with us and be among the first to experience the transformative power of **Ascend**.

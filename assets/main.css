@@ -237,10 +237,35 @@ a:hover {
   color: #333;
 }
 
+.feature-section:nth-child(even) .feature-text h2 {
+  color: #001a33;
+}
+
 .feature-section:nth-child(odd) .feature-text p {
   color: #fff;
 }
 
+.feature-section .main p {
+  color: #fff;
+}
+
+.feature-section .main ul {
+  color: #fff;
+}
+
+.feature-section .main hr {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.feature-section .main h2 {
+  color: #f0bf1e;
+}
+
+.feature-section .main h3 {
+  color: #f0bf1e;
+}
 
 .feature-image img {
   max-height: 75vh;
