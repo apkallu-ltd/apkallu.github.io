@@ -1,22 +1,40 @@
 ---
-layout: about
+layout: default
 title: About Us
 permalink: /about_us
 ---
+<div class="container" markdown="1">
+# About Apkallu
 
-# Welcome to Apkallu
+We are an innovative software company based in London, United Kingdom, dedicated to empowering individuals through transformative technology. Our mission is to create products that inspire personal growth, strengthen community connections, and drive positive change in people's lives.
 
-We are a software company based in London, United Kingdom. We are dedicated to empowering individuals and communities through technology. Our mission is to create products that foster personal growth, enhance community connections, and drive positive change in the digital world.
+## Our Vision
 
-## Our Products
+At Apkallu, we believe that technology should serve humanity's highest potential. We envision a world where digital tools don't just connect people—they elevate them. Every product we create is designed with this philosophy at its core.
 
-### [Ascend]({{ '/' | relative_url }})
-*Coming Soon*
+## Ascend: Our Flagship Product
 
-Welcome to **Ascend**, the ultimate platform for self-improvement enthusiasts. **Ascend** is more than just an app—it's a movement designed to unite individuals through shared goals, fostering a community where everyone can strive to become the best version of themselves. Whether you're seeking to achieve personal milestones, connect with like-minded individuals, or contribute to a supportive community, Ascend is here to empower your journey.
+**Ascend** represents the culmination of our vision—a social platform dedicated to personal growth through community support. By combining goal-tracking with social accountability, we've created an environment where self-improvement becomes both rewarding and sustainable.
 
-Stay tuned for the launch of Ascend and be among the first to join a community dedicated to self-improvement and mutual support!
+### Key Features:
+
+- **Community Challenges** - Connect with like-minded individuals working toward similar goals
+- **Progress Tracking** - Visualize your growth journey with intuitive analytics
+- **Achievement System** - Celebrate milestones with rewards and recognition
+- **Personalized Recommendations** - Receive customized suggestions based on your unique goals
+
+## Our Team
+
+Behind Apkallu is a team of passionate developers, designers, and self-improvement enthusiasts who believe in technology's power to transform lives. We combine expertise in software development with deep insights into human motivation and behavior change.
+
+## Join Our Journey
+
+We're just getting started, and we invite you to be part of our story. By joining the Ascend community, you're not just using an app—you're helping shape the future of personal development technology.
 
 ## Contact Us
 
-You can contact us at _[{{ site.email }}](mailto:{{ site.email }})_
+Have questions or feedback? We'd love to hear from you!
+
+Email: [{{ site.email }}](mailto:{{ site.email }})
+
+Follow us on [Instagram]({{ site.social.instagram }}), [Facebook]({{ site.social.facebook }}), [TikTok]({{ site.social.tiktok }}), and [YouTube]({{ site.social.youtube }}) to stay updated on our latest developments.

@@ -22,8 +22,10 @@
   <meta name="twitter:description" content="{{ site.description }}">
   <meta name="twitter:image" content="{{ site.url }}{{ 'assets/icons/ascend-logo.png' | relative_url }}">
 
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}"></head>
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 <body>
   <!-- Top Banner -->
   <header>
@@ -34,17 +36,17 @@
             <ul>
               <li>
                 <div class="logo-container">
-                  <img src="assets/icons/ascend-logo.png" alt="Ascend Logo" class="app-logo">
+                  <img src="{{ 'assets/icons/ascend-logo.png' | relative_url }}" alt="Ascend Logo" class="app-logo">
                 </div>
               </li>
               <li><h1>{{ site.ascend_title }}</h1></li>
             </ul>
           </nav>
           <nav>
-            <ul>
+            <ul class="nav-menu">
               <li><a href="{{ '/' | relative_url }}">Home</a></li>
-              <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
               <li><a href="{{ '/about_us' | relative_url }}">About Us</a></li>
+              <li><a href="{{ site.app.download_link }}" class="nav-cta">Download Now</a></li>
             </ul>
           </nav>
         </div>
@@ -52,75 +54,47 @@
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <section class="hero-section">
-      <div class="hero-text">
-        <h1>Join the First Social Media Dedicated to Self-Improvement!</h1>
-        <p>Become the best version of yourself by joining our community.</p>
-        <p><i>Our app is coming soon to Android and iOS. Stay tuned!</i></p>
-        <div class="centred-container">
-          <a href="{{ site.app.testing_form }}" target="_blank" rel="noopener noreferrer" class="btn-register">
-            Register to Test the App
-          </a>
-        </div>
-        <div class="app-links">
-          <a href="{{ site.social.linktree }}" target="_blank" rel="noopener noreferrer" class="btn disabled">
-            <img src="assets/icons/PreRegisterOnGoogle.png" alt="Google Play">
-          </a>
-          <a href="{{ site.social.linktree }}" target="_blank" rel="noopener noreferrer" class="btn disabled">
-            <img src="assets/icons/DownloadOnTheAppStore.png" alt="App Store">
-          </a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="assets/screenshots/main.png" alt="App Preview Screenshot">
-      </div>
-    </section>
-
-    <!-- Section: Community Challenges -->
-    <section class="feature-section">
-      <div class="feature-text">
-        <h2>Join in Community Challenges Made by People Like You!</h2>
-        <p>Take part in exciting challenges, created by the community. Share your experiences, join in conversations, and see how others are using these challenges to make real progress in their lives.</p>
-      </div>
-      <div class="feature-image">
-        <img src="assets/screenshots/gallery_1.png" alt="Challenge Screenshot">
-      </div>
-    </section>
-
-    <!-- Section: Daily Calendar -->
-    <section class="feature-section">
-      <div class="feature-image">
-        <img src="assets/screenshots/gallery_2.png" alt="Calendar Screenshot">
-      </div>
-      <div class="feature-text">
-        <h2>Stay on Top of Your Goals with the Daily Calendar</h2>
-        <p>Our built-in calendar makes it easy to track your plans, goals, and daily habits. See all your upcoming challenges at a glance and keep yourself accountable!</p>
-      </div>
-    </section>
-
-    <!-- Section: Profile & Achievements -->
-    <section class="feature-section">
-      <div class="feature-text">
-        <h2>Track Your Plans and Celebrate Your Achievements</h2>
-        <p>Your personal profile lets you track active plans, review past accomplishments, and celebrate milestones. Keep a record of everything you’ve achieved as you grow and improve!</p>
-      </div>
-      <div class="feature-image">
-        <img src="assets/screenshots/gallery_3.png" alt="Profile Screenshot">
-      </div>
-    </section>
-    <div class="feature-section">
-      <div class="main">
-          {{ content }}
-      </div>
-    </div>
-  </main>
+  <main>{{ content }}</main>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2024 Apkallu Ltd</p>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="footer-logo-circle">
+            <img src="{{ 'assets/icons/ascend-logo.png' | relative_url }}" alt="Ascend Logo" class="footer-app-logo">
+          </div>
+          <h3>{{ site.ascend_title }}</h3>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="{{ '/about_us' | relative_url }}">About Us</a></li>
+              <li><a href="mailto:{{ site.email }}">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="{{ '/ascend/privacy' | relative_url }}">Privacy Policy</a></li>
+              <li><a href="{{ '/ascend/terms' | relative_url }}">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Connect</h4>
+            <div class="footer-social">
+              <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+              <a href="{{ site.social.tiktok }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+              <a href="{{ site.social.youtube }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Apkallu Ltd. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 

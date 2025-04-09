@@ -25,6 +25,9 @@ social:
   linktree: https://linktr.ee/ascendapp
 
 app:
+  download_link: /download
+  google_play: https://play.google.com/store/apps/details?id=com.apkallu.ascend.app.android
+  app_store: https://apps.apple.com/us/app/ascend-self-improvement/id6575385135
   testing_form: https://docs.google.com/forms/d/e/1FAIpQLSfK4L5aW8uSz3lSrodQCsPTwNDf54fA-UVXA4W6_3NPdRFnqQ/viewform
 
 defaults:

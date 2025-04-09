@@ -1,9 +1,9 @@
 ---
-layout: legal
+layout: default
 title: Privacy Policy
 permalink: /ascend/privacy/
 ---
-
+<div class="container" markdown="1">
 # PRIVACY POLICY
 
 **Last updated September 2, 2024**
@@ -836,3 +836,4 @@ information. You may also have the right to withdraw your consent to our process
 of your personal information. These rights may be limited in some circumstances by
 applicable law. To request to review, update, or delete your personal information,
 please contact us at help@apkallu.co.uk.
+</div>

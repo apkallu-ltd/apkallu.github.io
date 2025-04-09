@@ -1,9 +1,9 @@
 ---
-layout: legal
+layout: default
 title: Terms of Service
 permalink: /ascend/terms/
 ---
-
+<div class="container" markdown="1">
 # TERMS OF SERVICE
 
 **Last updated September 2, 2024**
@@ -866,3 +866,5 @@ London, N1 7GU<br>
 England<br>
 
 help@apkallu.co.uk
+
+</div>
