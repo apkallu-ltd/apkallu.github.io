@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Download Ascend
+permalink: ascend/download
 ---
 
 <section class="download-section">

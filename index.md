@@ -115,7 +115,7 @@ title: Home
 </section>
 
 <!-- Daily Calendar Section -->
-<section class="feature-section reverse">
+<section class="feature-section">
   <div class="feature-image">
     <div class="device-mockup">
       <div class="feature-camera-overlay"></div>
