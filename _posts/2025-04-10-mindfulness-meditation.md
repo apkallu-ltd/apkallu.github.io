@@ -57,7 +57,7 @@ What makes this plan particularly effective is its integrated accountability fea
 Ready to begin your mindfulness journey? The complete 28-Day Mindfulness Meditation plan is available now in your Ascend app.
 <div class="blog-screenshot">
     <div class="blog-device-mockup">
-        <img src="{{ 'assets/images/blog/mindfulness-plan-app-view.png' | relative_url }}" alt="Plan in Ascend App" class="blog-screenshot-image">
+        <img src="{{ 'assets/images/blog/screenshots/mindfulness-plan-app-view.png' | relative_url }}" alt="Plan in Ascend App" class="blog-screenshot-image">
         <p class="screenshot-caption">How the plan appears in your Ascend app</p>
     </div>
 </div>

@@ -87,7 +87,7 @@ The complete 21-Day Sleep Optimization Protocol is available now in your Ascend 
 
 <div class="blog-screenshot">
     <div class="blog-device-mockup">
-        <img src="{{ 'assets/images/blog/sleep-optimization-app-view.png' | relative_url }}" alt="Sleep Optimization Plan in Ascend App" class="blog-screenshot-image">
+        <img src="{{ 'assets/images/blog/screenshots/sleep-optimization-app-view.png' | relative_url }}" alt="Sleep Optimization Plan in Ascend App" class="blog-screenshot-image">
         <p class="screenshot-caption">Find the Sleep Optimization Protocol in your Ascend app</p>
     </div>
 </div>
