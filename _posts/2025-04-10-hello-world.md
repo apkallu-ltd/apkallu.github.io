@@ -7,6 +7,7 @@ author_image: "/assets/icons/ascend-logo.png"
 featured_image: "/assets/images/blog/2025-04-10-hello-world.jpeg"
 excerpt: "Welcome to the official Ascend blog where we'll share insights on personal growth, community challenges, and tips to maximize your experience with our app."
 categories: [Announcements]
+permalink: ascend/blog/:categories/:title
 ---
 
 # Welcome to the Ascend Blog

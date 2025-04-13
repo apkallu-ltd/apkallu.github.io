@@ -6,8 +6,9 @@ author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"
 featured_image: "https://storage.googleapis.com/apkallu-ascend-app/ascend/badges/ascend_team/mindfulness_meditation_mindful_initiate.jpeg"
 excerpt: "Transform your mental wellbeing with our structured 4-week mindfulness meditation plan, designed to help beginners and intermediate practitioners develop a sustainable daily practice."
-categories: [New Plans, Mindfulness]
+categories: [Mindfulness]
 keywords: "mindfulness meditation, meditation for beginners, mental health, meditation plan, mindfulness practice, meditation journey"
+permalink: ascend/blog/:categories/:title
 ---
 
 # Introducing: 28-Day Mindfulness Meditation Journey

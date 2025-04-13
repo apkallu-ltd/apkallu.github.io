@@ -6,8 +6,9 @@ author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"
 featured_image: "https://storage.googleapis.com/apkallu-ascend-app/ascend/badges/ascend_team/sleep_optimization_routine_refiner.jpeg"
 excerpt: "Discover our science-backed 21-Day Sleep Optimization Protocol designed to help you fall asleep faster, stay asleep longer, and wake up refreshed through systematic improvements to your sleep environment and habits."
-categories: [New Plans, Health & Wellness]
+categories: [Wellness]
 keywords: "sleep optimization, better sleep, sleep protocol, insomnia, sleep hygiene, sleep quality, health, wellness, circadian rhythm"
+permalink: ascend/blog/:categories/:title
 ---
 
 # Revitalize Your Life: The 21-Day Sleep Optimization Protocol

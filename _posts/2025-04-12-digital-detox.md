@@ -6,8 +6,9 @@ author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"
 featured_image: "/assets/images/blog/2025-04-12-digital-detox.jpeg"
 excerpt: "Break free from digital overwhelm with our comprehensive Digital Detox Routine. Build sustainable, long-term technology habits that reduce screen addiction and increase real-world engagement without sacrificing productivity."
-categories: [New Plans, Productivity, Digital Wellness]
+categories: [Wellness]
 keywords: "digital detox, screen time reduction, technology habits, productivity, focus improvement, digital wellness, tech-life balance, mindful technology use"
+permalink: ascend/blog/:categories/:title
 ---
 
 # Taking Back Control: Your Digital Detox Journey

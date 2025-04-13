@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Privacy Policy
-permalink: /ascend/privacy/
+permalink: /ascend/privacy
 ---
 <div class="container" markdown="1">
 # PRIVACY POLICY

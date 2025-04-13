@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Terms of Service
-permalink: /ascend/terms/
+permalink: /ascend/terms
 ---
 <div class="container" markdown="1">
 # TERMS OF SERVICE
