@@ -11,6 +11,20 @@ keywords: "journaling practice, self-awareness, mindfulness, creative writing, e
 permalink: ascend/blog/:categories/:title
 ---
 
+## TL;DR: Your Quick Path to Journaling Mastery
+
+Don't have time to read the full post? Here's what you need to know:
+
+- Our new 30-day journaling program helps you build a sustainable writing practice
+- The plan covers multiple journaling techniques: morning pages, gratitude, problem-solving, emotional awareness, and more
+- You'll earn 5 achievement badges as you progress
+- Takes just 10-15 minutes daily
+- Scientifically proven to reduce stress, boost creativity, and enhance self-awareness
+
+**[Click here to start the plan now]({{ 'ascend/shared?type=plan&id=42' | relative_url }})**
+
+*Keep reading for the full details and science behind this transformative practice.*
+
 # Unlock the Hidden Power of Daily Journaling: Your 30-Day Transformation
 
 In today's fast-paced digital world, our thoughts often race by without acknowledgment, our emotions simmer beneath the surface unprocessed, and our most creative ideas vanish before we can capture them. Yet one of humanity's oldest practices offers a powerful antidote to this modern dilemma.
@@ -98,7 +112,7 @@ The complete 30-Day Journaling Practice is available now in your Ascend app.
     </div>
 </div>
 
-[Click here](https://ascendapp.apkallu.co.uk/share/plans/42) to open the plan directly in your Ascend app.
+[Click here]({{ 'ascend/shared?type=plan&id=42' | relative_url }}) to open the plan directly in your Ascend app.
 
 Don't have the Ascend app yet? [Download it here]({{ site.app.download_link}}) to access this and dozens of other life-transforming plans.
 

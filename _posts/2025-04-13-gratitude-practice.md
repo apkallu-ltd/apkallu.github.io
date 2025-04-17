@@ -11,6 +11,21 @@ keywords: "gratitude practice, mindfulness, mental health, positivity, well-bein
 permalink: ascend/blog/:categories/:title
 ---
 
+## TL;DR: Cultivate Daily Joy with Our Gratitude Journey
+
+Short on time? Here's the essence of our new Gratitude Practice Journey:
+
+-   Our new **30-day program** guides you to build a consistent gratitude practice.
+-   It's scientifically designed to **reduce stress, boost happiness, improve sleep**, and strengthen relationships.
+-   The journey progresses weekly: starting with simple daily acknowledgments, expanding to appreciate the ordinary, deepening connection with others and self, and finally finding gratitude even in challenges.
+-   Includes daily guided activities like the "Three Good Things" practice, noticing everyday gifts, and expressing appreciation.
+-   Earn **5 achievement badges** as you progress through the program.
+-   Transforms your outlook, enhancing emotional regulation, reducing comparison, and increasing joy in daily life.
+
+**[Click here to start the Gratitude Practice Journey now]({{ 'ascend/shared?type=plan&id=43' | relative_url }})**
+
+*Keep reading to explore the science behind gratitude and the full details of this transformative 30-day experience.*
+
 # The 30-Day Gratitude Practice Journey: Your Path to a More Appreciative Life
 
 In a world that often pulls our attention toward what's lacking, the ability to consistently notice and appreciate the good can be revolutionary for your mental health and overall happiness. Today, we're excited to announce the launch of our comprehensive **Gratitude Practice Journey** – a 30-day program carefully designed to transform your relationship with gratitude and cultivate lasting appreciation in your daily life.
@@ -98,7 +113,7 @@ The complete 30-Day Gratitude Practice Journey is available now in your Ascend a
     </div>
 </div>
 
-[Click here](https://ascendapp.apkallu.co.uk/share/plans/43) to open the plan directly in your Ascend app.
+[Click here]({{ 'ascend/shared?type=plan&id=43' | relative_url }}) to open the plan directly in your Ascend app.
 
 Don't have the Ascend app yet? [Download it here]({{ site.app.download_link}}) to access this and dozens of other life-transforming plans.
 

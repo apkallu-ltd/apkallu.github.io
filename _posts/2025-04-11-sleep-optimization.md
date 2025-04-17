@@ -11,6 +11,21 @@ keywords: "sleep optimization, better sleep, sleep protocol, insomnia, sleep hyg
 permalink: ascend/blog/:categories/:title
 ---
 
+## TL;DR: Your 21-Day Path to Better Sleep
+
+Too tired to read the full post? Here's the quick guide to our Sleep Optimization Protocol:
+
+-   Our new **21-Day Sleep Optimization Protocol** is a science-backed plan to help you fall asleep faster, stay asleep longer, and wake up refreshed.
+-   Addresses common sleep issues like **trouble falling asleep, nighttime waking, and daytime grogginess**.
+-   Provides a systematic approach covering **sleep environment optimization, habit formation (like digital sunsets and consistent schedules), and physiological support** (morning light, nutrition, relaxation).
+-   Builds better sleep habits progressively over **three weeks** with daily guidance and weekly assessments.
+-   Earn **5 achievement badges** as you improve your sleep quality and consistency.
+-   Benefits include not just better sleep, but also **enhanced mental clarity, improved mood, stronger immunity, more energy, and reduced stress**.
+
+**[Click here to start the Sleep Optimization Protocol now]({{ 'ascend/shared?type=plan&id=41' | relative_url }})**
+
+*Keep reading to learn the science behind optimizing your sleep and the full details of this transformative 21-day journey.*
+
 # Revitalize Your Life: The 21-Day Sleep Optimization Protocol
 
 Sleep isn't just a daily necessity—it's the foundation of your overall health and well-being. Yet in our hyper-connected world, quality sleep often becomes an elusive luxury. That's why we're thrilled to introduce our newest addition to the Ascend platform: the **21-Day Sleep Optimization Protocol**.
@@ -93,7 +108,7 @@ The complete 21-Day Sleep Optimization Protocol is available now in your Ascend 
     </div>
 </div>
 
-[Click here](https://ascendapp.apkallu.co.uk/share/plans/41) to open the plan directly in your Ascend app.
+[Click here]({{ 'ascend/shared?type=plan&id=41' | relative_url }}) to open the plan directly in your Ascend app.
 
 Don't have the Ascend app yet? [Download it here]({{ site.app.download_link}}) to access this and dozens of other life-transforming plans.
 

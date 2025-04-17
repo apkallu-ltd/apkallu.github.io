@@ -32,7 +32,7 @@ We believe that personal growth is most effective when shared with others, and o
 
 ## Share Your Story
 
-We'd love to hear from you! If you have a success story, challenge idea, or feedback to share, please reach out to us at [help@apkallu.co.uk](help@apkallu.co.uk). Your story might be featured in an upcoming blog post!
+We'd love to hear from you! If you have a success story, challenge idea, or feedback to share, please reach out to us at help@apkallu.co.uk. Your story might be featured in an upcoming blog post!
 
 Stay tuned for more content coming soon. Remember, every day is an opportunity to ascend to new heights!
 

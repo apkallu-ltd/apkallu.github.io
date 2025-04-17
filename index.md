@@ -34,11 +34,11 @@ title: Home
       </a>
     </div>
     <div class="app-links">
-      <a href="{{ site.app.google_play }}" target="_blank" rel="noopener noreferrer" class="btn">
-        <img src="{{ 'assets/icons/GetItOnGooglePlay.png' | relative_url }}" alt="Google Play">
-      </a>
       <a href="{{ site.app.app_store }}" target="_blank" rel="noopener noreferrer" class="btn">
         <img src="{{ 'assets/icons/DownloadOnTheAppStore.png' | relative_url }}" alt="App Store">
+      </a>
+      <a href="{{ site.app.google_play }}" target="_blank" rel="noopener noreferrer" class="btn">
+        <img src="{{ 'assets/icons/GetItOnGooglePlay.png' | relative_url }}" alt="Google Play">
       </a>
     </div>
   </div>
@@ -225,11 +225,11 @@ title: Home
         <i class="fas fa-download"></i> Download Ascend Now
       </a>
       <div class="app-links">
-        <a href="{{ site.app.google_play }}" target="_blank" rel="noopener noreferrer" class="btn">
-          <img src="{{ 'assets/icons/GetItOnGooglePlay.png' | relative_url }}" alt="Google Play">
-        </a>
         <a href="{{ site.app.app_store }}" target="_blank" rel="noopener noreferrer" class="btn">
           <img src="{{ 'assets/icons/DownloadOnTheAppStore.png' | relative_url }}" alt="App Store">
+        </a>
+        <a href="{{ site.app.google_play }}" target="_blank" rel="noopener noreferrer" class="btn">
+          <img src="{{ 'assets/icons/GetItOnGooglePlay.png' | relative_url }}" alt="Google Play">
         </a>
       </div>
       <div class="social-links">

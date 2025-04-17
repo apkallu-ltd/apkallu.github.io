@@ -11,6 +11,20 @@ keywords: "mindfulness meditation, meditation for beginners, mental health, medi
 permalink: ascend/blog/:categories/:title
 ---
 
+## TL;DR: Your 4-Week Path to Mindfulness
+
+Pressed for time? Here’s the quick scoop on our Mindfulness Meditation Journey:
+
+-   Our new **28-Day Mindfulness Meditation Journey** offers a structured way to build a consistent meditation practice.
+-   Designed for both beginners and intermediate practitioners, it helps **reduce stress, improve focus, enhance emotional regulation, and increase self-awareness**.
+-   The 4-week plan progresses systematically: **Week 1 (Mindful Breathing - 5 min), Week 2 (Body Scan - 10 min), Week 3 (Open Awareness - 15 min), Week 4 (Loving-Kindness)**.
+-   Features include **weekly reflection journals, daily mindfulness activities, and achievement badges** to keep you motivated and track progress.
+-   Provides a clear path to make mindfulness a sustainable part of your daily life.
+
+**[Click here to start the Mindfulness Meditation Journey now]({{ 'ascend/shared?type=plan&id=40' | relative_url }})**
+
+*Keep reading to learn more about the benefits of mindfulness and the detailed structure of this transformative 28-day plan.*
+
 # Introducing: 28-Day Mindfulness Meditation Journey
 
 In today's fast-paced world, finding moments of calm and clarity can seem like an impossible task. That's why we're excited to announce our newest addition to the Ascend platform: the **28-Day Mindfulness Meditation Journey**.
@@ -63,7 +77,7 @@ Ready to begin your mindfulness journey? The complete 28-Day Mindfulness Meditat
     </div>
 </div>
 
-Simply, [Click here](https://ascendapp.apkallu.co.uk/share/plans/40) to open the plan in the ascend app.
+Simply, [Click here]({{ 'ascend/shared?type=plan&id=40' | relative_url }}) to open the plan in the ascend app.
 
 Don't have the Ascend app yet? [Download it here]({{ site.app.download_link}}) to access this and dozens of other life-transforming plans.
 

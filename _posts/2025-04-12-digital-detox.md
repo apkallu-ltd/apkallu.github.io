@@ -11,6 +11,21 @@ keywords: "digital detox, screen time reduction, technology habits, productivity
 permalink: ascend/blog/:categories/:title
 ---
 
+## TL;DR: Your Guide to Mastering Digital Wellness
+
+Too busy scrolling to read it all? Here's the lowdown on our Digital Detox Routine:
+
+-   Our new **Digital Detox Routine** helps you build sustainable, healthy technology habits for the long term.
+-   It addresses the negative impacts of digital overuse like **fragmented attention, poor sleep, anxiety, and reduced presence**.
+-   Focuses on building lasting habits, not just temporary fixes, through phases like **Awareness Building, Boundary Creation, and Maintenance**.
+-   Learn practical skills: **device-free mornings/meals, notification audits, tech-free zones, digital sunsets**, and weekly tech sabbaths.
+-   Earn **5 achievement badges** as you regain control over your digital life.
+-   Benefits include **better focus, improved sleep, stronger relationships, reduced anxiety**, and increased real-world engagement.
+
+**[Click here to start the Digital Detox Routine now]({{ 'ascend/shared?type=plan&id=38' | relative_url }})**
+
+*Keep reading for a deep dive into the strategies and science behind reclaiming your focus in a hyperconnected world.*
+
 # Taking Back Control: Your Digital Detox Journey
 
 In today's hyperconnected world, our relationship with technology has become increasingly complex. The average person checks their phone 96 times daily—that's once every 10 minutes of waking life. We're introducing our newest plan on the Ascend platform: the **Digital Detox Routine**—a comprehensive program designed to help you reclaim your attention and rebuild a healthier relationship with technology for the long term.
@@ -103,7 +118,7 @@ The complete Digital Detox Routine is now available in your Ascend app.
     </div>
 </div>
 
-[Click here](https://ascendapp.apkallu.co.uk/share/plans/38) to open the plan directly in your Ascend app.
+[Click here]({{ 'ascend/shared?type=plan&id=38' | relative_url }}) to open the plan directly in your Ascend app.
 
 Don't have the Ascend app yet? [Download it here]({{ site.app.download_link}}) to access this and dozens of other life-transforming plans.
 
