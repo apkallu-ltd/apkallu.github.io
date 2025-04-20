@@ -11,6 +11,10 @@ keywords: "mindfulness meditation, meditation for beginners, mental health, medi
 permalink: ascend/blog/:categories/:title
 ---
 
+<a href="{{ 'ascend/shared?type=plan&id=40' | relative_url }}" class="floating-btn pulse">
+  Start Plan Now
+</a>
+
 ## TL;DR: Your 4-Week Path to Mindfulness
 
 Pressed for time? Here’s the quick scoop on our Mindfulness Meditation Journey:

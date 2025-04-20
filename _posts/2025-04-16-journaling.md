@@ -11,6 +11,10 @@ keywords: "journaling practice, self-awareness, mindfulness, creative writing, e
 permalink: ascend/blog/:categories/:title
 ---
 
+<a href="{{ 'ascend/shared?type=plan&id=42' | relative_url }}" class="floating-btn pulse">
+  Start Plan Now
+</a>
+
 ## TL;DR: Your Quick Path to Journaling Mastery
 
 Don't have time to read the full post? Here's what you need to know:

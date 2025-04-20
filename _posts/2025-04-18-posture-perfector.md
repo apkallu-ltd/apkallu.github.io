@@ -11,6 +11,10 @@ keywords: "posture improvement, posture correction, back pain relief, ergonomics
 permalink: ascend/blog/:categories/:title
 ---
 
+<a href="{{ 'ascend/shared?type=plan&id=47' | relative_url }}" class="floating-btn pulse">
+  Start Plan Now
+</a>
+
 ## TL;DR: Transform Your Posture in Just 21 Days
 Short on time? Here's what our new Posture Perfector plan offers:
 - A **21-day progressive program** designed to correct poor posture and reduce pain

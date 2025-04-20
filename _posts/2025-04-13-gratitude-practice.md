@@ -11,6 +11,10 @@ keywords: "gratitude practice, mindfulness, mental health, positivity, well-bein
 permalink: ascend/blog/:categories/:title
 ---
 
+<a href="{{ 'ascend/shared?type=plan&id=43' | relative_url }}" class="floating-btn pulse">
+  Start Plan Now
+</a>
+
 ## TL;DR: Cultivate Daily Joy with Our Gratitude Journey
 
 Short on time? Here's the essence of our new Gratitude Practice Journey:

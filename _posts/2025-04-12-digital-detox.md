@@ -11,6 +11,10 @@ keywords: "digital detox, screen time reduction, technology habits, productivity
 permalink: ascend/blog/:categories/:title
 ---
 
+<a href="{{ 'ascend/shared?type=plan&id=38' | relative_url }}" class="floating-btn pulse">
+  Start Plan Now
+</a>
+
 ## TL;DR: Your Guide to Mastering Digital Wellness
 
 Too busy scrolling to read it all? Here's the lowdown on our Digital Detox Routine:

@@ -11,6 +11,10 @@ keywords: "reading habit, book reading, habit building, focus, concentration, pe
 permalink: ascend/blog/:categories/:title
 ---
 
+<a href="{{ 'ascend/shared?type=plan&id=39' | relative_url }}" class="floating-btn pulse">
+  Start Plan Now
+</a>
+
 ## TL;DR: Build Your Lifelong Reading Habit
 
 Short on time? Here's what our new Reading Habit Builder plan offers:

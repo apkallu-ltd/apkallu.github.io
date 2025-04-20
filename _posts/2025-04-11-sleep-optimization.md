@@ -11,6 +11,10 @@ keywords: "sleep optimization, better sleep, sleep protocol, insomnia, sleep hyg
 permalink: ascend/blog/:categories/:title
 ---
 
+<a href="{{ 'ascend/shared?type=plan&id=41' | relative_url }}" class="floating-btn pulse">
+  Start Plan Now
+</a>
+
 ## TL;DR: Your 21-Day Path to Better Sleep
 
 Too tired to read the full post? Here's the quick guide to our Sleep Optimization Protocol:
