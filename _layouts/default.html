@@ -4,24 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{{ site.ascend_title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="keywords" content="{{ site.keywords }}">
-  <meta name="robots" content="index, follow">
-
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="{{ site.url }}{{ 'assets/icons/ascend-logo.png' | relative_url }}">
-  <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:type" content="website">
-
-  <meta name="twitter:title" content="{{ site.title }}">
-  <meta name="twitter:description" content="{{ site.description }}">
-  <meta name="twitter:image" content="{{ site.url }}{{ 'assets/icons/ascend-logo.png' | relative_url }}">
-
+  {% seo %}
   <meta name="apple-itunes-app" content="app-id=6575385135">
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
@@ -45,7 +28,7 @@
             <ul>
               <li>
                 <div class="logo-container">
-                  <img src="{{ 'assets/icons/ascend-logo.png' | relative_url }}" alt="Ascend Logo" class="app-logo">
+                  <img src="{{ '/assets/icons/ascend-logo.png' | relative_url }}" alt="Ascend Logo" class="app-logo">
                 </div>
               </li>
               <li><h1>{{ site.ascend_title }}</h1></li>
@@ -72,7 +55,7 @@
       <div class="footer-content">
         <div class="footer-logo">
           <div class="footer-logo-circle">
-            <img src="{{ 'assets/icons/ascend-logo.png' | relative_url }}" alt="Ascend Logo" class="footer-app-logo">
+            <img src="{{ '/assets/icons/ascend-logo.png' | relative_url }}" alt="Ascend Logo" class="footer-app-logo">
           </div>
           <h3>{{ site.ascend_title }}</h3>
         </div>

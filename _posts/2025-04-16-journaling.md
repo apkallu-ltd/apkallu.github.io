@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Transform Your Life One Page at a Time: The 30-Day Journaling Challenge"
+seo_title: "30-Day Journaling Challenge: Build the Habit | Ascend"
+description: "Unlock self-reflection and emotional clarity with our guided 30-day journaling practice. Build a sustainable habit for lifelong personal growth."
 date: 2025-04-16
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"

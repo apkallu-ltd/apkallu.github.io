@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Welcome to the Ascend Blog"
+seo_title: "Welcome to the Ascend Blog | Personal Growth & Community"
+description: "Welcome to the official Ascend blog. Discover insights on personal growth, community challenges, and tips to maximize your habit-building journey."
 date: 2025-04-10
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"

@@ -1,5 +1,6 @@
 ---
 layout: default
+image: assets/screenshots/main.png
 title: Home
 ---
 

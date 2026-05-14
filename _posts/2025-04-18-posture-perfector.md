@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Stand Tall: Transform Your Posture in 21 Days with Our New Program"
+seo_title: "21-Day Posture Perfector: Stand Taller | Ascend"
+description: "Correct your posture and reduce back pain with our 3-week corrective exercise plan. Improve your spine health and stand with confidence."
 date: 2025-04-18
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"

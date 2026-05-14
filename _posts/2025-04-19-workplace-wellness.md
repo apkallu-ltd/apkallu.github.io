@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Transform Your Workplace Wellness: 30-Day Desk Worker's Health Protocol"
-date: 2025-04-20
+seo_title: "Desk Worker Wellness: 30-Day Health Protocol | Ascend"
+description: "Beat office fatigue and improve your health with our desk worker wellness plan. Reduce pain and increase energy with ergonomic and movement strategies."
+date: 2025-04-19
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"
 featured_image: "https://storage.googleapis.com/apkallu-ascend-app/ascend/badges/ascend_team/desk_worker_health_posture_check-in.jpeg"

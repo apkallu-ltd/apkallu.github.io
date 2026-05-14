@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 permalink: ascend/blog
+page: blog
 ---
 
 <section class="blog-header">

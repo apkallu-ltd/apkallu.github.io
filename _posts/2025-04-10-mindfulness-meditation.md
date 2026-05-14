@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Introducing Our New 28-Day Mindfulness Meditation Journey"
+seo_title: "28-Day Mindfulness Meditation Journey: Start Today"
+description: "Build a sustainable meditation practice in 4 weeks with our mindfulness plan. Reduce stress and improve focus with structured daily guidance."
 date: 2025-04-10
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"

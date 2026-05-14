@@ -15,6 +15,7 @@ url: "https://apkallu.co.uk"
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag
 
 social:
   facebook: https://www.facebook.com/ascend.app.fb/

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Reclaim Your Focus: The Digital Detox Routine"
+seo_title: "Digital Detox Routine: Reclaim Your Time | Ascend"
+description: "Reduce screen time and improve mental clarity with our structured digital detox routine. Build sustainable habits for a healthier relationship with technology."
 date: 2025-04-12
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"
@@ -130,7 +132,7 @@ Don't have the Ascend app yet? [Download it here]({{ site.app.download_link}}) t
 
 One of the most powerful aspects of changing digital habits is community support. In the Ascend app, connect with others on their digital wellness journey:
 
-- Share strategies for managing difficult tech transitions
+- Share your strategy for managing difficult tech transitions
 - Exchange insights about rediscovered offline activities
 - Find accountability partners for digital-free challenges
 - Celebrate your wins in establishing healthier boundaries

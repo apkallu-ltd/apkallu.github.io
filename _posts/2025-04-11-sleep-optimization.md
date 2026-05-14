@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Transform Your Sleep with Our 21-Day Sleep Optimization Protocol"
+seo_title: "Transform Your Sleep: 21-Day Sleep Protocol | Ascend"
+description: "Fall asleep faster and wake up refreshed with our science-backed 21-Day Sleep Optimization Protocol. Improve your sleep hygiene and circadian rhythm."
 date: 2025-04-11
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"

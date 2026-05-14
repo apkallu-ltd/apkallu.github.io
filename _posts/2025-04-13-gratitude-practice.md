@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Cultivate Daily Joy with Our 30-Day Gratitude Practice Journey"
+seo_title: "30-Day Gratitude Practice Journey: Be Happier | Ascend"
+description: "Transform your outlook on life with our daily gratitude practice challenge. Reduce stress and boost happiness with science-backed habits."
 date: 2025-04-13
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"
@@ -150,4 +152,3 @@ Remember—a consistent gratitude practice doesn't just change your perspective;
 <sup>4</sup> Algoe, S. B., Gable, S. L., & Maisel, N. C. (2010). It's the little things: Everyday gratitude as a booster shot for romantic relationships. Personal Relationships, 17(2), 217-233.
 
 <sup>5</sup> Fredrickson, B. L., Tugade, M. M., Waugh, C. E., & Larkin, G. R. (2003). What good are positive emotions in crisis? A prospective study of resilience and emotions following the terrorist attacks on the United States on September 11th, 2001. Journal of Personality and Social Psychology, 84(2), 365-376.
-

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Transform Your Reading Life with Our Reading Habit Builder Plan"
+seo_title: "30-Day Reading Habit Builder: Read More | Ascend"
+description: "Go from occasional reader to daily bookworm with our reading habit builder plan. Improve focus and cognitive abilities with structured reading."
 date: 2025-04-17
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"
