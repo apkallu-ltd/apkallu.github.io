@@ -8,8 +8,8 @@ title: Home
 <section class="hero-section">
   <div class="hero-overlay"></div>
   <div class="hero-text">
-    <h1 class="animated-heading">Transform Your Life with <span class="highlight">Ascend</span></h1>
-    <p class="hero-subtitle">The social platform dedicated to personal growth and community-driven challenges</p>
+    <h1 class="animated-heading">Pick a Challenge. Show Up Every Day. <span class="highlight">Earn It.</span></h1>
+    <p class="hero-subtitle">Structured programmes for wellness, productivity, mindfulness and learning — with daily tasks, community accountability, and badges that mark real progress.</p>
     <div class="hero-features">
       <div class="hero-feature">
         <i class="fas fa-users feature-icon"></i>
