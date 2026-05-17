@@ -1,0 +1,261 @@
+/* ==========================================================================
+   ASCEND MASTER DESIGN SYSTEM
+   ========================================================================== */
+
+/* 1. Modern Page Headers (Gradients & Typography) */
+.modern-header {
+  padding: 100px 0 !important;
+  background: linear-gradient(135deg, #001A33 0%, #004586 100%) !important;
+  color: #FFFFFF !important;
+  text-align: center !important;
+  border-bottom: 5px solid #FFE573 !important;
+}
+.modern-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  color: #FFFFFF !important;
+  margin-bottom: 20px !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.03em !important;
+}
+.modern-header p {
+  font-size: 1.25rem !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  max-width: 700px;
+  margin: 0 auto !important;
+}
+
+/* 2. Unified Grid Layout */
+.modern-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)) !important;
+  gap: 40px !important;
+  padding: 80px 0 120px !important;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
+
+/* 3. The Premium Card Component */
+.modern-card {
+  background: #ffffff !important;
+  border-radius: 30px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  border: 1px solid #f0f0f0 !important;
+  height: 100% !important;
+  text-align: left !important;
+  position: relative !important;
+}
+.modern-card:hover {
+  transform: translateY(-15px) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12) !important;
+}
+.card-image {
+  height: 240px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative !important;
+}
+.card-content {
+  padding: 32px !important;
+  flex-grow: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.card-tag {
+  display: inline-block !important;
+  padding: 6px 16px !important;
+  border-radius: 100px !important;
+  font-size: 0.8rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 15px !important;
+}
+.card-title {
+  font-size: 1.6rem !important;
+  font-weight: 900 !important;
+  margin-bottom: 15px !important;
+  line-height: 1.2 !important;
+}
+.card-title a { color: #001A33 !important; text-decoration: none !important; }
+.card-description {
+  color: #555 !important;
+  font-size: 1.05rem !important;
+  margin-bottom: 25px !important;
+  line-height: 1.6 !important;
+}
+.card-footer {
+  margin-top: auto !important;
+  padding-top: 20px !important;
+  border-top: 1px solid #f5f5f5 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.card-link { color: #001A33 !important; font-weight: 900 !important; text-decoration: none !important; }
+
+/* 4. Challenge Specific Visuals */
+.challenge-badge-preview {
+  width: 100px !important;
+  height: 100px !important;
+  background: #FFE573 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto 30px !important;
+  box-shadow: 0 0 40px rgba(255, 229, 115, 0.4) !important;
+}
+.challenge-badge-preview i { font-size: 50px !important; color: #001A33 !important; }
+
+.countdown-container {
+  background: #fff !important;
+  padding: 60px !important;
+  border-radius: 40px !important;
+  margin: -80px auto 60px !important;
+  position: relative !important;
+  z-index: 10 !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1) !important;
+  text-align: center !important;
+  max-width: 800px !important;
+  border: 1px solid #f0f0f0 !important;
+}
+.timer { display: flex !important; justify-content: space-around !important; gap: 20px !important; }
+.timer-value { font-size: clamp(2rem, 5vw, 3.5rem) !important; font-weight: 900 !important; color: #001A33 !important; line-height: 1 !important; }
+.timer-unit { font-size: 0.8rem !important; text-transform: uppercase !important; color: #888 !important; font-weight: 700 !important; }
+
+.cta-box {
+  background: #fff !important;
+  padding: 60px !important;
+  border-radius: 40px !important;
+  text-align: center !important;
+  border: 1px solid #eee !important;
+  margin-top: 60px !important;
+}
+.join-btn {
+  display: inline-block !important;
+  background: #004586 !important;
+  color: #fff !important;
+  padding: 20px 50px !important;
+  border-radius: 100px !important;
+  font-weight: 800 !important;
+  font-size: 1.3rem !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+}
+.join-btn:hover { background: #001A33 !important; transform: scale(1.05) !important; }
+
+/* 5. Dynamic Homepage Banner */
+#dynamic-challenge-banner {
+  background: linear-gradient(90deg, #FFE573 0%, #FFF3A0 100%) !important;
+  color: #001A33 !important;
+  padding: 12px 0 !important;
+  display: none;
+  width: 100% !important;
+  border-bottom: 2px solid #d4a800 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+  position: sticky !important;
+  top: 79px !important;
+  z-index: 999 !important;
+}
+.banner-timer { background: rgba(0, 0, 0, 0.05) !important; padding: 5px 15px !important; border-radius: 50px !important; font-family: monospace !important; }
+.banner-cta { background: #001A33 !important; color: #fff !important; padding: 8px 20px !important; border-radius: 50px !important; font-weight: 700 !important; text-decoration: none !important; }
+
+/* 6. Blog Post Layout */
+.modern-post { padding: 0 0 120px !important; background-color: #FAF4E9 !important; }
+.modern-post-container {
+  max-width: 850px !important;
+  margin: -60px auto 0 !important;
+  background: #ffffff !important;
+  padding: 60px 80px !important;
+  border-radius: 40px !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08) !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+.modern-post-content { font-size: 1.25rem !important; line-height: 1.85 !important; color: #2c3e50 !important; }
+.modern-post-content p { margin-bottom: 1.5em !important; }
+.modern-post-content h1, .modern-post-content h2, .modern-post-content h3 { 
+  margin-top: 2em !important; 
+  margin-bottom: 0.8em !important; 
+  color: #001A33 !important; 
+  font-weight: 800 !important;
+}
+.modern-post-content ul, .modern-post-content ol { 
+  margin-bottom: 1.5em !important; 
+  padding-left: 20px !important; 
+}
+.modern-post-content li { margin-bottom: 0.8em !important; }
+.modern-post-content blockquote {
+  border-left: 8px solid #FFE573 !important;
+  padding: 30px 40px !important;
+  background: #F8F9FA !important;
+  font-style: italic !important;
+  font-size: 1.4rem !important;
+  margin: 50px 0 !important;
+  border-radius: 0 30px 30px 0 !important;
+  color: #004586 !important;
+}
+
+/* 7. Tags & Colors */
+.tag-peaceful { background: #E8F5E9 !important; color: #2E7D32 !important; }
+.tag-casual { background: #F1F8E9 !important; color: #558B2F !important; }
+.tag-balanced { background: #FFFDE7 !important; color: #F9A825 !important; }
+.tag-challenging { background: #FFF3E0 !important; color: #EF6C00 !important; }
+.tag-extreme { background: #FFEBEE !important; color: #C62828 !important; }
+.tag-blog, .tag-learning { background: #E3F2FD !important; color: #004586 !important; }
+
+/* 8. Floating Button */
+.floating-btn {
+  position: fixed !important; bottom: 40px !important; right: 40px !important;
+  background: #FFE573 !important; color: #001A33 !important;
+  padding: 16px 32px !important; border-radius: 100px !important;
+  font-weight: 800 !important; z-index: 1000 !important;
+  box-shadow: 0 10px 30px rgba(255, 229, 115, 0.3) !important;
+  text-decoration: none !important;
+}
+.pulse { animation: pulse-btn 2s infinite !important; }
+@keyframes pulse-btn { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+
+@media (max-width: 768px) {
+  .modern-grid { grid-template-columns: 1fr !important; }
+  .modern-post-container { padding: 40px 20px !important; width: 95% !important; }
+}
+
+/* Mobile fixes for the Global Banner */
+@media (max-width: 768px) {
+  #dynamic-challenge-banner .container {
+    flex-direction: column !important;
+    gap: 10px !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  .banner-content { flex-direction: column !important; gap: 8px !important; }
+}
+
+/* 9. "NEW" Badge for Blog Cards */
+.new-badge {
+  position: absolute !important;
+  top: 15px !important;
+  right: 15px !important;
+  background: #FFE573 !important;
+  color: #001A33 !important;
+  padding: 5px 12px !important;
+  border-radius: 8px !important;
+  font-weight: 800 !important;
+  font-size: 0.7rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  z-index: 20 !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2) !important;
+  animation: pulse-new 2s infinite !important;
+}
+
+@keyframes pulse-new {
+  0% { transform: scale(1); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+  50% { transform: scale(1.1); box-shadow: 0 6px 15px rgba(255,229,115,0.4); }
+  100% { transform: scale(1); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+}

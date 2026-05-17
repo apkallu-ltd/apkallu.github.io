@@ -9,11 +9,16 @@ keywords: habit challenge app, daily habit tracker, wellness challenge app, prod
 
 baseurl: ""
 url: "https://apkallu.co.uk"
+permalink: /ascend/blog/:categories/:title
 
 plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+
+collections:
+  challenges:
+    output: true
 
 social:
   facebook: https://www.facebook.com/ascend.app.fb/

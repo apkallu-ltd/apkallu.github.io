@@ -7,14 +7,10 @@
   {% seo %}
   <meta name="apple-itunes-app" content="app-id=6575385135">
 
+  <!-- Core Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  {% if page.page == "about" %}
-    <link rel="stylesheet" href="{{ '/assets/css/pages/about.css' | relative_url }}">
-  {% endif %}
-  {% if page.page == "shared" %}
-    <link rel="stylesheet" href="{{ '/assets/css/pages/shared.css' | relative_url }}">
-  {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/pages/blog.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/ascend-design.css' | relative_url }}">
+  
   <link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -37,6 +33,7 @@
           <nav>
             <ul class="nav-menu">
               <li><a href="{{ '/' | relative_url }}">Home</a></li>
+              <li><a href="{{ '/challenges' | relative_url }}">Challenges</a></li>
               <li><a href="{{ '/ascend/blog' | relative_url }}">Blog</a></li>
               <li><a href="{{ '/about_us' | relative_url }}">About Us</a></li>
               <li><a href="{{ site.app.download_link }}" class="nav-cta">Download Now</a></li>
@@ -45,6 +42,74 @@
         </div>
       </div>
     </div>
+
+    {% capture challenges_json %}
+    [
+      {% for challenge in site.challenges %}
+        {
+          "title": {{ challenge.title | jsonify }},
+          "url": {{ challenge.url | relative_url | jsonify }},
+          "start_date": {{ challenge.start_date | jsonify }},
+          "difficulty": {{ challenge.difficulty | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+    {% endcapture %}
+    <script type="application/json" id="challenge-data">
+      {{ challenges_json }}
+    </script>
+
+    <div id="dynamic-challenge-banner" style="display: none;">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <div class="banner-content">
+          <i class="fas fa-calendar-star" style="color: #004586;"></i>
+          <span class="banner-title">Next Challenge: <span id="banner-challenge-title"></span></span>
+          <div class="banner-timer">
+            <span id="banner-days">00</span>d :
+            <span id="banner-hours">00</span>h :
+            <span id="banner-minutes">00</span>m :
+            <span id="banner-seconds">00</span>s
+          </div>
+        </div>
+        <a href="#" id="banner-challenge-link" class="banner-cta">View Challenge</a>
+      </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var banner = document.getElementById('dynamic-challenge-banner');
+      var challengeDataEl = document.getElementById('challenge-data');
+      if (!challengeDataEl || !banner) return;
+      var challenges = JSON.parse(challengeDataEl.textContent);
+      var now = new Date().getTime();
+      var nextChallenge = challenges
+        .filter(function(c) { return new Date(c.start_date).getTime() > now; })
+        .sort(function(a, b) { return new Date(a.start_date).getTime() - new Date(b.start_date).getTime(); })[0];
+      if (nextChallenge) {
+        document.getElementById('banner-challenge-title').textContent = nextChallenge.title;
+        document.getElementById('banner-challenge-link').href = nextChallenge.url;
+        var startDate = new Date(nextChallenge.start_date).getTime();
+        function updateBannerTimer() {
+          var currentTime = new Date().getTime();
+          var distance = startDate - currentTime;
+          if (distance < 0) { banner.style.display = 'none'; return; }
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById('banner-days').textContent = days.toString().padStart(2, '0');
+          document.getElementById('banner-hours').textContent = hours.toString().padStart(2, '0');
+          document.getElementById('banner-minutes').textContent = minutes.toString().padStart(2, '0');
+          document.getElementById('banner-seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        updateBannerTimer();
+        setInterval(updateBannerTimer, 1000);
+        banner.style.display = 'flex';
+      } else {
+        banner.style.display = 'none';
+      }
+    });
+    </script>
   </header>
 
   <main>{{ content }}</main>

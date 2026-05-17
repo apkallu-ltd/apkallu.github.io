@@ -7,6 +7,7 @@ author_image: "/assets/icons/ascend-logo.png"
 featured_image: https://storage.googleapis.com/apkallu-ascend-app/ascend/badges/ascend_team/cold_exposure_starter_cold_adapted.jpeg
 excerpt: "Go from dreading a cold shower to conquering 3 full minutes of deliberate cold exposure in just 21 days. This science-backed protocol builds the breathing foundation, the habit, and the mental resilience — one degree at a time."
 categories: Wellness
+permalink: /ascend/blog/:categories/:title
 keywords: "cold shower challenge 21 days, cold exposure protocol beginners, cold water therapy plan, Wim Hof method beginners, cold plunge benefits routine, ice bath beginner protocol, cold adaptation habit"
 seo_title: "21-Day Cold Exposure Protocol for Beginners"
 meta_description: "Start your cold exposure journey with a structured 21-day plan. Build from 15 seconds to 3 minutes with breathing techniques, progressive overload, and daily habit-locking."

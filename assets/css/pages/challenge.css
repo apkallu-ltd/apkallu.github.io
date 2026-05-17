@@ -1,0 +1,218 @@
+/* Challenge Page Styling - Enhanced UX/UI */
+
+.challenge-hero {
+  position: relative;
+  padding: 120px 0 160px;
+  background: linear-gradient(135deg, #001A33 0%, #004586 100%);
+  color: #FAF4E9;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Add a subtle mesh pattern overlay to hero */
+.challenge-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(rgba(72, 187, 250, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+}
+
+.challenge-badge-preview {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 32px;
+  border-radius: 50%;
+  background: #FFE573;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 50px rgba(255, 229, 115, 0.4);
+  position: relative;
+  z-index: 1;
+}
+
+.challenge-badge-preview i {
+  font-size: 55px;
+  color: #001A33;
+}
+
+.challenge-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 28px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+}
+
+.challenge-meta {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.meta-item i {
+  color: #FFE573; /* Golden yellow for emphasis */
+}
+
+/* Countdown Section - Elevated */
+.countdown-container {
+  background: #FFFFFF;
+  color: #001A33;
+  padding: 60px 40px;
+  border-radius: 40px;
+  margin: -100px auto 80px;
+  position: relative;
+  z-index: 20;
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 800px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.countdown-label {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #48BBFA; /* Sky blue for contrast */
+}
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.timer-segment {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.timer-value {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  color: #001A33; /* Strong dark navy */
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  text-shadow: 2px 2px 0px #f0f0f0;
+}
+
+.timer-unit {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 700;
+  margin-top: 15px;
+  letter-spacing: 0.1em;
+}
+
+/* Main Content Padding */
+.challenge-body {
+  padding: 40px 0 100px;
+}
+
+.challenge-description {
+  font-size: 1.35rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 60px;
+  text-align: center;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Call to Action - More Prominent */
+.cta-box {
+  background: #FFFFFF;
+  padding: 80px 40px;
+  border-radius: 40px;
+  text-align: center;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 8px;
+  background: linear-gradient(90deg, #48BBFA, #004586);
+}
+
+.cta-box h3 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #001A33;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.cta-box p {
+  font-size: 1.15rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.join-btn {
+  display: inline-block;
+  background: #004586;
+  color: #FFFFFF !important;
+  padding: 24px 60px;
+  border-radius: 100px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 15px 35px rgba(0, 69, 134, 0.25);
+}
+
+.join-btn:hover {
+  background: #001A33;
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 26, 51, 0.35);
+}
+
+.app-store-badges {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.app-store-badges img {
+  height: 48px;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+@media (max-width: 768px) {
+  .challenge-hero { padding: 80px 0 120px; }
+  .countdown-container { margin-top: -60px; padding: 40px 20px; border-radius: 30px; }
+  .timer-value { font-size: 2.5rem; }
+  .cta-box { padding: 50px 20px; }
+}

@@ -12,8 +12,8 @@ title: Home
     <p class="hero-subtitle">Structured programmes for wellness, productivity, mindfulness and learning — with daily tasks, community accountability, and badges that mark real progress.</p>
     <div class="hero-features">
       <div class="hero-feature">
-        <i class="fas fa-users feature-icon"></i>
-        <span>Community Support</span>
+        <i class="fas fa-calendar-star feature-icon"></i>
+        <span><a href="{{ '/challenges' | relative_url }}" style="color: inherit; text-decoration: none;">Join Challenges</a></span>
       </div>
       <div class="hero-feature">
         <i class="fas fa-chart-line feature-icon"></i>
@@ -24,11 +24,6 @@ title: Home
         <span>Achieve Goals</span>
       </div>
     </div>
-    <!-- <div class="floating-notification">
-      <div class="notification-content">
-        <span class="user-count"><i class="fas fa-user-plus"></i> 350+ users already!</span>
-      </div>
-    </div> -->
     <div class="cta-container">
       <a href="{{ site.app.download_link }}" class="btn-register pulse-animation">
         <i class="fas fa-download"></i> Download Now

@@ -5,36 +5,43 @@ permalink: ascend/blog
 page: blog
 ---
 
-<section class="blog-header">
+<header class="modern-header">
   <div class="container">
     <h1>Ascend Blog</h1>
-    <p>Insights, tips, and stories about personal growth and community challenges</p>
+    <p>Insights, tips, and stories about personal growth, productivity, and community challenges.</p>
   </div>
-</section>
+</header>
 
-<section class="blog-content">
-  <div class="container">
-    <div class="blog-grid">
-      {% for post in site.posts %}
-      <div class="blog-card">
-        {% if post.featured_image %}
-        <div class="blog-card-image">
-          <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
+<div class="modern-grid">
+  {% for post in site.posts %}
+    <div class="modern-card">
+      {% assign post_seconds = post.date | date: "%s" | plus: 0 %}
+      {% assign now_seconds = "now" | date: "%s" | plus: 0 %}
+      {% assign diff_seconds = now_seconds | minus: post_seconds %}
+      {% assign ten_days_seconds = 864000 %}
+
+      {% if diff_seconds < ten_days_seconds %}
+        <div class="new-badge">New</div>
+      {% endif %}
+
+      {% if post.featured_image %}
+      <div class="card-image" style="background-image: url('{{ post.featured_image | relative_url }}')">
+        <div class="card-overlay"></div>
+      </div>
+      {% endif %}
+      <div class="card-content">
+        <div class="card-tags">
+          {% if post.categories.size > 0 %}
+          <span class="card-tag tag-blog">{{ post.categories | first }}</span>
+          {% endif %}
         </div>
-        {% endif %}
-        <div class="blog-card-content">
-          <div class="blog-meta">
-            <span class="blog-date">{{ post.date | date: "%B %d, %Y" }}</span>
-            {% if post.categories.size > 0 %}
-            <span class="blog-category">{{ post.categories | first }}</span>
-            {% endif %}
-          </div>
-          <h2 class="blog-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-          <p class="blog-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-          <a href="{{ post.url | relative_url }}" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p class="card-description">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+        <div class="card-footer">
+          <span class="card-date">{{ post.date | date: "%b %d, %Y" }}</span>
+          <a href="{{ post.url | relative_url }}" class="card-link">Read More →</a>
         </div>
       </div>
-      {% endfor %}
     </div>
-  </div>
-</section>
+  {% endfor %}
+</div>

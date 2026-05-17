@@ -7,6 +7,7 @@ author_image: "/assets/icons/ascend-logo.png"
 featured_image: https://storage.googleapis.com/apkallu-ascend-app/ascend/badges/ascend_team/second_brain_builder_second_brain_architect.jpeg
 excerpt: "Stop drowning in scattered notes and forgotten ideas. This 30-day plan gives you a battle-tested PARA framework to capture, organise, and actually use everything you learn."
 categories: Productivity
+permalink: /ascend/blog/:categories/:title
 keywords: "second brain, PARA method, knowledge management, PKM, note-taking system, Obsidian, Notion, progressive summarisation, personal knowledge management, productivity system"
 seo_title: "Build a Second Brain in 30 Days | PARA Method Plan"
 meta_description: "Build a personal knowledge system in 30 days using the PARA method and progressive summarisation. Works with Notion, Obsidian, Apple Notes, or any tool."

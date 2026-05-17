@@ -8,6 +8,7 @@ featured_image: "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?au
 excerpt: "Transform your learning process with the 30-Day Skill Acceleration Challenge. Combine AI tools with the Feynman technique to master new skills faster than ever."
 categories: [Learning]
 keywords: "AI learning challenge 30 days, learn faster with AI tools, AI-powered skill development, Feynman technique AI, spaced repetition AI study plan, skill acceleration challenge, learn any skill with ChatGPT"
+permalink: /ascend/blog/:categories/:title
 seo_title: "Master Any Skill in 30 Days: AI-Powered Learning Challenge"
 meta_description: "Join the 30-Day AI Learning Sprint. Use ChatGPT and spaced repetition to accelerate your skill development and bridge knowledge gaps fast."
 ---
