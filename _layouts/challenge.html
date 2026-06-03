@@ -13,9 +13,9 @@ layout: default
 </header>
 
 <div class="container">
-  <section class="countdown-container" id="challenge-countdown" data-start="{{ page.start_date }}">
-    <p style="margin-bottom: 20px; font-weight: 800; text-transform: uppercase; color: #48BBFA;">Challenge starts in</p>
-    <div class="timer">
+  <section class="countdown-container" id="challenge-countdown" data-start="{{ page.start_date }}" data-end="{{ page.end_date }}">
+    <p id="countdown-label" style="margin-bottom: 20px; font-weight: 800; text-transform: uppercase; color: #48BBFA;">Challenge starts in</p>
+    <div class="timer" id="countdown-timer">
       <div class="timer-segment">
         <div class="timer-value" id="days">00</div>
         <div class="timer-unit">Days</div>
@@ -55,6 +55,8 @@ layout: default
 document.addEventListener('DOMContentLoaded', function() {
   const countdownEl = document.getElementById('challenge-countdown');
   const startDate = new Date(countdownEl.getAttribute('data-start')).getTime();
+  const endDate = new Date(countdownEl.getAttribute('data-end')).getTime();
+  const labelEl = document.getElementById('countdown-label');
   const els = {
     d: document.getElementById('days'),
     h: document.getElementById('hours'),
@@ -63,12 +65,35 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   function update() {
-    const dist = startDate - new Date().getTime();
-    if (dist < 0) return;
-    els.d.textContent = Math.floor(dist / 86400000).toString().padStart(2, '0');
-    els.h.textContent = Math.floor((dist % 86400000) / 3600000).toString().padStart(2, '0');
-    els.m.textContent = Math.floor((dist % 3600000) / 60000).toString().padStart(2, '0');
-    els.s.textContent = Math.floor((dist % 60000) / 1000).toString().padStart(2, '0');
+    const now = new Date().getTime();
+    
+    if (now < startDate) {
+      // 1. Upcoming challenge
+      labelEl.textContent = 'Challenge starts in';
+      labelEl.style.color = '#48BBFA';
+      const dist = startDate - now;
+      els.d.textContent = Math.floor(dist / 86400000).toString().padStart(2, '0');
+      els.h.textContent = Math.floor((dist % 86400000) / 3600000).toString().padStart(2, '0');
+      els.m.textContent = Math.floor((dist % 3600000) / 60000).toString().padStart(2, '0');
+      els.s.textContent = Math.floor((dist % 60000) / 1000).toString().padStart(2, '0');
+    } else if (now >= startDate && now <= endDate) {
+      // 2. Active/Ongoing challenge
+      labelEl.textContent = 'Challenge is active! Time remaining:';
+      labelEl.style.color = '#FF9800'; // Amber/Orange highlight
+      const dist = endDate - now;
+      els.d.textContent = Math.floor(dist / 86400000).toString().padStart(2, '0');
+      els.h.textContent = Math.floor((dist % 86400000) / 3600000).toString().padStart(2, '0');
+      els.m.textContent = Math.floor((dist % 3600000) / 60000).toString().padStart(2, '0');
+      els.s.textContent = Math.floor((dist % 60000) / 1000).toString().padStart(2, '0');
+    } else {
+      // 3. Completed challenge
+      labelEl.textContent = 'Challenge Completed!';
+      labelEl.style.color = '#888888';
+      els.d.textContent = '00';
+      els.h.textContent = '00';
+      els.m.textContent = '00';
+      els.s.textContent = '00';
+    }
   }
   update();
   setInterval(update, 1000);

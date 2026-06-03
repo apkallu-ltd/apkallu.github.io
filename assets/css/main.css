@@ -662,6 +662,7 @@ a:hover {
 }
 
 .feature-camera-overlay {
+  display: none;
   position: absolute;
   width: 20px;
   height: 20px;

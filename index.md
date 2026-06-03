@@ -82,10 +82,37 @@ title: Home
   </div>
 </section>
 
+<!-- Badge Earned Section -->
+<section class="feature-section">
+  <div class="feature-image">
+    <div class="device-mockup">
+      <img src="{{ 'assets/screenshots/gallery_4.png' | relative_url }}" alt="Badge Earned Screenshot" class="feature-screenshot">
+    </div>
+  </div>
+  <div class="feature-text">
+    <h2>Hit milestones. Earn badges. Show them off.</h2>
+    <p>Every milestone you reach unlocks a custom-designed, glowing achievement badge. Celebrate your hard work and consistency with interactive rewards, and share your progress directly with your community.</p>
+    <div class="feature-bullets">
+      <div class="bullet-point">
+        <i class="fas fa-check-circle"></i>
+        <span>Unlock beautiful, glowing achievement badges</span>
+      </div>
+      <div class="bullet-point">
+        <i class="fas fa-check-circle"></i>
+        <span>Celebrate milestones on your growth journey</span>
+      </div>
+      <div class="bullet-point">
+        <i class="fas fa-check-circle"></i>
+        <span>Share your wins instantly with a custom layout</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Community Challenges Section -->
 <section class="feature-section">
   <div class="feature-text">
-    <h2>Join Community Challenges Created by People Like You</h2>
+    <h2>Join a challenge. Follow the plan. Don't go it alone.</h2>
     <p>Take part in exciting challenges designed by the community. Share experiences, engage in meaningful conversations, and see how others leverage these challenges to achieve real progress in their lives.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
@@ -104,7 +131,6 @@ title: Home
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <div class="feature-camera-overlay"></div>
       <img src="{{ 'assets/screenshots/gallery_1.png' | relative_url }}" alt="Community Challenges Screenshot" class="feature-screenshot">
     </div>
   </div>
@@ -114,12 +140,11 @@ title: Home
 <section class="feature-section">
   <div class="feature-image">
     <div class="device-mockup">
-      <div class="feature-camera-overlay"></div>
       <img src="{{ 'assets/screenshots/gallery_2.png' | relative_url }}" alt="Calendar Screenshot" class="feature-screenshot">
     </div>
   </div>
   <div class="feature-text">
-    <h2>Stay on Track with Our Intuitive Calendar</h2>
+    <h2>Every day has a plan. Check it off and keep your streak alive.</h2>
     <p>Our built-in calendar makes it easy to plan your day, track your goals, and maintain daily habits. Get a clear overview of all your upcoming challenges and keep yourself accountable every step of the way.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
@@ -141,7 +166,7 @@ title: Home
 <!-- Profile & Achievements Section -->
 <section class="feature-section">
   <div class="feature-text">
-    <h2>Track Your Journey and Celebrate Achievements</h2>
+    <h2>A wall of proof that you showed up.</h2>
     <p>Your personalized profile showcases active plans, past accomplishments, and major milestones. Keep a detailed record of everything you've achieved as you grow and continually improve yourself.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
@@ -160,7 +185,6 @@ title: Home
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <div class="feature-camera-overlay"></div>
       <img src="{{ 'assets/screenshots/gallery_3.png' | relative_url }}" alt="Profile Screenshot" class="feature-screenshot">
     </div>
   </div>

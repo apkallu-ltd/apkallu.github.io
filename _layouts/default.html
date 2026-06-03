@@ -50,6 +50,7 @@
           "title": {{ challenge.title | jsonify }},
           "url": {{ challenge.url | relative_url | jsonify }},
           "start_date": {{ challenge.start_date | jsonify }},
+          "end_date": {{ challenge.end_date | jsonify }},
           "difficulty": {{ challenge.difficulty | jsonify }}
         }{% unless forloop.last %},{% endunless %}
       {% endfor %}
@@ -63,8 +64,9 @@
       <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
         <div class="banner-content">
           <i class="fas fa-calendar-star" style="color: #004586;"></i>
-          <span class="banner-title">Next Challenge: <span id="banner-challenge-title"></span></span>
+          <span class="banner-title"><span id="banner-label">Next Challenge</span>: <span id="banner-challenge-title"></span></span>
           <div class="banner-timer">
+            <span id="banner-timer-prefix" style="font-weight: bold; margin-right: 5px;">Starts in:</span>
             <span id="banner-days">00</span>d :
             <span id="banner-hours">00</span>h :
             <span id="banner-minutes">00</span>m :
@@ -82,16 +84,48 @@
       if (!challengeDataEl || !banner) return;
       var challenges = JSON.parse(challengeDataEl.textContent);
       var now = new Date().getTime();
-      var nextChallenge = challenges
+      
+      // 1. Check for upcoming challenges (start_date > now)
+      var targetChallenge = challenges
         .filter(function(c) { return new Date(c.start_date).getTime() > now; })
         .sort(function(a, b) { return new Date(a.start_date).getTime() - new Date(b.start_date).getTime(); })[0];
-      if (nextChallenge) {
-        document.getElementById('banner-challenge-title').textContent = nextChallenge.title;
-        document.getElementById('banner-challenge-link').href = nextChallenge.url;
-        var startDate = new Date(nextChallenge.start_date).getTime();
+      
+      var isOngoing = false;
+      
+      // 2. If no upcoming challenges, look for ongoing challenges (start_date <= now <= end_date)
+      if (!targetChallenge) {
+        targetChallenge = challenges
+          .filter(function(c) {
+            var start = new Date(c.start_date).getTime();
+            var end = new Date(c.end_date).getTime();
+            return start <= now && end >= now;
+          })
+          .sort(function(a, b) { return new Date(a.end_date).getTime() - new Date(b.end_date).getTime(); })[0];
+        if (targetChallenge) {
+          isOngoing = true;
+        }
+      }
+      
+      if (targetChallenge) {
+        document.getElementById('banner-challenge-title').textContent = targetChallenge.title;
+        document.getElementById('banner-challenge-link').href = targetChallenge.url;
+        
+        var bannerLabel = document.getElementById('banner-label');
+        var timerPrefix = document.getElementById('banner-timer-prefix');
+        
+        if (isOngoing) {
+          bannerLabel.textContent = 'Ongoing Challenge';
+          timerPrefix.textContent = 'Ends in:';
+        } else {
+          bannerLabel.textContent = 'Next Challenge';
+          timerPrefix.textContent = 'Starts in:';
+        }
+        
+        var targetTime = new Date(isOngoing ? targetChallenge.end_date : targetChallenge.start_date).getTime();
+        
         function updateBannerTimer() {
           var currentTime = new Date().getTime();
-          var distance = startDate - currentTime;
+          var distance = targetTime - currentTime;
           if (distance < 0) { banner.style.display = 'none'; return; }
           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -102,6 +136,7 @@
           document.getElementById('banner-minutes').textContent = minutes.toString().padStart(2, '0');
           document.getElementById('banner-seconds').textContent = seconds.toString().padStart(2, '0');
         }
+        
         updateBannerTimer();
         setInterval(updateBannerTimer, 1000);
         banner.style.display = 'flex';
