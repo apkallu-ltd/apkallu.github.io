@@ -145,3 +145,72 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Hero star field — twinkling night sky
+// Stars are static in position, brightness gently pulses via sine wave.
+// Feels like a real sky, not a screensaver.
+(function () {
+  var canvas = document.getElementById('hero-particles');
+  if (!canvas) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var ctx = canvas.getContext('2d');
+  var stars = [];
+  var COUNT = 65;
+  var startTime = null;
+
+  function resize() {
+    var overlay = canvas.parentElement;
+    canvas.width  = overlay.offsetWidth;
+    canvas.height = overlay.offsetHeight;
+  }
+
+  function rand(a, b) { return a + Math.random() * (b - a); }
+
+  function init() {
+    resize();
+    stars = [];
+    for (var i = 0; i < COUNT; i++) {
+      var bright = Math.random() < 0.1; // ~10% are prominent stars
+      stars.push({
+        x:          rand(0, canvas.width),
+        y:          rand(0, canvas.height),
+        radius:     bright ? rand(1.2, 1.8) : rand(0.3, 0.9),
+        baseAlpha:  bright ? rand(0.25, 0.45) : rand(0.06, 0.22),
+        twinkleAmp: rand(0.04, 0.12),  // how much brightness shifts
+        phase:      rand(0, Math.PI * 2),
+        speed:      rand(0.3, 0.9)     // twinkle cycles per second
+      });
+    }
+  }
+
+  function draw(ts) {
+    if (!startTime) startTime = ts;
+    var t = (ts - startTime) / 1000; // seconds
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    stars.forEach(function (s) {
+      var alpha = s.baseAlpha + Math.sin(t * s.speed + s.phase) * s.twinkleAmp;
+      alpha = Math.max(0, Math.min(1, alpha));
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(255,255,255,' + alpha.toFixed(3) + ')';
+      ctx.fill();
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', function () {
+    resize();
+    // Re-scatter stars to fill new dimensions
+    stars.forEach(function (s) {
+      s.x = rand(0, canvas.width);
+      s.y = rand(0, canvas.height);
+    });
+  });
+
+  init();
+  requestAnimationFrame(draw);
+})();

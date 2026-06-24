@@ -259,3 +259,530 @@
   50% { transform: scale(1.1); box-shadow: 0 6px 15px rgba(255,229,115,0.4); }
   100% { transform: scale(1); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
 }
+
+/* ==========================================================================
+   AI VISUAL DESIGN SYSTEM
+   Ported from app: assistantShimmerBorder, assistantGlow, AiCoachOrb
+   Applied selectively — only where context warrants the AI language.
+   ========================================================================== */
+
+:root {
+  --ai-cyan: #48BBFA;
+  --ai-glow-color: rgba(72, 187, 250, 0.35);
+  --ai-glow-soft: rgba(72, 187, 250, 0.18);
+}
+
+/* --- 1. Shimmer Border --- */
+/* Port of assistantShimmerBorder modifier from the app.             */
+/* Applied to: hero phone frame, first feature screenshot, hero CTA. */
+@keyframes shimmer-rotate {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.shimmer-border {
+  position: relative;
+}
+.shimmer-border::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  padding: 3px; /* REQUIRED: creates the strip the mask XOR reveals as the border */
+  background: linear-gradient(
+    135deg,
+    #48BBFA 0%,
+    #FFE573 35%,
+    #48BBFA 65%,
+    #004586 100%
+  );
+  background-size: 300% 300%;
+  animation: shimmer-rotate 5s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  z-index: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+/* Ensure shimmer works on elements using box-shadow phone frames */
+.app-screenshot.shimmer-border,
+.feature-screenshot.shimmer-border {
+  z-index: 1;
+}
+
+/* --- 2. AI Glow on phone — original frame rings intact, cyan outer bloom added --- */
+/* The dark ring (10px) and gold ring (12px) that make it look like a phone frame    */
+/* are PRESERVED. A fourth shadow layer — a soft outer cyan bloom — pulses gently.  */
+@keyframes ai-glow-pulse {
+  0% {
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.3),
+      0 0 0 10px var(--primary-dark),
+      0 0 0 12px var(--accent-color),
+      0 0 18px 6px rgba(72, 187, 250, 0.15);
+  }
+  50% {
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.3),
+      0 0 0 10px var(--primary-dark),
+      0 0 0 12px var(--accent-color),
+      0 0 42px 12px rgba(72, 187, 250, 0.38);
+  }
+  100% {
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.3),
+      0 0 0 10px var(--primary-dark),
+      0 0 0 12px var(--accent-color),
+      0 0 18px 6px rgba(72, 187, 250, 0.15);
+  }
+}
+
+.app-screenshot.ai-glow {
+  animation: float 6s ease-in-out infinite, ai-glow-pulse 3.5s ease-in-out infinite;
+}
+
+/* --- 3. Upgrade hero CTA pulse to carry an AI cyan halo layer --- */
+/* The button keeps its own ::before sweep. We upgrade the keyframe instead. */
+@keyframes pulse {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(240, 191, 30, 0.7),
+      0 0 0 0 rgba(72, 187, 250, 0);
+  }
+  50% {
+    box-shadow:
+      0 0 0 12px rgba(240, 191, 30, 0),
+      0 0 22px rgba(72, 187, 250, 0.38);
+  }
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(240, 191, 30, 0),
+      0 0 0 0 rgba(72, 187, 250, 0);
+  }
+}
+
+/* --- 4. Nav CTA pulse dot --- */
+/* Port of the AI indicator dot — signals the AI feature is on its way. */
+@keyframes nav-dot-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(72, 187, 250, 0.8); opacity: 1; }
+  70%  { box-shadow: 0 0 0 5px rgba(72, 187, 250, 0); opacity: 0.7; }
+  100% { box-shadow: 0 0 0 0 rgba(72, 187, 250, 0); opacity: 1; }
+}
+
+.nav-cta::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ai-cyan);
+  margin-right: 7px;
+  vertical-align: middle;
+  animation: nav-dot-pulse 2.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+/* Nav CTA hover glow */
+.nav-cta:hover {
+  box-shadow: 0 0 18px rgba(72, 187, 250, 0.35), 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+/* --- 5. AI Coach nav link --- */
+/* The ✦ AI Coach nav item gets a distinct style from regular links. */
+.nav-ai-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.3s ease !important;
+}
+.nav-ai-link:hover {
+  color: var(--ai-cyan) !important;
+  background-color: rgba(72, 187, 250, 0.08) !important;
+}
+
+/* --- 6. Hero "coming soon" pill --- */
+.hero-feature.ai-coming-soon {
+  background-color: rgba(72, 187, 250, 0.08);
+  border: 1px solid rgba(72, 187, 250, 0.3);
+  color: rgba(255, 255, 255, 0.85);
+}
+.hero-feature.ai-coming-soon .feature-icon {
+  color: var(--ai-cyan);
+}
+
+/* --- 7. First feature card — AI accent treatment --- */
+/* The first card (to be labelled AI Coach) gets a subtle cyan treatment. */
+.features-grid .feature-card:first-child {
+  border: 1px solid rgba(72, 187, 250, 0.18) !important;
+  background: linear-gradient(150deg, #ffffff 60%, rgba(72, 187, 250, 0.04) 100%) !important;
+}
+.features-grid .feature-card:first-child .feature-icon-container {
+  background: linear-gradient(135deg, #001A33, #004586) !important;
+  color: var(--ai-cyan) !important;
+}
+.features-grid .feature-card:first-child .feature-icon-container::before {
+  border-color: var(--ai-cyan) !important;
+  animation: ai-icon-pulse 2.8s ease-in-out infinite !important;
+}
+@keyframes ai-icon-pulse {
+  0%   { transform: scale(1.15); opacity: 0.45; }
+  50%  { transform: scale(1.32); opacity: 0.15; }
+  100% { transform: scale(1.15); opacity: 0.45; }
+}
+
+/* --- 8. AI Coach teaser page — decorative orb --- */
+.ai-orb-decoration {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 38%, #48BBFA 0%, #004586 55%, #001A33 100%);
+  position: relative;
+  margin: 0 auto 48px;
+  animation: orb-breathe 3.2s ease-in-out infinite;
+  cursor: default;
+}
+.ai-orb-decoration::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #48BBFA 0%, #FFE573 40%, #48BBFA 80%, #004586 100%);
+  background-size: 300% 300%;
+  animation: shimmer-rotate 4s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.ai-orb-decoration::after {
+  content: '✦';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 68px;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 0 24px rgba(72, 187, 250, 0.9);
+}
+@keyframes orb-breathe {
+  0%   { box-shadow: 0 0 30px rgba(72, 187, 250, 0.28); transform: scale(1); }
+  50%  { box-shadow: 0 0 72px rgba(72, 187, 250, 0.58); transform: scale(1.04); }
+  100% { box-shadow: 0 0 30px rgba(72, 187, 250, 0.28); transform: scale(1); }
+}
+
+/* --- 9. Footer tagline --- */
+.footer-tagline {
+  text-align: center;
+  padding: 20px 0 12px;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+.footer-tagline strong {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* --- 10. AI Coach teaser page styles --- */
+.ai-coach-page {
+  background: #001A33;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.ai-coach-hero {
+  padding: 100px 20px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #001A33 0%, #001830 100%);
+}
+.ai-coach-hero::before {
+  /* Subtle particle field background */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(72,187,250,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(72,187,250,0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+.ai-coach-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 24px;
+  line-height: 1.15;
+  position: relative;
+  z-index: 1;
+}
+.ai-coach-hero h1 .ai-highlight {
+  color: var(--ai-cyan);
+}
+.ai-coach-hero .ai-hero-sub {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255,255,255,0.72);
+  max-width: 580px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+.ai-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(72, 187, 250, 0.1);
+  border: 1px solid rgba(72, 187, 250, 0.3);
+  color: var(--ai-cyan);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 100px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+.ai-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ai-cyan);
+  animation: nav-dot-pulse 2.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+.ai-contrast-section {
+  padding: 80px 20px;
+  background: #fff;
+}
+.ai-contrast-section h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 900;
+  color: #001A33;
+  margin-bottom: 50px;
+}
+.ai-contrast-table {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+.ai-contrast-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  background: #001A33;
+  color: #fff;
+  padding: 18px 28px;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  align-items: center;
+  gap: 20px;
+}
+.ai-contrast-header .ai-col-right {
+  color: var(--ai-cyan);
+}
+.ai-contrast-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding: 16px 28px;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: center;
+  gap: 20px;
+  transition: background 0.2s ease;
+}
+.ai-contrast-row:last-child { border-bottom: none; }
+.ai-contrast-row:nth-child(even) { background: #fafafa; }
+.ai-contrast-row:hover { background: rgba(72,187,250,0.04); }
+.ai-contrast-left {
+  color: #888;
+  font-size: 15px;
+  text-decoration: line-through;
+  text-decoration-color: rgba(0,0,0,0.2);
+}
+.ai-contrast-arrow {
+  color: var(--ai-cyan);
+  font-size: 20px;
+  text-align: center;
+}
+.ai-contrast-right {
+  color: #001A33;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.ai-preview-section {
+  padding: 80px 20px;
+  background: #001A33;
+}
+.ai-preview-section h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.ai-preview-section .ai-preview-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+.ai-chat-preview {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.ai-bubble {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #004586;
+  border-radius: 4px 18px 18px 18px;
+  padding: 14px 18px;
+  max-width: 78%;
+  align-self: flex-start;
+}
+.ai-bubble-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ai-cyan);
+  letter-spacing: 0.03em;
+}
+.ai-bubble p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+.ai-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+.ai-chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,0.22);
+  color: rgba(255,255,255,0.75);
+}
+.ai-chip.selected {
+  border-color: var(--ai-cyan);
+  background: rgba(72, 187, 250, 0.14);
+  color: #fff;
+  font-weight: 700;
+}
+.user-bubble {
+  align-self: flex-end;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 18px 4px 18px 18px;
+  padding: 12px 16px;
+  max-width: 78%;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.ai-plan-reveal-card {
+  max-width: 480px;
+  margin: 20px auto 0;
+  background: rgba(255,255,255,0.03);
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+}
+.ai-plan-reveal-card.shimmer-border::before {
+  border-radius: 20px;
+  inset: -2px;
+}
+.ai-plan-label {
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--ai-cyan);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.ai-plan-title {
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+.ai-plan-meta {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0;
+}
+
+.ai-coach-download-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #001A33, #004586);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.ai-coach-download-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('patterns/pattern-circles.jpeg');
+  background-size: cover;
+  opacity: 0.05;
+  pointer-events: none;
+}
+.ai-coach-download-section h2 {
+  color: #fff;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 900;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+.ai-coach-download-section p {
+  color: rgba(255,255,255,0.72);
+  font-size: 18px;
+  margin-bottom: 36px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+.ai-coach-download-section .app-links {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .ai-contrast-header,
+  .ai-contrast-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .ai-contrast-arrow { display: none; }
+  .ai-contrast-left { text-decoration: none; color: #aaa; font-size: 13px; }
+  .ai-orb-decoration { width: 140px; height: 140px; }
+  .ai-orb-decoration::after { font-size: 52px; }
+}

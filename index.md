@@ -6,7 +6,9 @@ title: Home
 
 <!-- Hero Section -->
 <section class="hero-section">
-  <div class="hero-overlay"></div>
+  <div class="hero-overlay">
+    <canvas id="hero-particles"></canvas>
+  </div>
   <div class="hero-text">
     <h1 class="animated-heading">Pick a Challenge. Show Up Every Day. <span class="highlight">Earn It.</span></h1>
     <p class="hero-subtitle">Structured programmes for wellness, productivity, mindfulness and learning — with daily tasks, community accountability, and badges that mark real progress.</p>
@@ -19,9 +21,9 @@ title: Home
         <i class="fas fa-chart-line feature-icon"></i>
         <span>Track Progress</span>
       </div>
-      <div class="hero-feature">
-        <i class="fas fa-trophy feature-icon"></i>
-        <span>Achieve Goals</span>
+      <div class="hero-feature ai-coming-soon">
+        <i class="fas fa-sparkles feature-icon"></i>
+        <span><a href="{{ '/ai-coach' | relative_url }}" style="color: inherit; text-decoration: none;">✦ AI Coach — Coming Soon</a></span>
       </div>
     </div>
     <div class="cta-container">
@@ -40,7 +42,7 @@ title: Home
   </div>
   <div class="hero-image">
     <div class="phone-frame">
-      <img src="{{ 'assets/screenshots/main.png' | relative_url }}" alt="Ascend App Preview" class="app-screenshot">
+      <img src="{{ 'assets/screenshots/main.png' | relative_url }}" alt="Ascend App Preview" class="app-screenshot ai-glow">
     </div>
   </div>
 </section>
@@ -52,10 +54,10 @@ title: Home
     <div class="features-grid">
       <div class="feature-card" data-aos="fade-up">
         <div class="feature-icon-container">
-          <i class="fas fa-users-cog"></i>
+          <i class="fas fa-robot"></i>
         </div>
-        <h3>Community Challenges</h3>
-        <p>Join and create challenges with like-minded individuals working toward similar goals</p>
+        <h3>✦ AI Coach <span style="font-size:0.7em; font-weight:500; color:#48BBFA;">— Coming Soon</span></h3>
+        <p>Tell your AI coach your goal and constraints. Get a personalised plan built around your life in seconds — no browsing required.</p>
       </div>
       <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
         <div class="feature-icon-container">

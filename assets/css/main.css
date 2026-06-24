@@ -269,11 +269,24 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image:
-    linear-gradient(135deg, rgba(0,26,51,0.95), rgba(0,51,102,0.85)),
-    url('patterns/pattern.jpeg');
-  background-size: cover;
+  /* Gradient deepens toward the top — like looking up into a night sky */
+  background:
+    /* Cyan halo behind the phone (right side) — phone floats in its own light */
+    radial-gradient(ellipse 820px 650px at 74% 52%, rgba(72, 187, 250, 0.07) 0%, transparent 68%),
+    /* Gold breath behind the headline (left side) — echoes the CTA button */
+    radial-gradient(ellipse 560px 380px at 8% 78%, rgba(255, 229, 115, 0.035) 0%, transparent 65%),
+    /* Sky gradient — darker at top (overhead), slightly lighter at base */
+    linear-gradient(180deg, #000C1F 0%, #001428 45%, #001A33 100%);
   z-index: 0;
+  overflow: hidden;
+}
+
+/* Canvas star field — JS populates this */
+#hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-text {

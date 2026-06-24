@@ -34,6 +34,7 @@
             <ul class="nav-menu">
               <li><a href="{{ '/' | relative_url }}">Home</a></li>
               <li><a href="{{ '/challenges' | relative_url }}">Challenges</a></li>
+              <li><a href="{{ '/ai-coach' | relative_url }}" class="nav-ai-link">✦ AI Coach</a></li>
               <li><a href="{{ '/ascend/blog' | relative_url }}">Blog</a></li>
               <li><a href="{{ '/about_us' | relative_url }}">About Us</a></li>
               <li><a href="{{ site.app.download_link }}" class="nav-cta">Download Now</a></li>
@@ -107,7 +108,7 @@
       }
       
       if (targetChallenge) {
-        document.getElementById('banner-challenge-title').textContent = targetChallenge.title;
+        document.getElementById('banner-challenge-title').textContent = '✦ ' + targetChallenge.title;
         document.getElementById('banner-challenge-link').href = targetChallenge.url;
         
         var bannerLabel = document.getElementById('banner-label');
@@ -164,6 +165,7 @@
             <h4>Company</h4>
             <ul>
               <li><a href="{{ '/about_us' | relative_url }}">About Us</a></li>
+              <li><a href="{{ '/ai-coach' | relative_url }}">✦ AI Coach</a></li>
               <li><a href="{{ '/ascend/blog' | relative_url }}">Blog</a></li>
               <li><a href="mailto:{{ site.email }}">Contact</a></li>
             </ul>
@@ -185,6 +187,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="footer-tagline">
+        <p>✦ <strong>Ascend</strong> — The habit app that knows you. Powered by AI.</p>
       </div>
       <div class="copyright">
         <p>&copy; 2024 Apkallu Ltd. All rights reserved.</p>
