@@ -3,93 +3,80 @@ layout: default
 title: Terms of Service
 permalink: /ascend/terms
 ---
-<div class="container" markdown="1">
-# TERMS OF SERVICE
+<header class="modern-header">
+  <div class="container">
+    <h1>Terms of Service</h1>
+    <p>Please read these terms carefully before using Ascend.</p>
+    <div class="legal-hero-meta">
+      <span class="legal-hero-badge">APKALLU LTD</span>
+      <span>Last updated July 8, 2026</span>
+    </div>
+  </div>
+</header>
 
-**Last updated September 2, 2024**
+<div class="legal-layout">
 
-<br>
+  <!-- Sidebar TOC -->
+  <aside class="legal-toc">
+    <h4>Contents</h4>
+    <ul>
+      <li><a href="#1-our-services">1. Our Services</a></li>
+      <li><a href="#2-intellectual-property-rights">2. Intellectual Property</a></li>
+      <li><a href="#3-user-representations">3. User Representations</a></li>
+      <li><a href="#4-user-registration">4. User Registration</a></li>
+      <li><a href="#5-purchases-and-payment">5. Purchases & Payment</a></li>
+      <li><a href="#6-prohibited-activities">6. Prohibited Activities</a></li>
+      <li><a href="#7-user-generated-contributions">7. User Contributions</a></li>
+      <li><a href="#8-contribution-licence">8. Contribution Licence</a></li>
+      <li><a href="#9-guidelines-for-reviews">9. Reviews</a></li>
+      <li><a href="#10-mobile-application-licence">10. App Licence</a></li>
+      <li><a href="#11-social-media">11. Social Media</a></li>
+      <li><a href="#12-third-party-websites-and-content">12. Third-Party Websites</a></li>
+      <li><a href="#13-advertisers">13. Advertisers</a></li>
+      <li><a href="#14-services-management">14. Services Management</a></li>
+      <li><a href="#15-privacy-policy">15. Privacy Policy</a></li>
+      <li><a href="#16-copyright-infringements">16. Copyright</a></li>
+      <li><a href="#17-term-and-termination">17. Termination</a></li>
+      <li><a href="#18-modifications-and-interruptions">18. Modifications</a></li>
+      <li><a href="#19-governing-law">19. Governing Law</a></li>
+      <li><a href="#20-dispute-resolution">20. Dispute Resolution</a></li>
+      <li><a href="#21-corrections">21. Corrections</a></li>
+      <li><a href="#22-disclaimer">22. Disclaimer</a></li>
+      <li><a href="#23-limitations-of-liability">23. Liability Limits</a></li>
+      <li><a href="#24-indemnification">24. Indemnification</a></li>
+      <li><a href="#25-user-data">25. User Data</a></li>
+      <li><a href="#26-electronic-communications-transactions-and-signatures">26. Electronic Comms</a></li>
+      <li><a href="#27-california-users-and-residents">27. California Users</a></li>
+      <li><a href="#28-miscellaneous">28. Miscellaneous</a></li>
+      <li><a href="#29-contact-us">29. Contact Us</a></li>
+    </ul>
+  </aside>
 
+  <!-- Main content -->
+  <div class="legal-content" markdown="1">
+
+<div class="legal-intro" markdown="1">
+We are APKALLU LTD ('**Company**', '**we**', '**us**', or '**our**'). VAT number: GB470530119. We operate the mobile application **Ascend** — a platform for gamified habit plans, community challenges, badge progression, and an AI Life Coach powered by Google Gemini.
+
+By accessing or using the Services, you agree to be bound by all of these Legal Terms. **IF YOU DO NOT AGREE, YOU MUST DISCONTINUE USE IMMEDIATELY.**
+
+The Services are intended for users who are at least **18 years old**.
+
+Contact us at [help@apkallu.co.uk](mailto:help@apkallu.co.uk) or by mail: 20 Wenlock Road, London, N1 7GU, England.
+</div>
+
+<a id="agreement-to-our-legal-terms"></a>
 ## AGREEMENT TO OUR LEGAL TERMS
 
-We are APKALLU LTD ('**Company**', '**we**', '**us**', or '**our**'). Our VAT number is GB470530119.
+We are APKALLU LTD ('**Company**', '**we**', '**us**', or '**our**'). Our VAT number is GB470530119. We operate the mobile application Ascend (the '**App**') and any other related products and services that refer or link to these legal terms (the '**Legal Terms**') (collectively, the '**Services**').
 
-We operate the mobile application Ascend (the '**App**'), as well as any other related
-products and services that refer or link to these legal terms (the '**Legal Terms**')
-(collectively, the '**Services**').
-
-Designed to promote self-development communities by bringing individuals together
-through shared goals. Our aim with Ascend is to help each user become a better
-version of themselves by providing a platform for growth and collaboration.
-
-You can contact us by email at help@apkallu.co.uk or by mail to:
-
-20 Wenlock Road<br>
-London, N1 7GU<br>
-England<br>
-
-These Legal Terms constitute a legally binding agreement made between you,
-whether personally or on behalf of an entity ('**you**'), and APKALLU LTD, concerning
-your access to and use of the Services. You agree that by accessing the Services,
-you have read, understood, and agreed to be bound by all of these Legal Terms. IF
-YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE
-EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST
-DISCONTINUE USE IMMEDIATELY.
-
-Supplemental terms and conditions or documents that may be posted on the
-Services from time to time are hereby expressly incorporated herein by reference.
-We reserve the right, in our sole discretion, to make changes or modifications to
-these Legal Terms from time to time. We will alert you about any changes by
-updating the 'Last updated' date of these Legal Terms, and you waive any right to
-receive specific notice of each such change. It is your responsibility to periodically
-review these Legal Terms to stay informed of updates. You will be subject to, and will
-be deemed to have been made aware of and to have accepted, the changes in any
-revised Legal Terms by your continued use of the Services after the date such
-revised Legal Terms are posted.
-
-The Services are intended for users who are at least 18 years old. Persons under the
-age of 18 are not permitted to use or register for the Services.
+These Legal Terms constitute a legally binding agreement. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. We reserve the right to make changes to these Legal Terms from time to time by updating the 'Last updated' date. The Services are intended for users who are at least 18 years old.
 
 We recommend that you print a copy of these Legal Terms for your records.
 
-<br>
-
-## TABLE OF CONTENTS
-[1. OUR SERVICES](#1-our-services)<br>
-[2. INTELLECTUAL PROPERTY RIGHTS](#2-intellectual-property-rights)<br>
-[3. USER REPRESENTATIONS](#3-user-representations)<br>
-[4. USER REGISTRATION](#4-user-registration)<br>
-[5. PURCHASES AND PAYMENT](#5-purchases-and-payment)<br>
-[6. PROHIBITED ACTIVITIES](#6-prohibited-activities)<br>
-[7. USER GENERATED CONTRIBUTIONS](#7-user-generated-contributions)<br>
-[8. CONTRIBUTION LICENCE](#8-contribution-licence)<br>
-[9. GUIDELINES FOR REVIEWS](#9-guidelines-for-reviews)<br>
-[10. MOBILE APPLICATION LICENCE](#10-mobile-application-licence)<br>
-[11. SOCIAL MEDIA](#11-social-media)<br>
-[12. THIRD-PARTY WEBSITES AND CONTENT](#12-third-party-websites-and-content)<br>
-[13. ADVERTISERS](#13-advertisers)<br>
-[14. SERVICES MANAGEMENT](#14-services-management)<br>
-[15. PRIVACY POLICY](#15-privacy-policy)<br>
-[16. COPYRIGHT INFRINGEMENTS](#16-copyright-infringements)<br>
-[17. TERM AND TERMINATION](#17-term-and-termination)<br>
-[18. MODIFICATIONS AND INTERRUPTIONS](#18-modifications-and-interruptions)<br>
-[19. GOVERNING LAW](#19-governing-law)<br>
-[20. DISPUTE RESOLUTION](#20-dispute-resolution)<br>
-[21. CORRECTIONS](#21-corrections)<br>
-[22. DISCLAIMER](#22-disclaimer)<br>
-[23. LIMITATIONS OF LIABILITY](#23-limitations-of-liability)<br>
-[24. INDEMNIFICATION](#24-indemnification)<br>
-[25. USER DATA](#25-user-data)<br>
-[26. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES](#26-electronic-communications-transactions-and-signatures)<br>
-[27. CALIFORNIA USERS AND RESIDENTS](#27-california-users-and-residents)<br>
-[28. MISCELLANEOUS](#28-miscellaneous)<br>
-[29. CONTACT US](#29-contact-us)<br>
-
-<br>
-
+<a id="1-our-services"></a>
 ## 1. OUR SERVICES
 
-The information provided when using the Services is not intended for distribution to
 or use by any person or entity in any jurisdiction or country where such distribution or
 use would be contrary to law or regulation or which would subject us to any
 registration requirement within such jurisdiction or country. Accordingly, those
@@ -103,6 +90,28 @@ Management Act (FISMA), etc.), so if your interactions would be subjected to suc
 laws, you may not use the Services. You may not use the Services in a way that
 would violate the Gramm-Leach-Bliley Act (GLBA).
 
+**AI Life Coach**
+
+The Services include an AI Life Coach feature that generates personalised habit plan
+templates on the user's request. Plan templates are produced using the Gemini large
+language model operated by Google LLC. The outputs of this feature are AI-generated
+and should not be construed as medical, clinical, psychological, nutritional, or
+professional advice of any kind. Ascend does not warrant that any generated plan will
+be accurate, complete, or appropriate for any particular individual, goal, or
+circumstance. Generated plans may not always reflect best practice and should be
+treated as general suggestions only.
+
+**AI CONTENT DISCLAIMER**
+
+AI-generated plan content is produced by a third-party language model. Ascend makes
+no representation about the completeness, accuracy, or suitability of any AI-generated
+plan for any specific health, fitness, or lifestyle goal. The AI system may produce
+outputs that are incomplete, imprecise, or unsuitable for your individual situation.
+Users assume full responsibility for how they act upon AI-generated plans. Nothing in
+AI-generated content constitutes a substitute for consultation with a qualified medical,
+clinical, nutritional, fitness, or other professional.
+
+<a id="2-intellectual-property-rights"></a>
 ## 2. INTELLECTUAL PROPERTY RIGHTS
 
 ### Our intellectual property
@@ -213,7 +222,7 @@ constitute confidential information.
 
 You are solely responsible for your Submissions and/or Contributions and you
 expressly agree to reimburse us for any and all losses that we may suffer because of
-your breach of (a) this section, (b) any third party’s intellectual property rights, or (c)
+your breach of (a) this section, (b) any third party's intellectual property rights, or (c)
 applicable law.
 
 **We may remove or edit your Content:** Although we have no obligation to monitor
@@ -229,6 +238,7 @@ We respect the intellectual property rights of others. If you believe that any m
 available on or through the Services infringes upon any copyright you own or control,
 please immediately refer to the '[COPYRIGHT INFRINGEMENTS](#16-copyright-infringements)' section below.
 
+<a id="3-user-representations"></a>
 ## 3. USER REPRESENTATIONS
 
 By using the Services, you represent and warrant that: (1) all registration information
@@ -245,6 +255,14 @@ If you provide any information that is untrue, inaccurate, not current, or incom
 we have the right to suspend or terminate your account and refuse any and all
 current or future use of the Services (or any portion thereof).
 
+You further represent and warrant that any information you submit through the AI Life
+Coach intake process — including your goal description, time commitment, constraints,
+and barriers — is truthful and does not intentionally attempt to manipulate, jailbreak,
+or circumvent the AI system's safety and content policy filters. Providing deliberately
+false, abusive, or manipulative inputs for the purpose of producing outputs that
+violate these Legal Terms constitutes a material breach of these representations.
+
+<a id="4-user-registration"></a>
 ## 4. USER REGISTRATION
 
 You may be required to register to use the Services. You agree to keep your
@@ -253,6 +271,7 @@ password. We reserve the right to remove, reclaim, or change a username you sele
 if we determine, in our sole discretion, that such username is inappropriate, obscene,
 or otherwise objectionable.
 
+<a id="5-purchases-and-payment"></a>
 ## 5. PURCHASES AND PAYMENT
 
 All purchases are non-refundable.
@@ -280,6 +299,59 @@ account, the same payment method, and/or orders that use the same billing or
 shipping address. We reserve the right to limit or prohibit orders that, in our sole
 judgement, appear to be placed by dealers, resellers, or distributors.
 
+### AI Generation Credits
+
+The Services include an AI generation credit system that governs access to the AI
+Life Coach plan generation feature. The following terms apply to AI generation credits:
+
+(a) **Daily credit allowance.** Each registered user receives three (3) free AI
+generation credits per day. Credits are replenished on a rolling daily basis.
+
+(b) **Credit consumption.** One credit is consumed each time a user submits a
+plan generation request through the AI Life Coach. A credit is considered consumed
+at the point of submission, regardless of whether the generated plan is ultimately
+saved or used.
+
+(c) **No rollover.** Unused daily credits do not carry over to the following day.
+Credits that are not consumed within the calendar day on which they are issued will
+expire and be replaced by the next day's allowance.
+
+(d) **System-wide quota.** The Services operate a global daily generation quota to
+manage API costs. Once the system-wide quota is reached for a given day, AI plan
+generation may be temporarily unavailable for all users regardless of individual credit
+balance. Ascend will endeavour to restore availability as soon as practicable and
+shall not be liable for any inconvenience caused by temporary quota-driven
+unavailability.
+
+(e) **Non-refundability; exception for content policy refusals.** Consumed credits
+are non-refundable. However, where a generation request is refused on safety or
+content policy grounds, the credit consumed by that request is automatically refunded
+to the user's daily allowance.
+
+### Rewarded Advertising Credits
+
+The Services include a 'Watch to Earn' feature through which users may optionally
+earn additional AI generation credits by watching a rewarded video advertisement
+(this feature is being prepared for launch and may not yet be available to all users).
+The following terms apply:
+
+(a) **Voluntary and opt-in.** Watching a rewarded advertisement is entirely voluntary.
+No user is required to watch any advertisement to use the Services.
+
+(b) **Credit award.** Upon successful completion of a rewarded advertisement, the
+user's account will be credited with one (1) additional AI generation credit, subject to
+verification of the completed ad view.
+
+(c) **Personal and non-transferable.** Credits awarded through the Watch to Earn
+mechanism are personal to the user account. They may not be transferred to another
+account, combined with any payment or cashback mechanism, or redeemed for
+monetary value in any form.
+
+(d) **Modification or discontinuation.** Ascend reserves the right to modify, suspend,
+or permanently discontinue the Watch to Earn feature at any time and for any reason
+without prior notice or liability.
+
+<a id="6-prohibited-activities"></a>
 ## 6. PROHIBITED ACTIVITIES
 
 You may not access or use the Services for any purpose other than that for which we
@@ -308,7 +380,7 @@ regulations.
 * Engage in unauthorised framing of or linking to the Services.
 * Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses,
 or other material, including excessive use of capital letters and spamming
-(continuous posting of repetitive text), that interferes with any party’s
+(continuous posting of repetitive text), that interferes with any party's
 uninterrupted use and enjoyment of the Services or modifies, impairs, disrupts,
 alters, or interferes with the use, features, functions, operation, or maintenance
 of the Services.
@@ -347,7 +419,19 @@ under false pretences.
 * Use the Services as part of any effort to compete with us or otherwise use the
 Services and/or the Content for any revenue-generating endeavour or
 commercial enterprise.
+* Attempt to manipulate, jailbreak, or circumvent the AI generation system or its
+content policy filters, including through prompt injection, repetitive vague or
+abusive queries, or any technique designed to produce outputs that violate
+these Legal Terms.
+* Use AI-generated plan content for commercial redistribution, resale, or
+publication without our express prior written consent.
+* Attempt to reverse-engineer or scrape the AI plan generation system, its
+prompt architecture, or its outputs at scale.
+* Attempt to spoof, intercept, or fabricate interactive notification completion
+payloads to falsely record task completions without actually completing the
+underlying task.
 
+<a id="7-user-generated-contributions"></a>
 ## 7. USER GENERATED CONTRIBUTIONS
 
 The Services may invite you to chat, contribute to, or participate in blogs, message
@@ -401,6 +485,16 @@ Any use of the Services in violation of the foregoing violates these Legal Terms
 may result in, among other things, termination or suspension of your rights to use the
 Services.
 
+**AI-generated content is not a user Contribution.** AI-generated plan content
+produced by the Gemini large language model at a user's request is not a
+'Contribution' made by that user within the meaning of these Legal Terms. The user
+does not author, own, or retain any intellectual property rights in AI-generated plans.
+Plans generated by the AI Life Coach and saved to a user's account are licensed to
+that user for personal, non-commercial use within the Services only. AI-generated
+plans may not be exported, republished, or redistributed in any form without our
+express prior written consent.
+
+<a id="8-contribution-licence"></a>
 ## 8. CONTRIBUTION LICENCE
 
 By posting your Contributions to any part of the Services or making Contributions
@@ -437,6 +531,16 @@ more appropriate locations on the Services; and (3) to pre-screen or delete any
 Contributions at any time and for any reason, without notice. We have no obligation
 to monitor your Contributions.
 
+**Carve-out for AI Coach intake answers.** Notwithstanding the broad licence
+granted in this section, the licence does not apply to raw AI Life Coach intake answers
+— specifically the goal description, time availability, constraints, and barriers —
+submitted by a user through the AI Life Coach intake flow. These inputs are processed
+solely for the purpose of generating the requested habit plan template and are not
+exploited commercially by Ascend beyond that generation request. This carve-out
+does not affect the licence granted in respect of any other Contribution made by the
+user.
+
+<a id="9-guidelines-for-reviews"></a>
 ## 9. GUIDELINES FOR REVIEWS
 
 We may provide you areas on the Services to leave reviews or ratings. When posting
@@ -461,6 +565,7 @@ exclusive, worldwide, royalty-free, fully paid, assignable, and sublicensable ri
 licence to reproduce, modify, translate, transmit by any means, display, perform,
 and/or distribute all content relating to review.
 
+<a id="10-mobile-application-licence"></a>
 ## 10. MOBILE APPLICATION LICENCE
 
 ### Use Licence
@@ -485,35 +590,62 @@ or (9) use any proprietary information or any of our interfaces or our other int
 property in the design, development, manufacture, licensing, or distribution of any
 applications, accessories, or devices for use with the App.
 
-### Apple and Android Devices
-The following terms apply when you use the App obtained from either the Apple Store
-or Google Play (each an 'App Distributor') to access the Services: (1) the licence
-granted to you for our App is limited to a non-transferable licence to use the
-application on a device that utilises the Apple iOS or Android operating systems, as
-applicable, and in accordance with the usage rules set forth in the applicable App
-Distributor’s terms of service; (2) we are responsible for providing any maintenance
-and support services with respect to the App as specified in the terms and conditions
-of this mobile application licence contained in these Legal Terms or as otherwise
-required under applicable law, and you acknowledge that each App Distributor has no
-obligation whatsoever to furnish any maintenance and support services with respect
-to the App; (3) in the event of any failure of the App to conform to any applicable
-warranty, you may notify the applicable App Distributor, and the App Distributor, in
-accordance with its terms and policies, may refund the purchase price, if any, paid for
-the App, and to the maximum extent permitted by applicable law, the App Distributor
+The App is available on Android (via Google Play) and iOS (via the Apple App Store).
+The shared business logic of the App is built using Kotlin Multiplatform (KMP). The
+licence granted under this section applies equally to both the Android and iOS
+versions of the App.
+
+### Apple Devices
+The following additional terms apply when you use the App obtained from the Apple
+App Store to access the Services: (1) the licence granted to you for our App is limited
+to a non-transferable licence to use the application on any Apple-branded device that
+you own or control and as permitted by the Usage Rules set forth in the App Store
+Terms of Service; (2) we are responsible for providing any maintenance and support
+services with respect to the App as specified in the terms and conditions of this
+mobile application licence contained in these Legal Terms or as otherwise required
+under applicable law, and you acknowledge that Apple has no obligation whatsoever
+to furnish any maintenance and support services with respect to the App; (3) in the
+event of any failure of the App to conform to any applicable warranty, you may notify
+Apple, and Apple will refund the purchase price, if any, paid for the App to you and,
+to the maximum extent permitted by applicable law, Apple will have no other warranty
+obligation whatsoever with respect to the App; (4) you represent and warrant that
+(i) you are not located in a country that is subject to a US government embargo, or
+that has been designated by the US government as a 'terrorist supporting' country
+and (ii) you are not listed on any US government list of prohibited or restricted parties;
+(5) you must comply with applicable third-party terms of agreement when using the
+App; and (6) you acknowledge and agree that Apple and its subsidiaries are
+third-party beneficiaries of the terms and conditions in this mobile application licence
+contained in these Legal Terms, and that Apple will have the right (and will be deemed
+to have accepted the right) to enforce the terms and conditions in this mobile
+application licence contained in these Legal Terms against you as a third-party
+beneficiary thereof.
+
+### Android Devices
+The following additional terms apply when you use the App obtained from Google
+Play to access the Services: (1) the licence granted to you for our App is limited to a
+non-transferable licence to use the application on an Android-powered device and in
+accordance with the usage rules set forth in Google Play's terms of service; (2) we
+are responsible for providing any maintenance and support services with respect to
+the App as specified in the terms and conditions of this mobile application licence
+contained in these Legal Terms or as otherwise required under applicable law, and
+you acknowledge that Google has no obligation whatsoever to furnish any
+maintenance and support services with respect to the App; (3) in the event of any
+failure of the App to conform to any applicable warranty, you may notify Google, and
+Google, in accordance with its terms and policies, may refund the purchase price, if
+any, paid for the App, and to the maximum extent permitted by applicable law, Google
 will have no other warranty obligation whatsoever with respect to the App; (4) you
 represent and warrant that (i) you are not located in a country that is subject to a US
 government embargo, or that has been designated by the US government as a
 'terrorist supporting' country and (ii) you are not listed on any US government list of
 prohibited or restricted parties; (5) you must comply with applicable third-party terms
-of agreement when using the App, e.g. if you have a VoIP application, then you must
-not be in violation of their wireless data service agreement when using the App; and
-(6) you acknowledge and agree that the App Distributors are third-party beneficiaries
-of the terms and conditions in this mobile application licence contained in these Legal
-Terms, and that each App Distributor will have the right (and will be deemed to have
-accepted the right) to enforce the terms and conditions in this mobile application
-licence contained in these Legal Terms against you as a third-party beneficiary
-thereof.
+of agreement when using the App; and (6) you acknowledge and agree that Google
+and its subsidiaries are third-party beneficiaries of the terms and conditions in this
+mobile application licence contained in these Legal Terms, and that Google will have
+the right (and will be deemed to have accepted the right) to enforce the terms and
+conditions in this mobile application licence contained in these Legal Terms against
+you as a third-party beneficiary thereof.
 
+<a id="11-social-media"></a>
 ## 11. SOCIAL MEDIA
 
 As part of the functionality of the Services, you may link your account with online
@@ -557,6 +689,7 @@ attempt to delete any information stored on our servers that was obtained throug
 such Third-Party Account, except the username and profile picture that become
 associated with your account.
 
+<a id="12-third-party-websites-and-content"></a>
 ## 12. THIRD-PARTY WEBSITES AND CONTENT
 
 The Services may contain (or you may be sent via the App) links to other websites
@@ -586,6 +719,7 @@ hold us blameless from any losses sustained by you or harm caused to you relatin
 to or resulting in any way from any Third-Party Content or any contact with Third-
 Party Websites.
 
+<a id="13-advertisers"></a>
 ## 13. ADVERTISERS
 
 We allow advertisers to display their advertisements and other information in certain
@@ -593,6 +727,7 @@ areas of the Services, such as sidebar advertisements or banner advertisements. 
 simply provide the space to place such advertisements, and we have no other
 relationship with advertisers.
 
+<a id="14-services-management"></a>
 ## 14. SERVICES MANAGEMENT
 
 We reserve the right, but not the obligation, to: (1) monitor the Services for violations
@@ -607,6 +742,17 @@ any way burdensome to our systems; and (5) otherwise manage the Services in a
 manner designed to protect our rights and property and to facilitate the proper
 functioning of the Services.
 
+We further reserve the right to restrict or suspend access to the AI Life Coach feature
+for any user who: (a) repeatedly triggers content policy violations through abusive,
+manipulative, or otherwise prohibited goal inputs; (b) exhausts credits in patterns that
+suggest bad-faith or automated use inconsistent with personal, non-commercial use;
+or (c) attempts to circumvent the generation system's safety or content policy filters.
+Where a generation request is refused on content policy grounds, the credit consumed
+by that request is automatically refunded to the user's daily allowance. Any broader
+restriction or suspension of the AI Life Coach feature under this paragraph does not
+entitle the user to a refund of any other credits previously consumed.
+
+<a id="15-privacy-policy"></a>
 ## 15. PRIVACY POLICY
 
 We care about data privacy and security. Please review our Privacy
@@ -620,6 +766,7 @@ continued use of the Services, you are transferring your data to the United King
 and United States, and you expressly consent to have your data transferred to and
 processed in the United Kingdom and United States.
 
+<a id="16-copyright-infringements"></a>
 ## 16. COPYRIGHT INFRINGEMENTS
 
 We respect the intellectual property rights of others. If you believe that any material
@@ -633,6 +780,7 @@ misrepresentations in a Notification. Thus, if you are not sure that material lo
 or linked to by the Services infringes your copyright, you should consider first
 contacting an attorney.
 
+<a id="17-term-and-termination"></a>
 ## 17. TERM AND TERMINATION
 
 These Legal Terms shall remain in full force and effect while you use the Services.
@@ -654,6 +802,7 @@ In addition to terminating or suspending your account, we reserve the right to t
 appropriate legal action, including without limitation pursuing civil, criminal, and
 injunctive redress.
 
+<a id="18-modifications-and-interruptions"></a>
 ## 18. MODIFICATIONS AND INTERRUPTIONS
 
 We reserve the right to change, modify, or remove the contents of the Services at any
@@ -672,6 +821,7 @@ Services during any downtime or discontinuance of the Services. Nothing in these
 Legal Terms will be construed to obligate us to maintain and support the Services or
 to supply any corrections, updates, or releases in connection therewith.
 
+<a id="19-governing-law"></a>
 ## 19. GOVERNING LAW
 
 These Legal Terms are governed by and interpreted following the laws of England
@@ -684,6 +834,7 @@ England, which means that you may make a claim to defend your consumer
 protection rights in regards to these Legal Terms in England, or in the EU country in
 which you reside.
 
+<a id="20-dispute-resolution"></a>
 ## 20. DISPUTE RESOLUTION
 
 ### Informal Negotiations
@@ -725,6 +876,7 @@ unenforceable and such Dispute shall be decided by a court of competent jurisdic
 within the courts listed for jurisdiction above, and the Parties agree to submit to the
 personal jurisdiction of that court.
 
+<a id="21-corrections"></a>
 ## 21. CORRECTIONS
 
 There may be information on the Services that contains typographical errors,
@@ -733,6 +885,7 @@ other information. We reserve the right to correct any errors, inaccuracies, or
 omissions and to change or update the information on the Services at any time,
 without prior notice.
 
+<a id="22-disclaimer"></a>
 ## 22. DISCLAIMER
 
 THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU
@@ -768,6 +921,17 @@ WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM
 OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGEMENT AND
 EXERCISE CAUTION WHERE APPROPRIATE.
 
+Ascend expressly disclaims all liability for any decisions made, actions taken, or
+outcomes experienced by users in reliance on AI-generated habit plan content,
+including any health, fitness, financial, psychological, or lifestyle outcomes resulting
+from following or attempting to follow a plan generated by the AI Life Coach. AI-
+generated content is provided 'as is' without warranty of any kind, express or implied.
+Ascend does not warrant that AI-generated plans will be medically sound, nutritionally
+appropriate, psychologically safe, or otherwise suitable for any individual user's
+circumstances. Users assume sole responsibility for evaluating and acting upon any
+AI-generated content.
+
+<a id="23-limitations-of-liability"></a>
 ## 23. LIMITATIONS OF LIABILITY
 
 IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE
@@ -787,12 +951,21 @@ THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR
 LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL
 RIGHTS.
 
+The limitation of liability set out above applies with full force to losses arising from:
+AI generation failures or errors in the output of the AI Life Coach; outages or
+degraded service affecting the Gemini API or any other third-party AI service provider
+used by Ascend; temporary unavailability of the AI Life Coach feature due to
+system-wide daily quota exhaustion; or AI-generated plan content that proves to be
+inaccurate, unsuitable, incomplete, or harmful to any individual user. Ascend shall not
+be liable for any such losses to the maximum extent permitted by applicable law.
+
+<a id="24-indemnification"></a>
 ## 24. INDEMNIFICATION
 
 You agree to defend, indemnify, and hold us harmless, including our subsidiaries,
 affiliates, and all of our respective officers, agents, partners, and employees, from
 and against any loss, damage, liability, claim, or demand, including reasonable
-attorneys’ fees and expenses, made by any third party due to or arising out of: (1)
+attorneys' fees and expenses, made by any third party due to or arising out of: (1)
 your Contributions; (2) use of the Services; (3) breach of these Legal Terms; (4) any
 breach of your representations and warranties set forth in these Legal Terms; (5) your
 violation of the rights of a third party, including but not limited to intellectual property
@@ -804,6 +977,7 @@ expense, with our defence of such claims. We will use reasonable efforts to noti
 you of any such claim, action, or proceeding which is subject to this indemnification
 upon becoming aware of it.
 
+<a id="25-user-data"></a>
 ## 25. USER DATA
 
 We will maintain certain data that you transmit to the Services for the purpose of
@@ -814,6 +988,17 @@ undertaken using the Services. You agree that we shall have no liability to you 
 any loss or corruption of any such data, and you hereby waive any right of action
 against us arising from any such loss or corruption of such data.
 
+Ascend operates an offline-first data model for certain features of the Services. User
+task-completion data, check-in states, and calendar data may be cached locally on
+your device before being synchronised to our servers. This local caching enables the
+App to function without a continuous internet connection. However, Ascend is not
+liable for any loss of data resulting from device failure, accidental deletion of the App,
+loss or theft of your device, or any other cause that occurs during an offline period
+before synchronisation with our servers has been completed. You are advised to
+maintain regular internet connectivity to ensure timely synchronisation of your data
+with our servers.
+
+<a id="26-electronic-communications-transactions-and-signatures"></a>
 ## 26. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
 
 Visiting the Services, sending us emails, and completing online forms constitute
@@ -829,6 +1014,7 @@ regulations, rules, ordinances, or other laws in any jurisdiction which require 
 original signature or delivery or retention of non-electronic records, or to payments or
 the granting of credits by any means other than electronic means.
 
+<a id="27-california-users-and-residents"></a>
 ## 27. CALIFORNIA USERS AND RESIDENTS
 
 If any complaint with us is not satisfactorily resolved, you can contact the Complaint
@@ -836,6 +1022,7 @@ Assistance Unit of the Division of Consumer Services of the California Departmen
 Consumer Affairs in writing at 1625 North Market Blvd., Suite N 112, Sacramento,
 California 95834 or by telephone at (800) 952-5210 or (916) 445-1254.
 
+<a id="28-miscellaneous"></a>
 ## 28. MISCELLANEOUS
 
 These Legal Terms and any policies or operating rules posted by us on the Services
@@ -855,6 +1042,7 @@ will not be construed against us by virtue of having drafted them. You hereby wa
 any and all defences you may have based on the electronic form of these Legal
 Terms and the lack of signing by the parties hereto to execute these Legal Terms.
 
+<a id="29-contact-us"></a>
 ## 29. CONTACT US
 
 In order to resolve a complaint regarding the Services or to receive further
@@ -867,4 +1055,22 @@ England<br>
 
 help@apkallu.co.uk
 
-</div>
+
+  </div><!-- /.legal-content -->
+
+</div><!-- /.legal-layout -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.legal-toc a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var target = document.getElementById(this.getAttribute('href').slice(1));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.pushState(null, '', this.getAttribute('href'));
+      }
+    });
+  });
+});
+</script>
