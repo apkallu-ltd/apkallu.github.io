@@ -10,8 +10,8 @@ title: Home
     <canvas id="hero-particles"></canvas>
   </div>
   <div class="hero-text">
-    <h1 class="animated-heading">Pick a Challenge. Show Up Every Day. <span class="highlight">Earn It.</span></h1>
-    <p class="hero-subtitle">Structured programmes for wellness, productivity, mindfulness and learning — with daily tasks, community accountability, and badges that mark real progress.</p>
+    <h1 class="animated-heading">Most habit apps give you a list. <span class="highlight">Ascend gives you a coach.</span></h1>
+    <p class="hero-subtitle">A personalised plan built around your week. A community doing it alongside you. Badges you actually earn.</p>
     <div class="hero-features">
       <div class="hero-feature">
         <i class="fas fa-calendar-star feature-icon"></i>
@@ -21,9 +21,9 @@ title: Home
         <i class="fas fa-chart-line feature-icon"></i>
         <span>Track Progress</span>
       </div>
-      <div class="hero-feature ai-coming-soon">
+      <div class="hero-feature">
         <i class="fas fa-sparkles feature-icon"></i>
-        <span><a href="{{ '/ai-coach' | relative_url }}" style="color: inherit; text-decoration: none;">✦ AI Coach — Coming Soon</a></span>
+        <span><a href="{{ '/ai-coach' | relative_url }}" style="color: inherit; text-decoration: none;">✦ AI Coach</a></span>
       </div>
     </div>
     <div class="cta-container">
@@ -56,8 +56,8 @@ title: Home
         <div class="feature-icon-container">
           <i class="fas fa-robot"></i>
         </div>
-        <h3>✦ AI Coach <span style="font-size:0.7em; font-weight:500; color:#48BBFA;">— Coming Soon</span></h3>
-        <p>Tell your AI coach your goal and constraints. Get a personalised plan built around your life in seconds — no browsing required.</p>
+        <h3>✦ AI Coach</h3>
+        <p>Describe your goal, your schedule, and your week. Get a personalised habit plan built around your life — no browsing, no guesswork.</p>
       </div>
       <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
         <div class="feature-icon-container">
