@@ -57,7 +57,7 @@ title: Home
           <i class="fas fa-robot"></i>
         </div>
         <h3>✦ AI Coach</h3>
-        <p>Describe your goal, your schedule, and your week. Get a personalised habit plan built around your life — no browsing, no guesswork.</p>
+        <p>Describe your goal, your schedule, and your week. Your AI coach builds a personalised plan that fits your life — ready in 30 seconds.</p>
       </div>
       <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
         <div class="feature-icon-container">
@@ -78,8 +78,35 @@ title: Home
           <i class="fas fa-brain"></i>
         </div>
         <h3>Personalized Growth</h3>
-        <p>Get customized recommendations based on your goals and preferences</p>
+        <p>Track every milestone on your profile, see how far you've come, and let your progress tell the story of your growth.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI Coach Feature Section -->
+<section class="feature-section">
+  <div class="feature-text">
+    <h2>Your habit plan, built around your life.</h2>
+    <p>Have a natural conversation with your AI Life Coach. Share your schedule, constraints, and aspirations — get a structured, personalized habit plan built in 30 seconds, complete with daily tasks and milestone rewards.</p>
+    <div class="feature-bullets">
+      <div class="bullet-point">
+        <i class="fas fa-check-circle"></i>
+        <span>A custom plan built around your actual schedule, not a generic template</span>
+      </div>
+      <div class="bullet-point">
+        <i class="fas fa-check-circle"></i>
+        <span>Adapts seamlessly without shame when your week gets crazy</span>
+      </div>
+      <div class="bullet-point">
+        <i class="fas fa-check-circle"></i>
+        <span><a href="{{ '/ai-coach' | relative_url }}" style="color: #004586; font-weight: 700; text-decoration: underline;">Explore how the AI Coach works &rarr;</a></span>
+      </div>
+    </div>
+  </div>
+  <div class="feature-image">
+    <div class="device-mockup">
+      <img src="{{ 'assets/screenshots/gallery_1.png' | relative_url }}" alt="AI Life Coach Conversation Screenshot" class="feature-screenshot ai-glow">
     </div>
   </div>
 </section>
@@ -88,7 +115,7 @@ title: Home
 <section class="feature-section">
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_4.png' | relative_url }}" alt="Badge Earned Screenshot" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/gallery_2.png' | relative_url }}" alt="Badge Earned Screenshot" class="feature-screenshot">
     </div>
   </div>
   <div class="feature-text">
@@ -111,40 +138,8 @@ title: Home
   </div>
 </section>
 
-<!-- Community Challenges Section -->
-<section class="feature-section">
-  <div class="feature-text">
-    <h2>Join a challenge. Follow the plan. Don't go it alone.</h2>
-    <p>Take part in exciting challenges designed by the community. Share experiences, engage in meaningful conversations, and see how others leverage these challenges to achieve real progress in their lives.</p>
-    <div class="feature-bullets">
-      <div class="bullet-point">
-        <i class="fas fa-check-circle"></i>
-        <span>Find challenges that match your interests</span>
-      </div>
-      <div class="bullet-point">
-        <i class="fas fa-check-circle"></i>
-        <span>Connect with people sharing similar goals</span>
-      </div>
-      <div class="bullet-point">
-        <i class="fas fa-check-circle"></i>
-        <span>Create your own challenges to inspire others</span>
-      </div>
-    </div>
-  </div>
-  <div class="feature-image">
-    <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_1.png' | relative_url }}" alt="Community Challenges Screenshot" class="feature-screenshot">
-    </div>
-  </div>
-</section>
-
 <!-- Daily Calendar Section -->
 <section class="feature-section">
-  <div class="feature-image">
-    <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_2.png' | relative_url }}" alt="Calendar Screenshot" class="feature-screenshot">
-    </div>
-  </div>
   <div class="feature-text">
     <h2>Every day has a plan. Check it off and keep your streak alive.</h2>
     <p>Our built-in calendar makes it easy to plan your day, track your goals, and maintain daily habits. Get a clear overview of all your upcoming challenges and keep yourself accountable every step of the way.</p>
@@ -160,6 +155,38 @@ title: Home
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
         <span>Track your streak of completed challenges</span>
+      </div>
+    </div>
+  </div>
+  <div class="feature-image">
+    <div class="device-mockup">
+      <img src="{{ 'assets/screenshots/gallery_3.png' | relative_url }}" alt="Calendar Screenshot" class="feature-screenshot">
+    </div>
+  </div>
+</section>
+
+<!-- Community Challenges Section -->
+<section class="feature-section">
+  <div class="feature-image">
+    <div class="device-mockup">
+      <img src="{{ 'assets/screenshots/gallery_4.png' | relative_url }}" alt="Community Challenges Screenshot" class="feature-screenshot">
+    </div>
+  </div>
+  <div class="feature-text">
+    <h2>Join a challenge. Follow the plan. Don't go it alone.</h2>
+    <p>Take part in exciting challenges designed by the community. Share experiences, engage in meaningful conversations, and see how others leverage these challenges to achieve real progress in their lives.</p>
+    <div class="feature-bullets">
+      <div class="bullet-point">
+        <i class="fas fa-check-circle"></i>
+        <span>Find challenges that match your interests</span>
+      </div>
+      <div class="bullet-point">
+        <i class="fas fa-check-circle"></i>
+        <span>Connect with people sharing similar goals</span>
+      </div>
+      <div class="bullet-point">
+        <i class="fas fa-check-circle"></i>
+        <span>Create your own challenges to inspire others</span>
       </div>
     </div>
   </div>
@@ -187,7 +214,7 @@ title: Home
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_3.png' | relative_url }}" alt="Profile Screenshot" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/gallery_5.png' | relative_url }}" alt="Profile Screenshot" class="feature-screenshot">
     </div>
   </div>
 </section>
@@ -199,37 +226,37 @@ title: Home
     <div class="testimonials-slider">
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Ascend has completely changed how I approach my goals. The community support makes all the difference!"</p>
+          <p>"I told the AI Coach my crazy work schedule and that I only had 20 mins a morning. It built a habit routine I actually stuck to for 30 days straight!"</p>
         </div>
         <div class="testimonial-author">
           <img src="{{ 'assets/testimonials/user1.png' | relative_url }}" alt="User" class="author-image">
           <div class="author-info">
             <h4>Sarah J.</h4>
-            <span>Fitness Enthusiast</span>
+            <span>Product Designer</span>
           </div>
         </div>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"I've tried many self-improvement apps, but the social aspect of Ascend keeps me motivated like nothing else."</p>
+          <p>"Joining the 21-Day Cold Shower & Mindfulness Challenge made all the difference. Running the same daily schedule alongside real people kept me accountable."</p>
         </div>
         <div class="testimonial-author">
           <img src="{{ 'assets/testimonials/user2.png' | relative_url }}" alt="User" class="author-image">
           <div class="author-info">
             <h4>Michael T.</h4>
-            <span>Productivity Coach</span>
+            <span>Software Engineer</span>
           </div>
         </div>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"The challenge system makes self-improvement feel like a game. I'm addicted to becoming better every day!"</p>
+          <p>"Checking off tasks on the daily calendar and watching my streak grow is addicting. Unlocking the 30-day completion badge felt genuinely earned!"</p>
         </div>
         <div class="testimonial-author">
           <img src="{{ 'assets/testimonials/user3.png' | relative_url }}" alt="User" class="author-image">
           <div class="author-info">
             <h4>Priya K.</h4>
-            <span>Student</span>
+            <span>Entrepreneur</span>
           </div>
         </div>
       </div>
@@ -241,8 +268,8 @@ title: Home
 <section class="final-cta">
   <div class="container">
     <div class="cta-content">
-      <h2>Ready to Start Your Transformation?</h2>
-      <p>Join our growing community of self-improvers and start your journey today.</p>
+      <h2>Your Next 30 Days Start Now.</h2>
+      <p>Join thousands of people building better habits — with a coach that actually fits their life.</p>
       <a href="{{ site.app.download_link }}" class="btn-register large">
         <i class="fas fa-download"></i> Download Ascend Now
       </a>
