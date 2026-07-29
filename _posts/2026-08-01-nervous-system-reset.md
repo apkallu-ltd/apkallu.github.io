@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Your Nervous System Is Not Broken, It Is Just Stuck On High Alert"
-date: 2026-08-06
+date: 2026-08-01
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"
 featured_image: "https://images.unsplash.com/photo-1763102915515-4b85829db319?fm=jpg&q=80&w=1600&auto=format&fit=crop"

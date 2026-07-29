@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing the Ascend AI Coach: Your Personal Habit Plan, Built in 30 Seconds"
-date: 2026-08-01
+date: 2026-08-06
 author: "Ascend Team"
 author_image: "/assets/icons/ascend-logo.png"
 featured_image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?fm=jpg&q=80&w=1600&auto=format&fit=crop"
