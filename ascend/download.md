@@ -2,6 +2,7 @@
 layout: default
 title: Download Ascend
 permalink: ascend/download
+last_modified_at: 2026-07-30
 ---
 
 <header class="modern-header">

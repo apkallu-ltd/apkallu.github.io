@@ -2,6 +2,7 @@
 layout: default
 image: assets/screenshots/main.png
 title: Home
+last_modified_at: 2026-07-30
 ---
 
 <!-- Hero Section -->

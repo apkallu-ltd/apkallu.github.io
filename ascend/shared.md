@@ -3,6 +3,7 @@ layout: default
 title: Shared Content - Ascend
 permalink: ascend/shared
 page: shared
+sitemap: false
 ---
 
 <header class="modern-header">

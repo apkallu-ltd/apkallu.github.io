@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-07-01
 layout: challenge
 css_name: challenge
 challenge_id: 5

@@ -3,6 +3,7 @@ layout: default
 title: "Ascend AI Coach — Your Personalised Habit Plan, Built by AI"
 description: "Most habit apps give you a to-do list. Ascend gives you a coach. Share your goal, your schedule, and your constraints — get a personalised plan in 30 seconds. Free on iOS & Android."
 permalink: /ai-coach
+last_modified_at: 2026-07-30
 ---
 
 <div class="ai-coach-page">
