@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: nervous-system-reset
 layout: post
 title: "Your Nervous System Is Not Broken, It Is Just Stuck On High Alert"
 date: 2026-08-01

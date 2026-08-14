@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: journaling
 layout: post
 title: "Transform Your Life One Page at a Time: The 30-Day Journaling Challenge"
 seo_title: "30-Day Journaling Challenge: Build the Habit | Ascend"

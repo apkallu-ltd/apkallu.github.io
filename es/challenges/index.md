@@ -1,13 +1,15 @@
 ---
 layout: default
-lang: en
+lang: es
 ref: challenges
+permalink: /es/challenges
+last_modified_at: 2026-08-14
 ---
 
 <header class="modern-header">
   <div class="container">
-    <h1>Community Challenge Calendar</h1>
-    <p>Join a structured, time-bound challenge. Pick a goal, show up every day, and earn your badge with the community.</p>
+    <h1>Calendario de Retos Comunitarios</h1>
+    <p>Únete a un reto estructurado y con fecha límite. Elige un objetivo, participa cada día y gana tu insignia junto a la comunidad.</p>
   </div>
 </header>
 
@@ -36,7 +38,7 @@ ref: challenges
 
   <!-- Active / Ongoing Challenges -->
   {% if ongoing_count > 0 %}
-    <h2 style="margin: 60px 0 30px; font-weight: 900; font-size: 2rem; color: #001A33; border-bottom: 4px solid #48BBFA; display: inline-block; padding-bottom: 10px;">Active Challenges</h2>
+    <h2 style="margin: 60px 0 30px; font-weight: 900; font-size: 2rem; color: #001A33; border-bottom: 4px solid #48BBFA; display: inline-block; padding-bottom: 10px;">Retos Activos</h2>
     <div class="modern-grid">
       {% for challenge in sorted_challenges %}
         {% assign challenge_start = challenge.start_date | date: "%s" | plus: 0 %}
@@ -45,7 +47,7 @@ ref: challenges
           <div class="modern-card">
             <div class="card-image" style="background-image: url('{{ challenge.image }}')">
               <div class="card-overlay"></div>
-              <div style="position: absolute; top: 15px; right: 15px; background: #FF9800; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">ONGOING</div>
+              <div style="position: absolute; top: 15px; right: 15px; background: #FF9800; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">EN CURSO</div>
             </div>
             <div class="card-content">
               <div class="card-tags">
@@ -54,8 +56,8 @@ ref: challenges
               <h3 class="card-title">{{ challenge.title }}</h3>
               <p class="card-description">{{ challenge.description | truncate: 140 }}</p>
               <div class="card-footer">
-                <span class="card-date">Started {{ challenge.start_date | date: "%b %d, %Y" }}</span>
-                <a href="{{ challenge.url | relative_url }}" class="card-link">View Details →</a>
+                <span class="card-date">Comenzó el {{ challenge.start_date | date: "%b %d, %Y" }}</span>
+                <a href="{{ challenge.url | relative_url }}" class="card-link">Ver Detalles →</a>
               </div>
             </div>
           </div>
@@ -66,7 +68,7 @@ ref: challenges
 
   <!-- Upcoming Challenges -->
   {% if upcoming_count > 0 %}
-    <h2 style="margin: 60px 0 30px; font-weight: 900; font-size: 2rem; color: #001A33; border-bottom: 4px solid #48BBFA; display: inline-block; padding-bottom: 10px;">Upcoming Challenges</h2>
+    <h2 style="margin: 60px 0 30px; font-weight: 900; font-size: 2rem; color: #001A33; border-bottom: 4px solid #48BBFA; display: inline-block; padding-bottom: 10px;">Próximos Retos</h2>
     <div class="modern-grid">
       {% for challenge in sorted_challenges %}
         {% assign challenge_start = challenge.start_date | date: "%s" | plus: 0 %}
@@ -82,8 +84,8 @@ ref: challenges
               <h3 class="card-title">{{ challenge.title }}</h3>
               <p class="card-description">{{ challenge.description | truncate: 140 }}</p>
               <div class="card-footer">
-                <span class="card-date">Starts {{ challenge.start_date | date: "%b %d, %Y" }}</span>
-                <a href="{{ challenge.url | relative_url }}" class="card-link">View Details →</a>
+                <span class="card-date">Comienza el {{ challenge.start_date | date: "%b %d, %Y" }}</span>
+                <a href="{{ challenge.url | relative_url }}" class="card-link">Ver Detalles →</a>
               </div>
             </div>
           </div>
@@ -94,7 +96,7 @@ ref: challenges
 
   <!-- Past Challenges -->
   {% if past_count > 0 %}
-    <h2 style="margin: 60px 0 30px; font-weight: 900; font-size: 2rem; color: #7f8c8d; border-bottom: 4px solid #bdc3c7; display: inline-block; padding-bottom: 10px;">Past Challenges</h2>
+    <h2 style="margin: 60px 0 30px; font-weight: 900; font-size: 2rem; color: #7f8c8d; border-bottom: 4px solid #bdc3c7; display: inline-block; padding-bottom: 10px;">Retos Anteriores</h2>
     <div class="modern-grid" style="opacity: 0.8;">
       {% for challenge in sorted_challenges %}
         {% assign challenge_end = challenge.end_date | date: "%s" | plus: 0 %}
@@ -105,13 +107,13 @@ ref: challenges
             </div>
             <div class="card-content">
               <div class="card-tags">
-                <span class="card-tag" style="background: #e0e0e0; color: #666;">COMPLETED</span>
+                <span class="card-tag" style="background: #e0e0e0; color: #666;">COMPLETADO</span>
               </div>
               <h3 class="card-title" style="color: #555;">{{ challenge.title }}</h3>
               <p class="card-description" style="color: #777;">{{ challenge.description | truncate: 140 }}</p>
               <div class="card-footer">
-                <span class="card-date" style="color: #888;">Ended {{ challenge.end_date | date: "%b %d, %Y" }}</span>
-                <a href="{{ challenge.url | relative_url }}" class="card-link">View Details →</a>
+                <span class="card-date" style="color: #888;">Terminó el {{ challenge.end_date | date: "%b %d, %Y" }}</span>
+                <a href="{{ challenge.url | relative_url }}" class="card-link">Ver Detalles →</a>
               </div>
             </div>
           </div>
@@ -124,8 +126,8 @@ ref: challenges
   {% if ongoing_count == 0 and upcoming_count == 0 %}
     <div style="text-align: center; padding: 80px 20px; background: #fff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-top: 60px;">
       <i class="fas fa-calendar-times" style="font-size: 4rem; color: #cbd5e1; margin-bottom: 20px;"></i>
-      <h3 style="font-weight: 800; font-size: 1.5rem; margin-bottom: 10px;">No Active or Upcoming Challenges</h3>
-      <p style="color: #64748b;">We are currently preparing new community challenges. Check back soon or download the app to create your own!</p>
+      <h3 style="font-weight: 800; font-size: 1.5rem; margin-bottom: 10px;">No Hay Retos Activos o Próximos</h3>
+      <p style="color: #64748b;">Actualmente estamos preparando nuevos retos comunitarios. ¡Vuelve pronto o descarga la app para crear el tuyo!</p>
     </div>
   {% endif %}
 

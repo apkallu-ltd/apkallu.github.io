@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: hello-world
 layout: post
 title: "Welcome to the Ascend Blog"
 seo_title: "Welcome to the Ascend Blog | Personal Growth & Community"

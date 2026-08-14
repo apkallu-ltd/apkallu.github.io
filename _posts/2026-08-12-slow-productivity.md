@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: slow-productivity
 layout: post
 title: "Do Less On Purpose: The Blueprint for Getting More Done by Trying Less"
 date: 2026-08-12

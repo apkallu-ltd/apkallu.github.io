@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: gratitude-practice
 layout: post
 title: "Cultivate Daily Joy with Our 30-Day Gratitude Practice Journey"
 seo_title: "30-Day Gratitude Practice Journey: Be Happier | Ascend"

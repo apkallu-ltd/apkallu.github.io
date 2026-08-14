@@ -1,9 +1,11 @@
 ---
 layout: default
-lang: en
+lang: es
 ref: home
 image: assets/screenshots/main.png
-title: Home
+title: "Ascend — Coach de Hábitos con IA | iOS y Android"
+description: "Ascend es tu coach personal de hábitos. Obtén un plan estructurado alrededor de tu semana, únete a retos comunitarios con responsabilidad real y gana insignias al alcanzar cada meta. Gratis en iOS y Android."
+permalink: /es/
 last_modified_at: 2026-07-30
 ---
 
@@ -13,25 +15,25 @@ last_modified_at: 2026-07-30
     <canvas id="hero-particles"></canvas>
   </div>
   <div class="hero-text">
-    <h1 class="animated-heading">Most habit apps give you a list. <span class="highlight">Ascend gives you a coach.</span></h1>
-    <p class="hero-subtitle">A personalised plan built around your week. A community doing it alongside you. Badges you actually earn.</p>
+    <h1 class="animated-heading">La mayoría de las apps te dan una lista. <span class="highlight">Ascend te da un coach.</span></h1>
+    <p class="hero-subtitle">Un plan personalizado alrededor de tu semana. Una comunidad haciéndolo contigo. Insignias que realmente te ganas.</p>
     <div class="hero-features">
       <div class="hero-feature">
         <i class="fas fa-calendar-star feature-icon"></i>
-        <span><a href="{{ '/challenges' | relative_url }}" style="color: inherit; text-decoration: none;">Join Challenges</a></span>
+        <span><a href="{{ /es/challenges' | relative_url }}" style="color: inherit; text-decoration: none;">Unirse a Retos</a></span>
       </div>
       <div class="hero-feature">
         <i class="fas fa-chart-line feature-icon"></i>
-        <span>Track Progress</span>
+        <span>Seguir Progreso</span>
       </div>
       <div class="hero-feature">
         <i class="fas fa-sparkles feature-icon"></i>
-        <span><a href="{{ '/ai-coach' | relative_url }}" style="color: inherit; text-decoration: none;">✦ AI Coach</a></span>
+        <span><a href="{{ '/es/ai-coach' | relative_url }}" style="color: inherit; text-decoration: none;">✦ Coach IA</a></span>
       </div>
     </div>
     <div class="cta-container">
       <a href="{{ site.app.download_link }}" class="btn-register pulse-animation">
-        <i class="fas fa-download"></i> Download Now
+        <i class="fas fa-download"></i> Descargar Ahora
       </a>
     </div>
     <div class="app-links">
@@ -45,7 +47,7 @@ last_modified_at: 2026-07-30
   </div>
   <div class="hero-image">
     <div class="phone-frame">
-      <img src="{{ 'assets/screenshots/main.png' | relative_url }}" alt="Ascend App Preview" class="app-screenshot ai-glow">
+      <img src="{{ 'assets/screenshots/main.png' | relative_url }}" alt="Vista previa de Ascend" class="app-screenshot ai-glow">
     </div>
   </div>
 </section>
@@ -53,35 +55,35 @@ last_modified_at: 2026-07-30
 <!-- Features Section -->
 <section class="features-overview">
   <div class="container">
-    <h2 class="section-title">Why Choose <span class="highlight">Ascend</span>?</h2>
+    <h2 class="section-title">¿Por qué elegir <span class="highlight">Ascend</span>?</h2>
     <div class="features-grid">
       <div class="feature-card" data-aos="fade-up">
         <div class="feature-icon-container">
           <i class="fas fa-robot"></i>
         </div>
-        <h3>✦ AI Coach</h3>
-        <p>Describe your goal, your schedule, and your week. Your AI coach builds a personalised plan that fits your life — ready in 30 seconds.</p>
+        <h3>✦ Coach IA</h3>
+        <p>Describe tu objetivo, tu horario y tu semana. Tu coach de IA construye un plan personalizado que se adapta a tu vida — listo en 30 segundos.</p>
       </div>
       <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
         <div class="feature-icon-container">
           <i class="fas fa-calendar-check"></i>
         </div>
-        <h3>Daily Tracking</h3>
-        <p>Stay accountable with our built-in calendar and progress tracking tools</p>
+        <h3>Seguimiento Diario</h3>
+        <p>Mantén la responsabilidad con nuestro calendario integrado y herramientas de seguimiento de progreso.</p>
       </div>
       <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
         <div class="feature-icon-container">
           <i class="fas fa-medal"></i>
         </div>
-        <h3>Achievement System</h3>
-        <p>Earn rewards and recognition as you reach milestones on your journey</p>
+        <h3>Sistema de Logros</h3>
+        <p>Gana recompensas y reconocimiento al alcanzar hitos en tu camino hacia el éxito.</p>
       </div>
       <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
         <div class="feature-icon-container">
           <i class="fas fa-brain"></i>
         </div>
-        <h3>Personalized Growth</h3>
-        <p>Track every milestone on your profile, see how far you've come, and let your progress tell the story of your growth.</p>
+        <h3>Crecimiento Personalizado</h3>
+        <p>Registra cada hito en tu perfil, ve hasta dónde has llegado y deja que tu progreso cuente la historia de tu crecimiento.</p>
       </div>
     </div>
   </div>
@@ -90,26 +92,26 @@ last_modified_at: 2026-07-30
 <!-- AI Coach Feature Section -->
 <section class="feature-section">
   <div class="feature-text">
-    <h2>Your habit plan, built around your life.</h2>
-    <p>Have a natural conversation with your AI Life Coach. Share your schedule, constraints, and aspirations — get a structured, personalized habit plan built in 30 seconds, complete with daily tasks and milestone rewards.</p>
+    <h2>Tu plan de hábitos, construido alrededor de tu vida.</h2>
+    <p>Mantén una conversación natural con tu Coach de Vida IA. Comparte tu horario, limitaciones y aspiraciones — obtén un plan de hábitos estructurado y personalizado en 30 segundos, con tareas diarias y recompensas por hitos.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>A custom plan built around your actual schedule, not a generic template</span>
+        <span>Un plan personalizado basado en tu horario real, no una plantilla genérica</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Adapts seamlessly without shame when your week gets crazy</span>
+        <span>Se adapta sin culpa cuando tu semana se complica</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span><a href="{{ '/ai-coach' | relative_url }}" style="color: #004586; font-weight: 700; text-decoration: underline;">Explore how the AI Coach works &rarr;</a></span>
+        <span><a href="{{ '/es/ai-coach' | relative_url }}" style="color: #004586; font-weight: 700; text-decoration: underline;">Descubre cómo funciona el Coach IA &rarr;</a></span>
       </div>
     </div>
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_1.png' | relative_url }}" alt="AI Life Coach Conversation Screenshot" class="feature-screenshot ai-glow">
+      <img src="{{ 'assets/screenshots/gallery_1.png' | relative_url }}" alt="Captura de pantalla del Coach de Vida IA" class="feature-screenshot ai-glow">
     </div>
   </div>
 </section>
@@ -118,24 +120,24 @@ last_modified_at: 2026-07-30
 <section class="feature-section">
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_2.png' | relative_url }}" alt="Badge Earned Screenshot" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/gallery_2.png' | relative_url }}" alt="Insignia ganada" class="feature-screenshot">
     </div>
   </div>
   <div class="feature-text">
-    <h2>Hit milestones. Earn badges. Show them off.</h2>
-    <p>Every milestone you reach unlocks a custom-designed, glowing achievement badge. Celebrate your hard work and consistency with interactive rewards, and share your progress directly with your community.</p>
+    <h2>Alcanza hitos. Gana insignias. Presúmelas.</h2>
+    <p>Cada hito que alcanzas desbloquea una insignia de logro personalizada y luminosa. Celebra tu esfuerzo y constancia con recompensas interactivas y comparte tu progreso directamente con tu comunidad.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Unlock beautiful, glowing achievement badges</span>
+        <span>Desbloquea hermosas insignias de logro luminosas</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Celebrate milestones on your growth journey</span>
+        <span>Celebra los hitos de tu camino de crecimiento</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Share your wins instantly with a custom layout</span>
+        <span>Comparte tus victorias al instante con un diseño personalizado</span>
       </div>
     </div>
   </div>
@@ -144,26 +146,26 @@ last_modified_at: 2026-07-30
 <!-- Daily Calendar Section -->
 <section class="feature-section">
   <div class="feature-text">
-    <h2>Every day has a plan. Check it off and keep your streak alive.</h2>
-    <p>Our built-in calendar makes it easy to plan your day, track your goals, and maintain daily habits. Get a clear overview of all your upcoming challenges and keep yourself accountable every step of the way.</p>
+    <h2>Cada día tiene un plan. Márcalo y mantén tu racha.</h2>
+    <p>Nuestro calendario integrado facilita planificar tu día, seguir tus objetivos y mantener hábitos diarios. Obtén una visión clara de todos tus próximos retos y mantente responsable en cada paso del camino.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Visualize your daily, weekly, and monthly goals</span>
+        <span>Visualiza tus objetivos diarios, semanales y mensuales</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Set reminders to stay consistent</span>
+        <span>Configura recordatorios para mantener la consistencia</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Track your streak of completed challenges</span>
+        <span>Sigue tu racha de retos completados</span>
       </div>
     </div>
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_3.png' | relative_url }}" alt="Calendar Screenshot" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/gallery_3.png' | relative_url }}" alt="Captura de pantalla del calendario" class="feature-screenshot">
     </div>
   </div>
 </section>
@@ -172,24 +174,24 @@ last_modified_at: 2026-07-30
 <section class="feature-section">
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_4.png' | relative_url }}" alt="Community Challenges Screenshot" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/gallery_4.png' | relative_url }}" alt="Captura de pantalla de retos comunitarios" class="feature-screenshot">
     </div>
   </div>
   <div class="feature-text">
-    <h2>Join a challenge. Follow the plan. Don't go it alone.</h2>
-    <p>Take part in exciting challenges designed by the community. Share experiences, engage in meaningful conversations, and see how others leverage these challenges to achieve real progress in their lives.</p>
+    <h2>Únete a un reto. Sigue el plan. No vayas solo.</h2>
+    <p>Participa en emocionantes retos diseñados por la comunidad. Comparte experiencias, participa en conversaciones significativas y descubre cómo otros aprovechan estos retos para lograr un progreso real en sus vidas.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Find challenges that match your interests</span>
+        <span>Encuentra retos que coincidan con tus intereses</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Connect with people sharing similar goals</span>
+        <span>Conéctate con personas que comparten objetivos similares</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Create your own challenges to inspire others</span>
+        <span>Crea tus propios retos para inspirar a otros</span>
       </div>
     </div>
   </div>
@@ -198,26 +200,26 @@ last_modified_at: 2026-07-30
 <!-- Profile & Achievements Section -->
 <section class="feature-section">
   <div class="feature-text">
-    <h2>A wall of proof that you showed up.</h2>
-    <p>Your personalized profile showcases active plans, past accomplishments, and major milestones. Keep a detailed record of everything you've achieved as you grow and continually improve yourself.</p>
+    <h2>Una pared de pruebas de que lo lograste.</h2>
+    <p>Tu perfil personalizado muestra planes activos, logros pasados e hitos importantes. Lleva un registro detallado de todo lo que has conseguido mientras creces y te superas continuamente.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Monitor your progress with detailed analytics</span>
+        <span>Monitorea tu progreso con análisis detallados</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Earn badges and rewards for completed challenges</span>
+        <span>Gana insignias y recompensas por retos completados</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Share your achievements with the community</span>
+        <span>Comparte tus logros con la comunidad</span>
       </div>
     </div>
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_5.png' | relative_url }}" alt="Profile Screenshot" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/gallery_5.png' | relative_url }}" alt="Captura de pantalla del perfil" class="feature-screenshot">
     </div>
   </div>
 </section>
@@ -225,41 +227,41 @@ last_modified_at: 2026-07-30
 <!-- Testimonials Section -->
 <section class="testimonials-section">
   <div class="container">
-    <h2 class="section-title">What Our Users Say</h2>
+    <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
     <div class="testimonials-slider">
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"I told the AI Coach my crazy work schedule and that I only had 20 mins a morning. It built a habit routine I actually stuck to for 30 days straight!"</p>
+          <p>"Le conté al Coach IA sobre mi horario de trabajo tan ocupado y que solo tenía 20 minutos por la mañana. ¡Creó una rutina de hábitos que mantuve durante 30 días seguidos!"</p>
         </div>
         <div class="testimonial-author">
-          <img src="{{ 'assets/testimonials/user1.png' | relative_url }}" alt="User" class="author-image">
+          <img src="{{ 'assets/testimonials/user1.png' | relative_url }}" alt="Usuario" class="author-image">
           <div class="author-info">
             <h4>Sarah J.</h4>
-            <span>Product Designer</span>
+            <span>Diseñadora de Producto</span>
           </div>
         </div>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Joining the 21-Day Cold Shower & Mindfulness Challenge made all the difference. Running the same daily schedule alongside real people kept me accountable."</p>
+          <p>"Unirme al Reto de 21 Días de Ducha Fría y Mindfulness marcó la diferencia. Seguir el mismo horario diario junto a personas reales me mantuvo responsable."</p>
         </div>
         <div class="testimonial-author">
-          <img src="{{ 'assets/testimonials/user2.png' | relative_url }}" alt="User" class="author-image">
+          <img src="{{ 'assets/testimonials/user2.png' | relative_url }}" alt="Usuario" class="author-image">
           <div class="author-info">
             <h4>Michael T.</h4>
-            <span>Software Engineer</span>
+            <span>Ingeniero de Software</span>
           </div>
         </div>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Checking off tasks on the daily calendar and watching my streak grow is addicting. Unlocking the 30-day completion badge felt genuinely earned!"</p>
+          <p>"Marcar tareas en el calendario diario y ver crecer mi racha es adictivo. ¡Desbloquear la insignia de 30 días se sintió genuinamente ganado!"</p>
         </div>
         <div class="testimonial-author">
-          <img src="{{ 'assets/testimonials/user3.png' | relative_url }}" alt="User" class="author-image">
+          <img src="{{ 'assets/testimonials/user3.png' | relative_url }}" alt="Usuario" class="author-image">
           <div class="author-info">
             <h4>Priya K.</h4>
-            <span>Entrepreneur</span>
+            <span>Emprendedora</span>
           </div>
         </div>
       </div>
@@ -271,10 +273,10 @@ last_modified_at: 2026-07-30
 <section class="final-cta">
   <div class="container">
     <div class="cta-content">
-      <h2>Your Next 30 Days Start Now.</h2>
-      <p>Join thousands of people building better habits — with a coach that actually fits their life.</p>
+      <h2>Tus próximos 30 días empiezan ahora.</h2>
+      <p>Únete a miles de personas construyendo mejores hábitos — con un coach que realmente se adapta a su vida.</p>
       <a href="{{ site.app.download_link }}" class="btn-register large">
-        <i class="fas fa-download"></i> Download Ascend Now
+        <i class="fas fa-download"></i> Descargar Ascend Ahora
       </a>
       <div class="app-links">
         <a href="{{ site.app.app_store }}" target="_blank" rel="noopener noreferrer" class="btn">
@@ -285,7 +287,7 @@ last_modified_at: 2026-07-30
         </a>
       </div>
       <div class="social-links">
-        <p>Follow our journey:</p>
+        <p>Síguenos:</p>
         <div class="social-icons">
           <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
           <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>

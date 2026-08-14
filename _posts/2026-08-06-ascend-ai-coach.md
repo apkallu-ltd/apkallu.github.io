@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: ascend-ai-coach
 layout: post
 title: "Introducing the Ascend AI Coach: Your Personal Habit Plan, Built in 30 Seconds"
 date: 2026-08-06

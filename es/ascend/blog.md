@@ -1,16 +1,16 @@
 ---
 layout: default
-lang: en
+lang: es
 ref: blog
-title: Blog
-permalink: ascend/blog
+title: Blog — Ascend
+permalink: /es/ascend/blog
 page: blog
 ---
 
 <header class="modern-header">
   <div class="container">
-    <h1>Ascend Blog</h1>
-    <p>Insights, tips, and stories about personal growth, productivity, and community challenges.</p>
+    <h1>Blog de Ascend</h1>
+    <p>Consejos, reflexiones e historias sobre crecimiento personal, productividad y retos comunitarios.</p>
   </div>
 </header>
 
@@ -23,7 +23,7 @@ page: blog
       {% assign ten_days_seconds = 864000 %}
 
       {% if diff_seconds < ten_days_seconds %}
-        <div class="new-badge">New</div>
+        <div class="new-badge">Nuevo</div>
       {% endif %}
 
       {% if post.featured_image %}
@@ -40,8 +40,8 @@ page: blog
         <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         <p class="card-description">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
         <div class="card-footer">
-          <span class="card-date">{{ post.date | date: "%b %d, %Y" }}</span>
-          <a href="{{ post.url | relative_url }}" class="card-link">Read More →</a>
+          <span class="card-date">{{ post.date | date: "%d %b, %Y" }}</span>
+          <a href="{{ post.url | relative_url }}" class="card-link">Leer más →</a>
         </div>
       </div>
     </div>

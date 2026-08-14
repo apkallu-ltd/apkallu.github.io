@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: posture-perfector
 layout: post
 title: "Stand Tall: Transform Your Posture in 21 Days with Our New Program"
 seo_title: "21-Day Posture Perfector: Stand Taller | Ascend"

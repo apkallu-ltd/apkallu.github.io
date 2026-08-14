@@ -1,0 +1,31 @@
+# English UI strings
+# These are the shared UI labels used in _layouts/default.html
+# To add a new language, create _data/i18n/<lang>.yml with the same keys
+
+nav:
+  home: "Home"
+  challenges: "Challenges"
+  ai_coach: "✦ AI Coach"
+  blog: "Blog"
+  about_us: "About Us"
+  download: "Download Now"
+
+footer:
+  company: "Company"
+  legal: "Legal"
+  connect: "Connect"
+  about_us: "About Us"
+  ai_coach: "✦ AI Coach"
+  blog: "Blog"
+  contact: "Contact"
+  privacy: "Privacy Policy"
+  terms: "Terms of Service"
+  tagline: "The habit app that knows you. Powered by AI."
+  copyright: "All rights reserved."
+
+banner:
+  next_challenge: "Next Challenge"
+  ongoing_challenge: "Ongoing Challenge"
+  starts_in: "Starts in:"
+  ends_in: "Ends in:"
+  view_challenge: "View Challenge"

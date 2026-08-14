@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: sleep-optimization
 layout: post
 title: "Transform Your Sleep with Our 21-Day Sleep Optimization Protocol"
 seo_title: "Transform Your Sleep: 21-Day Sleep Protocol | Ascend"

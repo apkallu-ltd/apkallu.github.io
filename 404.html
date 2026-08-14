@@ -1,6 +1,7 @@
 ---
 permalink: /404.html
 layout: default
+title: "Page Not Found"
 ---
 
 <div class="error-page">
@@ -9,15 +10,76 @@ layout: default
       <i class="fas fa-mountain"></i>
     </div>
     <h1 class="error-code">404</h1>
-    <h2 class="error-title">Page Not Found</h2>
-    <p class="error-message">Looks like you've wandered off the path. Let's get you back on track to your self-improvement journey.</p>
+    <h2 class="error-title" id="err-title">Page Not Found</h2>
+    <p class="error-message" id="err-message">Looks like you've wandered off the path. Let's get you back on track to your self-improvement journey.</p>
     <div class="error-actions">
-      <a href="{{ '/' | relative_url }}" class="btn-primary">
-        <i class="fas fa-home"></i> Return Home
+      <a href="/" class="btn-primary" id="err-home">
+        <i class="fas fa-home"></i> <span id="err-home-label">Return Home</span>
       </a>
       <a href="{{ '/ascend/download' | relative_url }}" class="btn-secondary">
-        <i class="fas fa-rocket"></i> Try Ascend
+        <i class="fas fa-rocket"></i> <span id="err-try-label">Try Ascend</span>
       </a>
     </div>
   </div>
 </div>
+
+<script>
+(function() {
+  var translations = {
+    en: {
+      title: "Page Not Found",
+      message: "Looks like you've wandered off the path. Let's get you back on track to your self-improvement journey.",
+      home: "/",
+      homeLabel: "Return Home",
+      tryLabel: "Try Ascend"
+    },
+    es: {
+      title: "Página No Encontrada",
+      message: "Parece que te has salido del camino. Volvamos a encaminarte en tu viaje de superación personal.",
+      home: "/es/",
+      homeLabel: "Volver al Inicio",
+      tryLabel: "Probar Ascend"
+    },
+    fr: {
+      title: "Page Introuvable",
+      message: "On dirait que vous vous êtes égaré. Revenons sur la bonne voie pour votre parcours d'amélioration personnelle.",
+      home: "/fr/",
+      homeLabel: "Retour à l'Accueil",
+      tryLabel: "Essayer Ascend"
+    },
+    pt: {
+      title: "Página Não Encontrada",
+      message: "Parece que você se perdeu no caminho. Vamos te colocar de volta na trilha da sua jornada de melhoria pessoal.",
+      home: "/pt/",
+      homeLabel: "Voltar ao Início",
+      tryLabel: "Experimentar Ascend"
+    },
+    de: {
+      title: "Seite Nicht Gefunden",
+      message: "Es sieht aus, als hättest du dich verlaufen. Lass uns dich wieder auf den richtigen Weg bringen.",
+      home: "/de/",
+      homeLabel: "Zurück zur Startseite",
+      tryLabel: "Ascend Ausprobieren"
+    }
+  };
+
+  // Detect language from the URL path e.g. /es/something-broken
+  var parts = window.location.pathname.split('/').filter(Boolean);
+  var lang = (parts.length > 0 && translations[parts[0]]) ? parts[0] : 'en';
+  var t = translations[lang];
+
+  // Update 404 content
+  document.getElementById('err-title').textContent = t.title;
+  document.getElementById('err-message').textContent = t.message;
+  document.getElementById('err-home').href = t.home;
+  document.getElementById('err-home-label').textContent = t.homeLabel;
+  document.getElementById('err-try-label').textContent = t.tryLabel;
+
+  // Translate the full nav + footer chrome via the shared applyI18n function
+  if (lang !== 'en') {
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof window.applyI18n === 'function') window.applyI18n(lang);
+    });
+  }
+})();
+</script>

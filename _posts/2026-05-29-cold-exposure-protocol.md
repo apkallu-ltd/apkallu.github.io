@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: cold-exposure-protocol
 layout: post
 title: "21-Day Cold Exposure Protocol: Your Beginner Guide to Cold Adaptation"
 date: 2026-05-29

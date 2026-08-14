@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: recovery-era
 layout: post
 title: "Working Harder Is Out, Recovering Smarter Is In"
 date: 2026-07-26

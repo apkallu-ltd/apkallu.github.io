@@ -1,9 +1,9 @@
 ---
 layout: default
-lang: en
+lang: es
 ref: download
-title: Download Ascend
-permalink: ascend/download
+title: Descargar Ascend
+permalink: /es/ascend/download
 last_modified_at: 2026-07-30
 ---
 
@@ -12,28 +12,28 @@ last_modified_at: 2026-07-30
     <div class="challenge-badge-preview">
       <i class="fas fa-mobile-alt"></i>
     </div>
-    <h1>Get Started with Ascend</h1>
-    <p>Your journey to personal transformation starts here. Available now on all major platforms.</p>
+    <h1>Empieza con Ascend</h1>
+    <p>Tu camino hacia la transformación personal comienza aquí. Disponible ahora en todas las plataformas principales.</p>
   </div>
 </header>
 
 <section class="modern-post" style="padding-top: 0;">
   <div class="container">
     <div class="modern-post-container" style="text-align: center;">
-      
+
       <div id="recommended-section" style="margin-bottom: 60px; display: none;">
         <p style="font-size: 1.3rem; margin-bottom: 30px; color: #2c3e50;">
-          We've detected you're using <span id="device-type" style="font-weight: 700;">a mobile device</span>.
+          Hemos detectado que usas <span id="device-type" style="font-weight: 700;">un dispositivo móvil</span>.
         </p>
         <a id="recommended-store" href="#" class="join-btn" style="padding: 22px 60px; font-size: 1.4rem;">
-          <i class="fas fa-download" style="margin-right: 12px;"></i> <span id="store-text">Download Now</span>
+          <i class="fas fa-download" style="margin-right: 12px;"></i> <span id="store-text">Descargar Ahora</span>
         </a>
       </div>
 
       <div class="cta-box" style="margin-top: 0; padding: 60px 40px; background-color: #fcfcfc;">
-        <h2 style="font-weight: 900; margin-bottom: 20px; color: #001A33;">Choose Your Platform</h2>
-        <p style="color: #666; margin-bottom: 40px; font-size: 1.1rem;">Scan the code or click the buttons below to download Ascend and join our growing community.</p>
-        
+        <h2 style="font-weight: 900; margin-bottom: 20px; color: #001A33;">Elige tu Plataforma</h2>
+        <p style="color: #666; margin-bottom: 40px; font-size: 1.1rem;">Escanea el código o haz clic en los botones de abajo para descargar Ascend y unirte a nuestra creciente comunidad.</p>
+
         <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
           <div style="flex: 1; min-width: 250px; background: #fff; padding: 30px; border-radius: 30px; border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
             <i class="fab fa-apple" style="font-size: 3rem; color: #001A33; margin-bottom: 20px;"></i>
@@ -42,7 +42,7 @@ last_modified_at: 2026-07-30
               <img src="{{ '/assets/icons/DownloadOnTheAppStore.png' | relative_url }}" alt="App Store" style="height: 54px;">
             </a>
           </div>
-          
+
           <div style="flex: 1; min-width: 250px; background: #fff; padding: 30px; border-radius: 30px; border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
             <i class="fab fa-android" style="font-size: 3rem; color: #A4C639; margin-bottom: 20px;"></i>
             <h3 style="font-weight: 800; margin-bottom: 15px;">Android</h3>
@@ -54,22 +54,22 @@ last_modified_at: 2026-07-30
       </div>
 
       <div style="margin-top: 80px;">
-        <h3 style="font-weight: 900; margin-bottom: 25px;">Why Ascend?</h3>
+        <h3 style="font-weight: 900; margin-bottom: 25px;">¿Por qué Ascend?</h3>
         <div class="modern-grid" style="padding-top: 0; margin-bottom: 0;">
           <div class="modern-card" style="padding: 30px; text-align: center;">
             <i class="fas fa-users-cog" style="font-size: 2rem; color: #48BBFA; margin-bottom: 15px;"></i>
             <h4 style="font-weight: 800;">Social</h4>
-            <p style="font-size: 0.95rem; margin-bottom: 0;">Challenges with friends</p>
+            <p style="font-size: 0.95rem; margin-bottom: 0;">Retos con amigos</p>
           </div>
           <div class="modern-card" style="padding: 30px; text-align: center;">
             <i class="fas fa-calendar-check" style="font-size: 2rem; color: #8BC34A; margin-bottom: 15px;"></i>
-            <h4 style="font-weight: 800;">Progress</h4>
-            <p style="font-size: 0.95rem; margin-bottom: 0;">Daily task tracking</p>
+            <h4 style="font-weight: 800;">Progreso</h4>
+            <p style="font-size: 0.95rem; margin-bottom: 0;">Seguimiento diario de tareas</p>
           </div>
           <div class="modern-card" style="padding: 30px; text-align: center;">
             <i class="fas fa-medal" style="font-size: 2rem; color: #FFE573; margin-bottom: 15px;"></i>
-            <h4 style="font-weight: 800;">Rewards</h4>
-            <p style="font-size: 0.95rem; margin-bottom: 0;">Earn digital badges</p>
+            <h4 style="font-weight: 800;">Recompensas</h4>
+            <p style="font-size: 0.95rem; margin-bottom: 0;">Gana insignias digitales</p>
           </div>
         </div>
       </div>
@@ -89,14 +89,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (isIOS) {
     recommendedSection.style.display = 'block';
-    deviceTypeEl.textContent = 'an iOS device';
+    deviceTypeEl.textContent = 'un dispositivo iOS';
     recommendedStore.href = "{{ site.app.app_store }}";
-    storeText.textContent = 'Download on the App Store';
+    storeText.textContent = 'Descargar en el App Store';
   } else if (isAndroid) {
     recommendedSection.style.display = 'block';
-    deviceTypeEl.textContent = 'an Android device';
+    deviceTypeEl.textContent = 'un dispositivo Android';
     recommendedStore.href = "{{ site.app.google_play }}";
-    storeText.textContent = 'Get it on Google Play';
+    storeText.textContent = 'Disponible en Google Play';
   }
 });
 </script>

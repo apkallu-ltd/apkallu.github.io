@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: workplace-wellness
 layout: post
 title: "Transform Your Workplace Wellness: 30-Day Desk Worker's Health Protocol"
 seo_title: "Desk Worker Wellness: 30-Day Health Protocol | Ascend"

@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: digital-detox
 layout: post
 title: "Reclaim Your Focus: The Digital Detox Routine"
 seo_title: "Digital Detox Routine: Reclaim Your Time | Ascend"

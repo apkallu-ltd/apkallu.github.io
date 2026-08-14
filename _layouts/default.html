@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+{% assign lang = page.lang | default: 'en' %}
+{% assign i18n = site.data.i18n[lang] %}
+{% if lang == 'en' %}{% assign lang_prefix = '' %}{% else %}{% assign lang_prefix = '/' | append: lang %}{% endif %}
+<html lang="{{ lang }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   {% seo %}
+
+  <!-- hreflang alternate links for multi-language SEO -->
+  {% if page.ref %}
+    {% assign translations = site.pages | where: 'ref', page.ref %}
+    {% assign post_translations = site.posts | where: 'ref', page.ref %}
+    {% assign all_translations = translations | concat: post_translations %}
+    {% for t in all_translations %}
+      <link rel="alternate" hreflang="{{ t.lang | default: 'en' }}" href="{{ t.url | absolute_url }}" />
+    {% endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/" />
+  {% endif %}
   <meta name="apple-itunes-app" content="app-id=6575385135">
 
   <!-- Core Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/ascend-design.css' | relative_url }}">
-  
+
   <link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -32,12 +46,34 @@
           </nav>
           <nav>
             <ul class="nav-menu">
-              <li><a href="{{ '/' | relative_url }}">Home</a></li>
-              <li><a href="{{ '/challenges' | relative_url }}">Challenges</a></li>
-              <li><a href="{{ '/ai-coach' | relative_url }}" class="nav-ai-link">✦ AI Coach</a></li>
-              <li><a href="{{ '/ascend/blog' | relative_url }}">Blog</a></li>
-              <li><a href="{{ '/about_us' | relative_url }}">About Us</a></li>
-              <li><a href="{{ site.app.download_link }}" class="nav-cta">Download Now</a></li>
+              <li><a href="{{ lang_prefix | append: '/' | relative_url }}" data-i18n="nav.home">{{ i18n.nav.home }}</a></li>
+              <li><a href="{{ lang_prefix | append: '/challenges' | relative_url }}" data-i18n="nav.challenges">{{ i18n.nav.challenges }}</a></li>
+              <li><a href="{{ lang_prefix | append: '/ai-coach' | relative_url }}" class="nav-ai-link" data-i18n="nav.ai_coach">{{ i18n.nav.ai_coach }}</a></li>
+              <li><a href="{{ lang_prefix | append: '/ascend/blog' | relative_url }}" data-i18n="nav.blog">{{ i18n.nav.blog }}</a></li>
+              <li><a href="{{ lang_prefix | append: '/about_us' | relative_url }}" data-i18n="nav.about_us">{{ i18n.nav.about_us }}</a></li>
+              <li><a href="{{ lang_prefix | append: site.app.download_link | relative_url }}" class="nav-cta" data-i18n="nav.download">{{ i18n.nav.download }}</a></li>
+              {% if page.ref %}
+                {% assign lang_versions = site.pages | where: 'ref', page.ref %}
+                {% assign lang_versions_posts = site.posts | where: 'ref', page.ref %}
+                {% assign all_lang_versions = lang_versions | concat: lang_versions_posts %}
+                {% if all_lang_versions.size > 1 %}
+                <li class="lang-switcher">
+                  <button class="lang-switcher-btn" aria-label="Change language">🌐 <span class="lang-code">{{ lang | upcase }}</span></button>
+                  <ul class="lang-dropdown">
+                    {% for t in all_lang_versions %}
+                      {% assign t_lang = t.lang | default: 'en' %}
+                      {% assign lang_labels = 'en:English,es:Español,fr:Français,pt:Português,de:Deutsch,ar:العربية,ja:日本語,zh:中文' | split: ',' %}
+                      {% assign label = t_lang %}
+                      {% for pair in lang_labels %}
+                        {% assign parts = pair | split: ':' %}
+                        {% if parts[0] == t_lang %}{% assign label = parts[1] %}{% endif %}
+                      {% endfor %}
+                      <li><a href="{{ t.url | absolute_url }}" {% if t_lang == lang %}class="lang-active"{% endif %}>{{ label }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                {% endif %}
+              {% endif %}
             </ul>
           </nav>
         </div>
@@ -65,16 +101,16 @@
       <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
         <div class="banner-content">
           <i class="fas fa-calendar-star" style="color: #004586;"></i>
-          <span class="banner-title"><span id="banner-label">Next Challenge</span>: <span id="banner-challenge-title"></span></span>
+          <span class="banner-title"><span id="banner-label">{{ i18n.banner.next_challenge }}</span>: <span id="banner-challenge-title"></span></span>
           <div class="banner-timer">
-            <span id="banner-timer-prefix" style="font-weight: bold; margin-right: 5px;">Starts in:</span>
+            <span id="banner-timer-prefix" style="font-weight: bold; margin-right: 5px;">{{ i18n.banner.starts_in }}</span>
             <span id="banner-days">00</span>d :
             <span id="banner-hours">00</span>h :
             <span id="banner-minutes">00</span>m :
             <span id="banner-seconds">00</span>s
           </div>
         </div>
-        <a href="#" id="banner-challenge-link" class="banner-cta">View Challenge</a>
+        <a href="#" id="banner-challenge-link" class="banner-cta">{{ i18n.banner.view_challenge }}</a>
       </div>
     </div>
 
@@ -85,14 +121,14 @@
       if (!challengeDataEl || !banner) return;
       var challenges = JSON.parse(challengeDataEl.textContent);
       var now = new Date().getTime();
-      
+
       // 1. Check for upcoming challenges (start_date > now)
       var targetChallenge = challenges
         .filter(function(c) { return new Date(c.start_date).getTime() > now; })
         .sort(function(a, b) { return new Date(a.start_date).getTime() - new Date(b.start_date).getTime(); })[0];
-      
+
       var isOngoing = false;
-      
+
       // 2. If no upcoming challenges, look for ongoing challenges (start_date <= now <= end_date)
       if (!targetChallenge) {
         targetChallenge = challenges
@@ -106,24 +142,24 @@
           isOngoing = true;
         }
       }
-      
+
       if (targetChallenge) {
         document.getElementById('banner-challenge-title').textContent = '✦ ' + targetChallenge.title;
         document.getElementById('banner-challenge-link').href = targetChallenge.url;
-        
+
         var bannerLabel = document.getElementById('banner-label');
         var timerPrefix = document.getElementById('banner-timer-prefix');
-        
+
         if (isOngoing) {
-          bannerLabel.textContent = 'Ongoing Challenge';
-          timerPrefix.textContent = 'Ends in:';
+          bannerLabel.textContent = '{{ i18n.banner.ongoing_challenge }}';
+          timerPrefix.textContent = '{{ i18n.banner.ends_in }}';
         } else {
-          bannerLabel.textContent = 'Next Challenge';
-          timerPrefix.textContent = 'Starts in:';
+          bannerLabel.textContent = '{{ i18n.banner.next_challenge }}';
+          timerPrefix.textContent = '{{ i18n.banner.starts_in }}';
         }
-        
+
         var targetTime = new Date(isOngoing ? targetChallenge.end_date : targetChallenge.start_date).getTime();
-        
+
         function updateBannerTimer() {
           var currentTime = new Date().getTime();
           var distance = targetTime - currentTime;
@@ -137,7 +173,7 @@
           document.getElementById('banner-minutes').textContent = minutes.toString().padStart(2, '0');
           document.getElementById('banner-seconds').textContent = seconds.toString().padStart(2, '0');
         }
-        
+
         updateBannerTimer();
         setInterval(updateBannerTimer, 1000);
         banner.style.display = 'flex';
@@ -162,23 +198,23 @@
         </div>
         <div class="footer-links">
           <div class="footer-column">
-            <h4>Company</h4>
+            <h4 data-i18n="footer.company">{{ i18n.footer.company }}</h4>
             <ul>
-              <li><a href="{{ '/about_us' | relative_url }}">About Us</a></li>
-              <li><a href="{{ '/ai-coach' | relative_url }}">✦ AI Coach</a></li>
-              <li><a href="{{ '/ascend/blog' | relative_url }}">Blog</a></li>
-              <li><a href="mailto:{{ site.email }}">Contact</a></li>
+              <li><a href="{{ '/about_us' | relative_url }}" data-i18n="footer.about_us">{{ i18n.footer.about_us }}</a></li>
+              <li><a href="{{ '/ai-coach' | relative_url }}" data-i18n="footer.ai_coach">{{ i18n.footer.ai_coach }}</a></li>
+              <li><a href="{{ '/ascend/blog' | relative_url }}" data-i18n="footer.blog">{{ i18n.footer.blog }}</a></li>
+              <li><a href="mailto:{{ site.email }}" data-i18n="footer.contact">{{ i18n.footer.contact }}</a></li>
             </ul>
           </div>
           <div class="footer-column">
-            <h4>Legal</h4>
+            <h4 data-i18n="footer.legal">{{ i18n.footer.legal }}</h4>
             <ul>
-              <li><a href="{{ '/ascend/privacy' | relative_url }}">Privacy Policy</a></li>
-              <li><a href="{{ '/ascend/terms' | relative_url }}">Terms of Service</a></li>
+              <li><a href="{{ '/ascend/privacy' | relative_url }}" data-i18n="footer.privacy">{{ i18n.footer.privacy }}</a></li>
+              <li><a href="{{ '/ascend/terms' | relative_url }}" data-i18n="footer.terms">{{ i18n.footer.terms }}</a></li>
             </ul>
           </div>
           <div class="footer-column">
-            <h4>Connect</h4>
+            <h4 data-i18n="footer.connect">{{ i18n.footer.connect }}</h4>
             <div class="footer-social">
               <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
               <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
@@ -189,14 +225,51 @@
         </div>
       </div>
       <div class="footer-tagline">
-        <p>✦ <strong>Ascend</strong> — The habit app that knows you. Powered by AI.</p>
+        <p>✦ <strong>Ascend</strong> — <span data-i18n="footer.tagline">{{ i18n.footer.tagline }}</span></p>
       </div>
       <div class="copyright">
-        <p>&copy; {{ site.time | date: '%Y' }} Apkallu Ltd. All rights reserved.</p>
+        <p>&copy; {{ site.time | date: '%Y' }} Apkallu Ltd. <span data-i18n="footer.copyright">{{ i18n.footer.copyright }}</span></p>
       </div>
     </div>
   </footer>
 
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+  <!-- i18n bundle: all language strings available to JS (used by 404 and future pages) -->
+  <script id="site-i18n" type="application/json">{{ site.data.i18n | jsonify }}</script>
+  <script>
+  window.applyI18n = function(lang) {
+    var dataEl = document.getElementById('site-i18n');
+    if (!dataEl) return;
+    var all = JSON.parse(dataEl.textContent);
+    var t = all[lang];
+    if (!t) return;
+
+    // Update text of all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var val = el.getAttribute('data-i18n').split('.').reduce(function(o, k) {
+        return o && o[k];
+      }, t);
+      if (val) el.textContent = val;
+    });
+
+    // Update nav link hrefs to the correct language prefix
+    if (lang !== 'en') {
+      var prefix = '/' + lang;
+      var remap = {
+        '/': prefix + '/',
+        '/challenges': prefix + '/challenges',
+        '/ai-coach': prefix + '/ai-coach',
+        '/about_us': prefix + '/about_us'
+      };
+      document.querySelectorAll('.nav-menu a[data-i18n], .footer-links a[data-i18n]').forEach(function(a) {
+        try {
+          var path = new URL(a.href).pathname.replace(/\/$/, '') || '/';
+          if (remap[path]) a.href = remap[path];
+        } catch(e) {}
+      });
+    }
+  };
+  </script>
 </body>
 </html>

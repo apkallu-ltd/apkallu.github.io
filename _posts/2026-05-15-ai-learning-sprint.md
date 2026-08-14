@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: ai-learning-sprint
 layout: post
 title: "AI-Powered Learning Sprint: Master Any Skill in 30 Days"
 date: 2026-05-15

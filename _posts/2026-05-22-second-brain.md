@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: second-brain
 layout: post
 title: "Build a Second Brain in 30 Days: The PARA Method Knowledge System"
 date: 2026-05-22

@@ -1,0 +1,30 @@
+# Spanish UI strings
+# Keys must match _data/i18n/en.yml exactly
+
+nav:
+  home: "Inicio"
+  challenges: "Retos"
+  ai_coach: "✦ Coach IA"
+  blog: "Blog"
+  about_us: "Nosotros"
+  download: "Descargar"
+
+footer:
+  company: "Empresa"
+  legal: "Legal"
+  connect: "Conectar"
+  about_us: "Nosotros"
+  ai_coach: "✦ Coach IA"
+  blog: "Blog"
+  contact: "Contacto"
+  privacy: "Política de Privacidad"
+  terms: "Términos de Servicio"
+  tagline: "La app de hábitos que te conoce. Impulsada por IA."
+  copyright: "Todos los derechos reservados."
+
+banner:
+  next_challenge: "Próximo Reto"
+  ongoing_challenge: "Reto en Curso"
+  starts_in: "Empieza en:"
+  ends_in: "Termina en:"
+  view_challenge: "Ver Reto"

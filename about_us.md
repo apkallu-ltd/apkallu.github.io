@@ -1,5 +1,7 @@
 ---
 layout: default
+lang: en
+ref: about
 title: About Us
 permalink: /about_us
 page: about

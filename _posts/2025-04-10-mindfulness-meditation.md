@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: mindfulness-meditation
 layout: post
 title: "Introducing Our New 28-Day Mindfulness Meditation Journey"
 seo_title: "28-Day Mindfulness Meditation Journey: Start Today"

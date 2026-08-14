@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: reading-habit
 layout: post
 title: "Transform Your Reading Life with Our Reading Habit Builder Plan"
 seo_title: "30-Day Reading Habit Builder: Read More | Ascend"
