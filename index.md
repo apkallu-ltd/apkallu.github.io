@@ -2,7 +2,7 @@
 layout: default
 lang: en
 ref: home
-image: assets/screenshots/main.png
+image: assets/screenshots/en/main.png
 title: Home
 last_modified_at: 2026-07-30
 ---
@@ -45,7 +45,7 @@ last_modified_at: 2026-07-30
   </div>
   <div class="hero-image">
     <div class="phone-frame">
-      <img src="{{ 'assets/screenshots/main.png' | relative_url }}" alt="Ascend App Preview" class="app-screenshot ai-glow">
+      <img src="{{ 'assets/screenshots/en/main.png' | relative_url }}" alt="Ascend App Preview" class="app-screenshot ai-glow">
     </div>
   </div>
 </section>
@@ -109,7 +109,7 @@ last_modified_at: 2026-07-30
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_1.png' | relative_url }}" alt="AI Life Coach Conversation Screenshot" class="feature-screenshot ai-glow">
+      <img src="{{ 'assets/screenshots/en/gallery_1.png' | relative_url }}" alt="AI Life Coach Conversation Screenshot" class="feature-screenshot ai-glow">
     </div>
   </div>
 </section>
@@ -118,7 +118,7 @@ last_modified_at: 2026-07-30
 <section class="feature-section">
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_2.png' | relative_url }}" alt="Badge Earned Screenshot" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/en/gallery_2.png' | relative_url }}" alt="Badge Earned Screenshot" class="feature-screenshot">
     </div>
   </div>
   <div class="feature-text">
@@ -163,7 +163,7 @@ last_modified_at: 2026-07-30
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_3.png' | relative_url }}" alt="Calendar Screenshot" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/en/gallery_3.png' | relative_url }}" alt="Calendar Screenshot" class="feature-screenshot">
     </div>
   </div>
 </section>
@@ -172,7 +172,7 @@ last_modified_at: 2026-07-30
 <section class="feature-section">
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_4.png' | relative_url }}" alt="Community Challenges Screenshot" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/en/gallery_4.png' | relative_url }}" alt="Community Challenges Screenshot" class="feature-screenshot">
     </div>
   </div>
   <div class="feature-text">
@@ -217,7 +217,7 @@ last_modified_at: 2026-07-30
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/gallery_5.png' | relative_url }}" alt="Profile Screenshot" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/en/gallery_5.png' | relative_url }}" alt="Profile Screenshot" class="feature-screenshot">
     </div>
   </div>
 </section>

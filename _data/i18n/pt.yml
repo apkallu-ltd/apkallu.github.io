@@ -1,0 +1,40 @@
+# Portuguese UI strings
+# Keys must match _data/i18n/en.yml exactly
+
+nav:
+  home: "Início"
+  challenges: "Desafios"
+  ai_coach: "✦ Coach IA"
+  blog: "Blog"
+  about_us: "Sobre Nós"
+  download: "Baixar Agora"
+
+footer:
+  company: "Empresa"
+  legal: "Legal"
+  connect: "Conectar"
+  about_us: "Sobre Nós"
+  ai_coach: "✦ Coach IA"
+  blog: "Blog"
+  contact: "Contato"
+  privacy: "Política de Privacidade"
+  terms: "Termos de Serviço"
+  tagline: "O app de hábitos que conhece você. Movido por IA."
+  copyright: "Todos os direitos reservados."
+
+banner:
+  next_challenge: "Próximo Desafio"
+  ongoing_challenge: "Desafio em Andamento"
+  starts_in: "Começa em:"
+  ends_in: "Termina em:"
+  view_challenge: "Ver Desafio"
+
+post:
+  by: "Por"
+  share: "Compartilhe esta inspiração"
+  previous: "← Anterior"
+  next: "Próximo →"
+
+blog:
+  new_badge: "Novo"
+  read_more: "Ler mais →"

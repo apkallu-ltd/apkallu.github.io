@@ -1,43 +1,43 @@
 ---
 layout: default
-lang: en
+lang: de
 ref: ai-coach
-title: "Ascend AI Coach — Your Personalised Habit Plan, Built by AI"
-description: "Most habit apps give you a to-do list. Ascend gives you a coach. Share your goal, your schedule, and your constraints — get a personalised plan in 30 seconds. Free on iOS & Android."
-permalink: /ai-coach
-last_modified_at: 2026-07-30
+title: "Ascend KI-Coach — Dein maßgeschneiderter Gewohnheitsplan, von KI erstellt"
+description: "Die meisten Apps geben dir eine bloße To-Do-Liste. Ascend gibt dir einen Coach. Nenne dein Ziel, deinen Zeitplan und deine Einschränkungen — erhalte in 30 Sekunden einen personalisierten Plan. Kostenlos für iOS und Android."
+permalink: /de/ai-coach
+last_modified_at: 2026-09-05
 ---
 
 <div class="ai-coach-page">
 
   <!-- Hero Section -->
   <section class="ai-coach-hero">
-    <div class="ai-orb-decoration" role="img" aria-label="Ascend AI Coach"></div>
+    <div class="ai-orb-decoration" role="img" aria-label="Ascend KI-Coach"></div>
 
-    <h1>The habit plan that fits your life.<br><span class="ai-highlight">Built by AI in 30 seconds.</span></h1>
+    <h1>Der Gewohnheitsplan, der zu deinem Leben passt.<br><span class="ai-highlight">In 30 Sekunden von KI erstellt.</span></h1>
 
     <p class="ai-hero-sub">
-      Share your goals, schedule, and constraints in a simple conversation. Your AI coach crafts
-      a custom programme in 30 seconds &mdash; then guides you through every single day.
+      Teile deine Ziele, deine Zeit und deine Herausforderungen in einem einfachen Gespräch mit. Dein KI-Coach erstellt
+      einen maßgeschneiderten Plan in 30 Sekunden &mdash; und begleitet dich jeden Tag.
     </p>
 
     <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap; position:relative; z-index:1;">
       <a href="{{ site.app.app_store }}" target="_blank" rel="noopener noreferrer" class="btn">
-        <img src="{{ 'assets/icons/DownloadOnTheAppStore.png' | relative_url }}" alt="Download on the App Store">
+        <img src="{{ 'assets/icons/DownloadOnTheAppStore.png' | relative_url }}" alt="Im App Store herunterladen">
       </a>
       <a href="{{ site.app.google_play }}" target="_blank" rel="noopener noreferrer" class="btn">
-        <img src="{{ 'assets/icons/GetItOnGooglePlay.png' | relative_url }}" alt="Get it on Google Play">
+        <img src="{{ 'assets/icons/GetItOnGooglePlay.png' | relative_url }}" alt="Jetzt bei Google Play">
       </a>
     </div>
     <p style="color:rgba(255,255,255,0.4); font-size:13px; margin-top:16px; position:relative; z-index:1;">
-      Free download &middot; Start your custom AI plan today
+      Kostenloser Download &middot; Starte deinen individuellen KI-Plan noch heute
     </p>
   </section>
 
   <!-- Live Interactive Conversation Simulator -->
   <section class="ai-preview-section">
-    <h2>Experience the AI Coach</h2>
-    <p class="ai-preview-sub">Select a goal below to see how Ascend builds a custom programme in real time.</p>
+    <h2>Erlebe den KI-Coach live</h2>
+    <p class="ai-preview-sub">Wähle ein Ziel aus und erlebe, wie Ascend in Echtzeit einen maßgeschneiderten Plan erstellt.</p>
 
     <div class="ai-chat-shell">
 
@@ -57,24 +57,24 @@ last_modified_at: 2026-07-30
             <span>&#x2726;</span>
             <span>Ascend Coach</span>
           </div>
-          <p>What are you working on? Pick a goal to see your plan:</p>
+          <p>Woran möchtest du arbeiten? Wähle ein Ziel, um deinen Plan zu sehen:</p>
           <div class="ai-chips-row" id="initial-goal-chips">
-            <button class="ai-chip" onclick="selectGoal('morning')">&#x26A1; Morning Energy</button>
-            <button class="ai-chip" onclick="selectGoal('fitness')">&#x1F4AA; 20-Min Fitness</button>
-            <button class="ai-chip" onclick="selectGoal('mind')">&#x1F9E0; Mindful Focus</button>
+            <button class="ai-chip" onclick="selectGoal('morning')">&#x26A1; Morgen-Energie</button>
+            <button class="ai-chip" onclick="selectGoal('fitness')">&#x1F4AA; 20-Min-Fitness</button>
+            <button class="ai-chip" onclick="selectGoal('mind')">&#x1F9E0; Fokus & Achtsamkeit</button>
           </div>
         </div>
 
         <div id="dynamic-chat-thread"></div>
       </div>
 
-      <!-- Plan Reveal Card — inside shell, shown when plan is generated -->
+      <!-- Plan Reveal Card -->
       <div class="ai-plan-reveal-card" id="interactive-plan-card" style="display: none;">
-        <p class="ai-plan-label">&#x2726; Your Custom Plan</p>
-        <p class="ai-plan-title" id="card-plan-title">21-Day Morning Power Routine</p>
-        <p class="ai-plan-meta" id="card-plan-meta">20 min &nbsp;&middot;&nbsp; Solo &nbsp;&middot;&nbsp; Starts tomorrow &nbsp;&middot;&nbsp; 5 badges to earn</p>
+        <p class="ai-plan-label">&#x2726; Dein Maßgeschneiderter Plan</p>
+        <p class="ai-plan-title" id="card-plan-title">21-Tage Power-Morgenroutine</p>
+        <p class="ai-plan-meta" id="card-plan-meta">20 Min/Tag &nbsp;&middot;&nbsp; Individuell &nbsp;&middot;&nbsp; Startet morgen &nbsp;&middot;&nbsp; 5 Abzeichen zu verdienen</p>
         <a href="{{ site.app.download_link }}" class="ai-plan-cta">
-          Get This Plan in Ascend &rarr;
+          Diesen Plan in Ascend öffnen &rarr;
         </a>
       </div>
 
@@ -84,21 +84,21 @@ last_modified_at: 2026-07-30
   <!-- Two-Phone App Showcase -->
   <section class="ai-showcase-section">
     <div class="container">
-      <h2>Always One Tap Away</h2>
-      <p class="ai-showcase-sub">The AI Coach lives right inside your daily feed. Access guidance, check-ins, or plan adjustments whenever you need them.</p>
+      <h2>Immer an deiner Seite</h2>
+      <p class="ai-showcase-sub">Der KI-Coach ist fester Bestandteil deines täglichen Feeds. Hole dir Ratschläge, Check-ins oder Plan-Anpassungen, wann immer du sie brauchst.</p>
 
       <div class="ai-showcase-phones">
         <div class="ai-showcase-phone">
           <div class="device-mockup">
-            <img src="{{ 'assets/screenshots/en/main.png' | relative_url }}" alt="Ascend Feed with Coach Orb" class="feature-screenshot">
+            <img src="{{ 'assets/screenshots/de/main.png' | relative_url }}" alt="Ascend Feed mit KI-Coach" class="feature-screenshot">
           </div>
-          <p class="ai-showcase-caption">Your AI Coach, always within reach</p>
+          <p class="ai-showcase-caption">Dein KI-Coach, immer griffbereit</p>
         </div>
         <div class="ai-showcase-phone">
           <div class="device-mockup">
-            <img src="{{ 'assets/screenshots/en/gallery_1.png' | relative_url }}" alt="Ascend AI Coach Conversation" class="feature-screenshot ai-glow">
+            <img src="{{ 'assets/screenshots/de/gallery_1.png' | relative_url }}" alt="Chat mit dem Ascend KI-Coach" class="feature-screenshot ai-glow">
           </div>
-          <p class="ai-showcase-caption">Your custom plan, ready in seconds</p>
+          <p class="ai-showcase-caption">Dein individueller Plan, in Sekunden bereit</p>
         </div>
       </div>
     </div>
@@ -106,49 +106,49 @@ last_modified_at: 2026-07-30
 
   <!-- Contrast Section -->
   <section class="ai-contrast-section">
-    <h2>Why an AI Coach<br>Changes Everything</h2>
+    <h2>Warum ein KI-Coach<br>alles grundlegend verändert</h2>
     <div class="ai-contrast-table">
       <div class="ai-contrast-header">
-        <span>Without AI</span>
+        <span>Ohne KI</span>
         <span></span>
-        <span class="ai-col-right">&#x2726; With Ascend AI Coach</span>
+        <span class="ai-col-right">&#x2726; Mit dem Ascend KI-Coach</span>
       </div>
       <div class="ai-contrast-row">
-        <span class="ai-contrast-left">A generic one-size plan for everyone</span>
+        <span class="ai-contrast-left">Standardpläne von der Stange für jeden gleich</span>
         <span class="ai-contrast-arrow">&#x2192;</span>
-        <span class="ai-contrast-right">A plan built around your specific life</span>
+        <span class="ai-contrast-right">Ein Plan, der sich an deinen Alltag anpasst</span>
       </div>
       <div class="ai-contrast-row">
-        <span class="ai-contrast-left">Fill out long goal forms</span>
+        <span class="ai-contrast-left">Lange, mühsame Fragebögen ausfüllen</span>
         <span class="ai-contrast-arrow">&#x2192;</span>
-        <span class="ai-contrast-right">Have a natural conversation</span>
+        <span class="ai-contrast-right">Ein natürliches, flüssiges Gespräch führen</span>
       </div>
       <div class="ai-contrast-row">
-        <span class="ai-contrast-left">Follow someone else's schedule</span>
+        <span class="ai-contrast-left">Dem starren Zeitplan eines anderen folgen</span>
         <span class="ai-contrast-arrow">&#x2192;</span>
-        <span class="ai-contrast-right">Follow the plan <em>you</em> described</span>
+        <span class="ai-contrast-right">Den Rhythmus leben, <em>den du</em> vorgegeben hast</span>
       </div>
       <div class="ai-contrast-row">
-        <span class="ai-contrast-left">Quit alone when life gets busy</span>
+        <span class="ai-contrast-left">Allein aufgeben, wenn das Leben dazwischenkommt</span>
         <span class="ai-contrast-arrow">&#x2192;</span>
-        <span class="ai-contrast-right">AI adapts your plan &mdash; no shame</span>
+        <span class="ai-contrast-right">Die KI passt deinen Plan an &mdash; völlig ohne Schuldgefühle</span>
       </div>
     </div>
   </section>
 
   <!-- Download CTA -->
   <section class="ai-coach-download-section">
-    <h2>Your Custom Plan Starts Today.</h2>
+    <h2>Dein individueller Plan beginnt heute.</h2>
     <p>
-      Create your personalized routine, start tomorrow, and show up every day.
-      Ascend is free to download on iOS and Android.
+      Definiere deine Routine, starte morgen und mache jeden Tag echte Fortschritte.
+      Ascend ist kostenlos für iOS und Android.
     </p>
     <div class="app-links">
       <a href="{{ site.app.app_store }}" target="_blank" rel="noopener noreferrer" class="btn">
-        <img src="{{ 'assets/icons/DownloadOnTheAppStore.png' | relative_url }}" alt="Download on the App Store">
+        <img src="{{ 'assets/icons/DownloadOnTheAppStore.png' | relative_url }}" alt="Im App Store herunterladen">
       </a>
       <a href="{{ site.app.google_play }}" target="_blank" rel="noopener noreferrer" class="btn">
-        <img src="{{ 'assets/icons/GetItOnGooglePlay.png' | relative_url }}" alt="Get it on Google Play">
+        <img src="{{ 'assets/icons/GetItOnGooglePlay.png' | relative_url }}" alt="Jetzt bei Google Play">
       </a>
     </div>
   </section>
@@ -158,25 +158,25 @@ last_modified_at: 2026-07-30
 <script>
 const goalScenarios = {
   morning: {
-    userText: "I want to build an energising morning routine in 20 mins.",
-    aiReply: "Got it! How many days a week can you commit to?",
-    timeChips: ["3 Days", "5 Days", "Every Day"],
-    planTitle: "21-Day Morning Power Routine",
-    planMeta: "20 min/day · Solo · Starts tomorrow · 5 badges to earn"
+    userText: "Ich möchte eine energiegeladene 20-minütige Morgenroutine aufbauen.",
+    aiReply: "Klingt super! An wie vielen Tagen pro Woche kannst du dir dafür Zeit nehmen?",
+    timeChips: ["3 Tage", "5 Tage", "Jeden Tag"],
+    planTitle: "21-Tage Power-Morgenroutine",
+    planMeta: "20 Min/Tag · Individuell · Startet morgen · 5 Abzeichen zu verdienen"
   },
   fitness: {
-    userText: "I want a quick home workout routine with no equipment.",
-    aiReply: "Awesome. What body focus would you prefer?",
-    timeChips: ["Full Body", "Core & Cardio", "Mobility & Strength"],
-    planTitle: "30-Day Bodyweight Ignite Plan",
-    planMeta: "15 min/day · Solo · Starts tomorrow · 6 badges to earn"
+    userText: "Ich suche nach einem Workout für zu Hause, ganz ohne Geräte.",
+    aiReply: "Hervorragende Idee. Welcher Bereich ist dir am wichtigsten?",
+    timeChips: ["Ganzkörper", "Core & Cardio", "Kraft & Mobilität"],
+    planTitle: "30-Tage Bodyweight-Programm",
+    planMeta: "15 Min/Tag · Individuell · Startet morgen · 6 Abzeichen zu verdienen"
   },
   mind: {
-    userText: "I need to reduce stress and build a daily focus habit.",
-    aiReply: "Understood. When during the day fits best for you?",
-    timeChips: ["First thing", "Midday Reset", "Evening Wind-down"],
-    planTitle: "14-Day Mindful Clarity & Focus",
-    planMeta: "10 min/day · Solo · Starts tomorrow · 4 badges to earn"
+    userText: "Ich möchte Stress abbauen und eine tägliche Fokus-Gewohnheit etablieren.",
+    aiReply: "Verstanden. Zu welcher Tageszeit passt das am besten in deinen Ablauf?",
+    timeChips: ["Direkt nach dem Aufstehen", "In der Mittagspause", "Am Abend zum Abschalten"],
+    planTitle: "14-Tage Mentale Klarheit & Fokus",
+    planMeta: "10 Min/Tag · Individuell · Startet morgen · 4 Abzeichen zu verdienen"
   }
 };
 
@@ -184,12 +184,8 @@ function selectGoal(type) {
   const scenario = goalScenarios[type];
   const thread = document.getElementById('dynamic-chat-thread');
   const chips = document.getElementById('initial-goal-chips');
-  
-  // Disable initial chips
   chips.style.pointerEvents = 'none';
   chips.style.opacity = '0.5';
-
-  // Render User Message
   thread.innerHTML = `
     <div class="user-bubble" style="margin-top: 12px;">${scenario.userText}</div>
     <div class="ai-bubble" id="typing-bubble" style="margin-top: 12px;">
@@ -197,8 +193,6 @@ function selectGoal(type) {
       <p class="typing-dots"><span></span><span></span><span></span></p>
     </div>
   `;
-
-  // Simulate AI Typing
   setTimeout(() => {
     const typingBubble = document.getElementById('typing-bubble');
     typingBubble.innerHTML = `
@@ -216,23 +210,20 @@ function finishDemo(chipBtn, type) {
   const chipContainer = chipBtn.parentElement;
   chipContainer.style.pointerEvents = 'none';
   chipBtn.classList.add('selected');
-
   const thread = document.getElementById('dynamic-chat-thread');
   const userChoiceNode = document.createElement('div');
   userChoiceNode.className = 'user-bubble';
   userChoiceNode.style.marginTop = '12px';
   userChoiceNode.innerText = chipBtn.innerText;
   thread.appendChild(userChoiceNode);
-
   const finalAiNode = document.createElement('div');
   finalAiNode.className = 'ai-bubble';
   finalAiNode.style.marginTop = '12px';
   finalAiNode.innerHTML = `
     <div class="ai-bubble-header"><span>✦</span><span>Ascend Coach</span></div>
-    <p>Perfect! Building your custom programme now...</p>
+    <p>Perfekt! Dein maßgeschneiderter Plan wird jetzt erstellt...</p>
   `;
   thread.appendChild(finalAiNode);
-
   setTimeout(() => {
     const planCard = document.getElementById('interactive-plan-card');
     document.getElementById('card-plan-title').innerText = scenario.planTitle;

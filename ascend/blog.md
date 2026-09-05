@@ -15,7 +15,9 @@ page: blog
 </header>
 
 <div class="modern-grid">
-  {% for post in site.posts %}
+  {% assign current_lang = page.lang | default: 'en' %}
+  {% assign filtered_posts = site.posts | where: "lang", current_lang %}
+  {% for post in filtered_posts %}
     <div class="modern-card">
       {% assign post_seconds = post.date | date: "%s" | plus: 0 %}
       {% assign now_seconds = "now" | date: "%s" | plus: 0 %}
@@ -23,7 +25,7 @@ page: blog
       {% assign ten_days_seconds = 864000 %}
 
       {% if diff_seconds < ten_days_seconds %}
-        <div class="new-badge">New</div>
+        <div class="new-badge">{{ i18n.blog.new_badge | default: "New" }}</div>
       {% endif %}
 
       {% if post.featured_image %}
@@ -41,7 +43,7 @@ page: blog
         <p class="card-description">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
         <div class="card-footer">
           <span class="card-date">{{ post.date | date: "%b %d, %Y" }}</span>
-          <a href="{{ post.url | relative_url }}" class="card-link">Read More →</a>
+          <a href="{{ post.url | relative_url }}" class="card-link">{{ i18n.blog.read_more | default: "Read More →" }}</a>
         </div>
       </div>
     </div>

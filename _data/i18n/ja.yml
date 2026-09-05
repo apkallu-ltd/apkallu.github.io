@@ -1,0 +1,40 @@
+# Japanese UI strings
+# Keys must match _data/i18n/en.yml exactly
+
+nav:
+  home: "ホーム"
+  challenges: "チャレンジ"
+  ai_coach: "✦ AIコーチ"
+  blog: "ブログ"
+  about_us: "私たちについて"
+  download: "今すぐダウンロード"
+
+footer:
+  company: "企業情報"
+  legal: "規約・ポリシー"
+  connect: "公式SNS"
+  about_us: "私たちについて"
+  ai_coach: "✦ AIコーチ"
+  blog: "ブログ"
+  contact: "お問い合わせ"
+  privacy: "プライバシーポリシー"
+  terms: "利用規約"
+  tagline: "あなたを深く理解する習慣化アプリ。AIがサポート。"
+  copyright: "All rights reserved."
+
+banner:
+  next_challenge: "次のチャレンジ"
+  ongoing_challenge: "開催中のチャレンジ"
+  starts_in: "開始まで:"
+  ends_in: "終了まで:"
+  view_challenge: "チャレンジを見る"
+
+post:
+  by: "投稿者:"
+  share: "この記事をシェアする"
+  previous: "← 前へ"
+  next: "次へ →"
+
+blog:
+  new_badge: "NEW"
+  read_more: "続きを読む →"

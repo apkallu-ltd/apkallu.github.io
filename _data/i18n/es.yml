@@ -28,3 +28,13 @@ banner:
   starts_in: "Empieza en:"
   ends_in: "Termina en:"
   view_challenge: "Ver Reto"
+
+post:
+  by: "Por"
+  share: "Comparte esta inspiración"
+  previous: "← Anterior"
+  next: "Siguiente →"
+
+blog:
+  new_badge: "Nuevo"
+  read_more: "Leer más →"

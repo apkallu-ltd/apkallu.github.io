@@ -1,0 +1,40 @@
+# German UI strings
+# Keys must match _data/i18n/en.yml exactly
+
+nav:
+  home: "Startseite"
+  challenges: "Challenges"
+  ai_coach: "✦ KI-Coach"
+  blog: "Blog"
+  about_us: "Über uns"
+  download: "Jetzt herunterladen"
+
+footer:
+  company: "Unternehmen"
+  legal: "Rechtliches"
+  connect: "Verbinden"
+  about_us: "Über uns"
+  ai_coach: "✦ KI-Coach"
+  blog: "Blog"
+  contact: "Kontakt"
+  privacy: "Datenschutzerklärung"
+  terms: "Nutzungsbedingungen"
+  tagline: "Die Gewohnheits-App, die dich versteht. Angetrieben von KI."
+  copyright: "Alle Rechte vorbehalten."
+
+banner:
+  next_challenge: "Nächste Challenge"
+  ongoing_challenge: "Laufende Challenge"
+  starts_in: "Startet in:"
+  ends_in: "Endet in:"
+  view_challenge: "Challenge ansehen"
+
+post:
+  by: "Von"
+  share: "Teile diese Inspiration"
+  previous: "← Zurück"
+  next: "Weiter →"
+
+blog:
+  new_badge: "Neu"
+  read_more: "Mehr lesen →"

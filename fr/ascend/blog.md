@@ -1,21 +1,21 @@
 ---
 layout: default
-lang: es
+lang: fr
 ref: blog
 title: Blog — Ascend
-permalink: /es/ascend/blog
+permalink: /fr/ascend/blog
 page: blog
 ---
 
 <header class="modern-header">
   <div class="container">
-    <h1>Blog de Ascend</h1>
-    <p>Consejos, reflexiones e historias sobre crecimiento personal, productividad y retos comunitarios.</p>
+    <h1>Blog Ascend</h1>
+    <p>Conseils, réflexions et histoires sur le développement personnel, la productivité et les défis communautaires.</p>
   </div>
 </header>
 
 <div class="modern-grid">
-  {% assign current_lang = page.lang | default: 'es' %}
+  {% assign current_lang = page.lang | default: 'fr' %}
   {% assign filtered_posts = site.posts | where: "lang", current_lang %}
   {% for post in filtered_posts %}
     <div class="modern-card">
@@ -25,7 +25,7 @@ page: blog
       {% assign ten_days_seconds = 864000 %}
 
       {% if diff_seconds < ten_days_seconds %}
-        <div class="new-badge">{{ i18n.blog.new_badge | default: "Nuevo" }}</div>
+        <div class="new-badge">{{ i18n.blog.new_badge | default: "Nouveau" }}</div>
       {% endif %}
 
       {% if post.featured_image %}
@@ -43,7 +43,7 @@ page: blog
         <p class="card-description">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
         <div class="card-footer">
           <span class="card-date">{{ post.date | date: "%d %b, %Y" }}</span>
-          <a href="{{ post.url | relative_url }}" class="card-link">{{ i18n.blog.read_more | default: "Leer más →" }}</a>
+          <a href="{{ post.url | relative_url }}" class="card-link">{{ i18n.blog.read_more | default: "Lire la suite →" }}</a>
         </div>
       </div>
     </div>

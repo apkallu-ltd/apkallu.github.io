@@ -29,3 +29,13 @@ banner:
   starts_in: "Starts in:"
   ends_in: "Ends in:"
   view_challenge: "View Challenge"
+
+post:
+  by: "By"
+  share: "Share this inspiration"
+  previous: "← Previous"
+  next: "Next →"
+
+blog:
+  new_badge: "New"
+  read_more: "Read More →"

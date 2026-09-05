@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% assign lang = page.lang | default: 'en' %}
+{% assign i18n = site.data.i18n[lang] | default: site.data.i18n['en'] %}
+
 <header class="modern-header">
   <div class="container">
     <div class="post-meta-badges">
@@ -10,7 +13,7 @@ layout: default
     </div>
     <h1 style="max-width: 900px; margin-left: auto; margin-right: auto;">{{ page.title }}</h1>
     {% if page.author %}
-    <p style="margin-top: 20px; font-weight: 600; opacity: 0.9;">By {{ page.author }}</p>
+    <p style="margin-top: 20px; font-weight: 600; opacity: 0.9;">{{ i18n.post.by | default: "By" }} {{ page.author }}</p>
     {% endif %}
   </div>
 </header>
@@ -29,7 +32,7 @@ layout: default
       </article>
 
       <div class="post-share-section">
-        <h4 style="margin-bottom: 20px; font-weight: 800;">Share this inspiration</h4>
+        <h4 style="margin-bottom: 20px; font-weight: 800;">{{ i18n.post.share | default: "Share this inspiration" }}</h4>
         <div style="display: flex; justify-content: center; gap: 15px;">
           <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" class="social-badge" style="background: #1877F2; color: #fff !important; width: auto; padding: 10px 25px;"><i class="fab fa-facebook-f"></i> Facebook</a>
           <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title }}" target="_blank" class="social-badge" style="background: #1DA1F2; color: #fff !important; width: auto; padding: 10px 25px;"><i class="fab fa-twitter"></i> Twitter</a>
@@ -38,10 +41,10 @@ layout: default
 
       <div style="display: flex; justify-content: space-between; margin-top: 60px;">
         {% if page.previous.url %}
-        <a href="{{ page.previous.url | relative_url }}" style="font-weight: 800; color: #004586; text-decoration: none;">← Previous</a>
+        <a href="{{ page.previous.url | relative_url }}" style="font-weight: 800; color: #004586; text-decoration: none;">{{ i18n.post.previous | default: "← Previous" }}</a>
         {% endif %}
         {% if page.next.url %}
-        <a href="{{ page.next.url | relative_url }}" style="font-weight: 800; color: #004586; text-decoration: none;">Next →</a>
+        <a href="{{ page.next.url | relative_url }}" style="font-weight: 800; color: #004586; text-decoration: none;">{{ i18n.post.next | default: "Next →" }}</a>
         {% endif %}
       </div>
     </div>

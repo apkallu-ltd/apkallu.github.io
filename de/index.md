@@ -1,12 +1,12 @@
 ---
 layout: default
-lang: es
+lang: de
 ref: home
-image: assets/screenshots/es/main.png
-title: "Ascend — Coach de Hábitos con IA | iOS y Android"
-description: "Ascend es tu coach personal de hábitos. Obtén un plan estructurado alrededor de tu semana, únete a retos comunitarios con responsabilidad real y gana insignias al alcanzar cada meta. Gratis en iOS y Android."
-permalink: /es/
-last_modified_at: 2026-07-30
+image: assets/screenshots/de/main.png
+title: "Ascend — KI-Lebenscoach & Gewohnheits-Challenges | iOS & Android"
+description: "Ascend ist dein persönlicher Gewohnheits-Coach. Erhalte einen strukturierten Plan für deine Woche, nimm an motivierenden Community-Challenges teil und verdiene Abzeichen bei jedem Meilenstein. Kostenlos für iOS und Android."
+permalink: /de/
+last_modified_at: 2026-09-05
 ---
 
 <!-- Hero Section -->
@@ -15,25 +15,25 @@ last_modified_at: 2026-07-30
     <canvas id="hero-particles"></canvas>
   </div>
   <div class="hero-text">
-    <h1 class="animated-heading">La mayoría de las apps te dan una lista. <span class="highlight">Ascend te da un coach.</span></h1>
-    <p class="hero-subtitle">Un plan personalizado alrededor de tu semana. Una comunidad haciéndolo contigo. Insignias que realmente te ganas.</p>
+    <h1 class="animated-heading">Die meisten Gewohnheits-Apps geben dir eine Liste. <span class="highlight">Ascend gibt dir einen Coach.</span></h1>
+    <p class="hero-subtitle">Ein personalisierter Plan, der genau zu deiner Woche passt. Eine Community, die dich begleitet. Abzeichen, die du dir wirklich verdienst.</p>
     <div class="hero-features">
       <div class="hero-feature">
         <i class="fas fa-calendar-star feature-icon"></i>
-        <span><a href="{{ '/es/challenges' | relative_url }}" style="color: inherit; text-decoration: none;">Unirse a Retos</a></span>
+        <span><a href="{{ '/de/challenges' | relative_url }}" style="color: inherit; text-decoration: none;">An Challenges teilnehmen</a></span>
       </div>
       <div class="hero-feature">
         <i class="fas fa-chart-line feature-icon"></i>
-        <span>Seguir Progreso</span>
+        <span>Fortschritt verfolgen</span>
       </div>
       <div class="hero-feature">
         <i class="fas fa-sparkles feature-icon"></i>
-        <span><a href="{{ '/es/ai-coach' | relative_url }}" style="color: inherit; text-decoration: none;">✦ Coach IA</a></span>
+        <span><a href="{{ '/de/ai-coach' | relative_url }}" style="color: inherit; text-decoration: none;">✦ KI-Coach</a></span>
       </div>
     </div>
     <div class="cta-container">
       <a href="{{ site.app.download_link }}" class="btn-register pulse-animation">
-        <i class="fas fa-download"></i> Descargar Ahora
+        <i class="fas fa-download"></i> Jetzt herunterladen
       </a>
     </div>
     <div class="app-links">
@@ -47,7 +47,7 @@ last_modified_at: 2026-07-30
   </div>
   <div class="hero-image">
     <div class="phone-frame">
-      <img src="{{ 'assets/screenshots/es/main.png' | relative_url }}" alt="Vista previa de Ascend" class="app-screenshot ai-glow">
+      <img src="{{ 'assets/screenshots/de/main.png' | relative_url }}" alt="Ascend Vorschau" class="app-screenshot ai-glow">
     </div>
   </div>
 </section>
@@ -55,35 +55,35 @@ last_modified_at: 2026-07-30
 <!-- Features Section -->
 <section class="features-overview">
   <div class="container">
-    <h2 class="section-title">¿Por qué elegir <span class="highlight">Ascend</span>?</h2>
+    <h2 class="section-title">Warum <span class="highlight">Ascend</span> wählen?</h2>
     <div class="features-grid">
       <div class="feature-card" data-aos="fade-up">
         <div class="feature-icon-container">
           <i class="fas fa-robot"></i>
         </div>
-        <h3>✦ Coach IA</h3>
-        <p>Describe tu objetivo, tu horario y tu semana. Tu coach de IA construye un plan personalizado que se adapta a tu vida — listo en 30 segundos.</p>
+        <h3>✦ KI-Coach</h3>
+        <p>Beschreibe dein Ziel, deinen Rhythmus und deine verfügbare Zeit. Dein KI-Coach erstellt in nur 30 Sekunden einen maßgeschneiderten Plan, der perfekt in dein Leben passt.</p>
       </div>
       <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
         <div class="feature-icon-container">
           <i class="fas fa-calendar-check"></i>
         </div>
-        <h3>Seguimiento Diario</h3>
-        <p>Mantén la responsabilidad con nuestro calendario integrado y herramientas de seguimiento de progreso.</p>
+        <h3>Tägliches Tracking</h3>
+        <p>Bleibe mit unserem integrierten Kalender und präzisen Fortschrittsanalysen dauerhaft am Ball.</p>
       </div>
       <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
         <div class="feature-icon-container">
           <i class="fas fa-medal"></i>
         </div>
-        <h3>Sistema de Logros</h3>
-        <p>Gana recompensas y reconocimiento al alcanzar hitos en tu camino hacia el éxito.</p>
+        <h3>Belohnungssystem</h3>
+        <p>Sammle Abzeichen und Anerkennung bei jedem Meilenstein auf deinem Weg zum Erfolg.</p>
       </div>
       <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
         <div class="feature-icon-container">
           <i class="fas fa-brain"></i>
         </div>
-        <h3>Crecimiento Personalizado</h3>
-        <p>Registra cada hito en tu perfil, ve hasta dónde has llegado y deja que tu progreso cuente la historia de tu crecimiento.</p>
+        <h3>Persönliche Entwicklung</h3>
+        <p>Halte jeden Schritt in deinem Profil fest, verfolge deinen Weg und feiere deine Erfolge.</p>
       </div>
     </div>
   </div>
@@ -92,26 +92,26 @@ last_modified_at: 2026-07-30
 <!-- AI Coach Feature Section -->
 <section class="feature-section">
   <div class="feature-text">
-    <h2>Tu plan de hábitos, construido alrededor de tu vida.</h2>
-    <p>Mantén una conversación natural con tu Coach de Vida IA. Comparte tu horario, limitaciones y aspiraciones — obtén un plan de hábitos estructurado y personalizado en 30 segundos, con tareas diarias y recompensas por hitos.</p>
+    <h2>Dein Gewohnheitsplan, abgestimmt auf dein echtes Leben.</h2>
+    <p>Sprich ganz natürlich mit deinem KI-Lebenscoach. Teile deinen Zeitplan, deine Einschränkungen und Ziele mit — erhalte in 30 Sekunden einen strukturierten Plan mit klaren täglichen Aufgaben und motivierenden Belohnungen.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Un plan personalizado basado en tu horario real, no una plantilla genérica</span>
+        <span>Ein individueller Plan, basierend auf deiner echten Verfügbarkeit</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Se adapta sin culpa cuando tu semana se complica</span>
+        <span>Passt sich ohne Schuldgefühle an, wenn deine Woche stressiger wird</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span><a href="{{ '/es/ai-coach' | relative_url }}" style="color: #004586; font-weight: 700; text-decoration: underline;">Descubre cómo funciona el Coach IA &rarr;</a></span>
+        <span><a href="{{ '/de/ai-coach' | relative_url }}" style="color: #004586; font-weight: 700; text-decoration: underline;">Entdecke den KI-Coach &rarr;</a></span>
       </div>
     </div>
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/es/gallery_1.png' | relative_url }}" alt="Captura de pantalla del Coach de Vida IA" class="feature-screenshot ai-glow">
+      <img src="{{ 'assets/screenshots/de/gallery_1.png' | relative_url }}" alt="Screenshot des KI-Lebenscoachs" class="feature-screenshot ai-glow">
     </div>
   </div>
 </section>
@@ -120,24 +120,24 @@ last_modified_at: 2026-07-30
 <section class="feature-section">
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/es/gallery_2.png' | relative_url }}" alt="Insignia ganada" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/de/gallery_2.png' | relative_url }}" alt="Verdientes Abzeichen" class="feature-screenshot">
     </div>
   </div>
   <div class="feature-text">
-    <h2>Alcanza hitos. Gana insignias. Presúmelas.</h2>
-    <p>Cada hito que alcanzas desbloquea una insignia de logro personalizada y luminosa. Celebra tu esfuerzo y constancia con recompensas interactivas y comparte tu progreso directamente con tu comunidad.</p>
+    <h2>Erreiche Meilensteine. Schalte Abzeichen frei. Teile deinen Erfolg.</h2>
+    <p>Jede abgeschlossene Challenge schaltet ein exklusives Abzeichen frei. Feiere deine Ausdauer mit interaktiven Belohnungen und teile deine Meilensteine mit deiner Community.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Desbloquea hermosas insignias de logro luminosas</span>
+        <span>Schalte wunderschön gestaltete Abzeichen frei</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Celebra los hitos de tu camino de crecimiento</span>
+        <span>Markiere jeden Meilenstein deiner Entwicklung</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Comparte tus victorias al instante con un diseño personalizado</span>
+        <span>Teile deine Erfolge im Handumdrehen</span>
       </div>
     </div>
   </div>
@@ -146,26 +146,26 @@ last_modified_at: 2026-07-30
 <!-- Daily Calendar Section -->
 <section class="feature-section">
   <div class="feature-text">
-    <h2>Cada día tiene un plan. Márcalo y mantén tu racha.</h2>
-    <p>Nuestro calendario integrado facilita planificar tu día, seguir tus objetivos y mantener hábitos diarios. Obtén una visión clara de todos tus próximos retos y mantente responsable en cada paso del camino.</p>
+    <h2>Jeder Tag hat einen Plan. Hake Aufgaben ab und halte den Rhythmus.</h2>
+    <p>Unser dedizierter Kalender erleichtert es dir, deine Tage zu strukturieren, Ziele zu verfolgen und neue Gewohnheiten fest zu verankern. Behalte immer den Überblick über deine nächsten Schritte.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Visualiza tus objetivos diarios, semanales y mensuales</span>
+        <span>Überblicke tägliche, wöchentliche und monatliche Prioritäten</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Configura recordatorios para mantener la consistencia</span>
+        <span>Aktiviere Erinnerungen für maximale Beständigkeit</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Sigue tu racha de retos completados</span>
+        <span>Behalte deine Erfolgsserie ohne Unterbrechung bei</span>
       </div>
     </div>
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/es/gallery_3.png' | relative_url }}" alt="Captura de pantalla del calendario" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/de/gallery_3.png' | relative_url }}" alt="Screenshot des Kalenders" class="feature-screenshot">
     </div>
   </div>
 </section>
@@ -174,24 +174,24 @@ last_modified_at: 2026-07-30
 <section class="feature-section">
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/es/gallery_4.png' | relative_url }}" alt="Captura de pantalla de retos comunitarios" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/de/gallery_4.png' | relative_url }}" alt="Screenshot von Community-Challenges" class="feature-screenshot">
     </div>
   </div>
   <div class="feature-text">
-    <h2>Únete a un reto. Sigue el plan. No vayas solo.</h2>
-    <p>Participa en emocionantes retos diseñados por la comunidad. Comparte experiencias, participa en conversaciones significativas y descubre cómo otros aprovechan estos retos para lograr un progreso real en sus vidas.</p>
+    <h2>Schließe dich einer Challenge an. Geh den Weg gemeinsam.</h2>
+    <p>Nimm an motivierenden Challenges teil, die von der Community erstellt wurden. Tausche dich aus, wachst zusammen über euch hinaus und erlebe, wie andere ihre Gewohnheiten transformieren.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Encuentra retos que coincidan con tus intereses</span>
+        <span>Finde Challenges, die genau zu deinen Zielen passen</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Conéctate con personas que comparten objetivos similares</span>
+        <span>Verbinde dich mit Gleichgesinnten auf demselben Weg</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Crea tus propios retos para inspirar a otros</span>
+        <span>Erstelle eigene Challenges und inspiriere andere</span>
       </div>
     </div>
   </div>
@@ -200,26 +200,26 @@ last_modified_at: 2026-07-30
 <!-- Profile & Achievements Section -->
 <section class="feature-section">
   <div class="feature-text">
-    <h2>Una pared de pruebas de que lo lograste.</h2>
-    <p>Tu perfil personalizado muestra planes activos, logros pasados e hitos importantes. Lleva un registro detallado de todo lo que has conseguido mientras creces y te superas continuamente.</p>
+    <h2>Der lebendige Beweis deiner Ausdauer.</h2>
+    <p>Dein Profil zeigt deine aktiven Pläne, vergangenen Erfolge und gesammelten Auszeichnungen. Behalte deinen vollständigen Entwicklungsweg an einem Ort im Blick.</p>
     <div class="feature-bullets">
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Monitorea tu progreso con análisis detallados</span>
+        <span>Miss deinen Fortschritt mit detaillierten Einblicken</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Gana insignias y recompensas por retos completados</span>
+        <span>Schalte wohlverdiente Trophäen und Abzeichen frei</span>
       </div>
       <div class="bullet-point">
         <i class="fas fa-check-circle"></i>
-        <span>Comparte tus logros con la comunidad</span>
+        <span>Teile deine Erfolge stolz mit der Community</span>
       </div>
     </div>
   </div>
   <div class="feature-image">
     <div class="device-mockup">
-      <img src="{{ 'assets/screenshots/es/gallery_5.png' | relative_url }}" alt="Captura de pantalla del perfil" class="feature-screenshot">
+      <img src="{{ 'assets/screenshots/de/gallery_5.png' | relative_url }}" alt="Screenshot des Profils" class="feature-screenshot">
     </div>
   </div>
 </section>
@@ -227,41 +227,41 @@ last_modified_at: 2026-07-30
 <!-- Testimonials Section -->
 <section class="testimonials-section">
   <div class="container">
-    <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
+    <h2 class="section-title">Was unsere Nutzer sagen</h2>
     <div class="testimonials-slider">
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Le conté al Coach IA sobre mi horario de trabajo tan ocupado y que solo tenía 20 minutos por la mañana. ¡Creó una rutina de hábitos que mantuve durante 30 días seguidos!"</p>
+          <p>"Ich habe dem KI-Coach von meinem vollen Alltag und 20 Minuten am Morgen erzählt. Er hat mir eine Routine gebaut, die ich 30 Tage lang lückenlos durchgezogen habe!"</p>
         </div>
         <div class="testimonial-author">
-          <img src="{{ 'assets/testimonials/user1.png' | relative_url }}" alt="Usuario" class="author-image">
+          <img src="{{ 'assets/testimonials/user1.png' | relative_url }}" alt="Nutzer" class="author-image">
           <div class="author-info">
             <h4>Sarah J.</h4>
-            <span>Diseñadora de Producto</span>
+            <span>Produktdesignerin</span>
           </div>
         </div>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Unirme al Reto de 21 Días de Ducha Fría y Mindfulness marcó la diferencia. Seguir el mismo horario diario junto a personas reales me mantuvo responsable."</p>
+          <p>"Die Achtsamkeits- und Kaltwasser-Challenge hat alles verändert. Dieselbe Routine gemeinsam mit anderen durchzuziehen, hat mich extrem motiviert."</p>
         </div>
         <div class="testimonial-author">
-          <img src="{{ 'assets/testimonials/user2.png' | relative_url }}" alt="Usuario" class="author-image">
+          <img src="{{ 'assets/testimonials/user2.png' | relative_url }}" alt="Nutzer" class="author-image">
           <div class="author-info">
             <h4>Michael T.</h4>
-            <span>Ingeniero de Software</span>
+            <span>Softwareentwickler</span>
           </div>
         </div>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Marcar tareas en el calendario diario y ver crecer mi racha es adictivo. ¡Desbloquear la insignia de 30 días se sintió genuinamente ganado!"</p>
+          <p>"Täglich Aufgaben abzuhaken und meine Serie wachsen zu sehen, motiviert ungemein. Das 30-Tage-Abzeichen freizuschalten war ein großartiges Gefühl!"</p>
         </div>
         <div class="testimonial-author">
-          <img src="{{ 'assets/testimonials/user3.png' | relative_url }}" alt="Usuario" class="author-image">
+          <img src="{{ 'assets/testimonials/user3.png' | relative_url }}" alt="Nutzer" class="author-image">
           <div class="author-info">
             <h4>Priya K.</h4>
-            <span>Emprendedora</span>
+            <span>Unternehmerin</span>
           </div>
         </div>
       </div>
@@ -273,10 +273,10 @@ last_modified_at: 2026-07-30
 <section class="final-cta">
   <div class="container">
     <div class="cta-content">
-      <h2>Tus próximos 30 días empiezan ahora.</h2>
-      <p>Únete a miles de personas construyendo mejores hábitos — con un coach que realmente se adapta a su vida.</p>
+      <h2>Deine nächsten 30 Tage beginnen heute.</h2>
+      <p>Schließe dich Tausenden an, die ihre Gewohnheiten verändern — mit einem Coach, der wirklich zu deinem Leben passt.</p>
       <a href="{{ site.app.download_link }}" class="btn-register large">
-        <i class="fas fa-download"></i> Descargar Ascend Ahora
+        <i class="fas fa-download"></i> Ascend jetzt herunterladen
       </a>
       <div class="app-links">
         <a href="{{ site.app.app_store }}" target="_blank" rel="noopener noreferrer" class="btn">
@@ -287,7 +287,7 @@ last_modified_at: 2026-07-30
         </a>
       </div>
       <div class="social-links">
-        <p>Síguenos:</p>
+        <p>Folge uns:</p>
         <div class="social-icons">
           <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
           <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>

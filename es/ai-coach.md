@@ -90,13 +90,13 @@ last_modified_at: 2026-07-30
       <div class="ai-showcase-phones">
         <div class="ai-showcase-phone">
           <div class="device-mockup">
-            <img src="{{ 'assets/screenshots/main.png' | relative_url }}" alt="Feed de Ascend con Coach IA" class="feature-screenshot">
+            <img src="{{ 'assets/screenshots/es/main.png' | relative_url }}" alt="Feed de Ascend con Coach IA" class="feature-screenshot">
           </div>
           <p class="ai-showcase-caption">Tu Coach IA, siempre al alcance</p>
         </div>
         <div class="ai-showcase-phone">
           <div class="device-mockup">
-            <img src="{{ 'assets/screenshots/gallery_1.png' | relative_url }}" alt="Conversación con el Coach IA de Ascend" class="feature-screenshot ai-glow">
+            <img src="{{ 'assets/screenshots/es/gallery_1.png' | relative_url }}" alt="Conversación con el Coach IA de Ascend" class="feature-screenshot ai-glow">
           </div>
           <p class="ai-showcase-caption">Tu plan personalizado, listo en segundos</p>
         </div>
